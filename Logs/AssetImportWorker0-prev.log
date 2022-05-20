@@ -1,0 +1,558 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.33f1 (915a7af8b0d5) revision 9525882'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 16259 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\Program Files\UnityEditor\2020.3.33f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/UnityProject/2d-test
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54392
+Successfully changed project path to: D:/UnityProject/2d-test
+D:/UnityProject/2d-test
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 90.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
+[Subsystems] Discovering subsystems at path D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProject/2d-test/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Vendor:   
+    VRAM:     4021 MB
+    Driver:   30.0.15.1259
+Initialize mono
+Mono path[0] = 'D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001241 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 96.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.788 seconds
+Domain Reload Profiling:
+	ReloadAssembly (788ms)
+		BeginReloadAssembly (75ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (629ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (187ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (271ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (96ms)
+				BeforeProcessingInitializeOnLoad (22ms)
+				ProcessInitializeOnLoadAttributes (110ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003023 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProject\2d-test\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 86.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.493 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1493ms)
+		BeginReloadAssembly (186ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1231ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (368ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (517ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (86ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (292ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2223 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.4 MB.
+System memory in use after: 112.3 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2670.
+Total: 4.628800 ms (FindLiveObjects: 0.186400 ms CreateObjectMapping: 0.095700 ms MarkObjects: 4.034600 ms  DeleteObjects: 0.311200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Music/Title.mp3
+  artifactKey: Guid(bfd0742d4da3c92449a87fec3f6dba9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Title.mp3 using Guid(bfd0742d4da3c92449a87fec3f6dba9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b51596fb6dcb18399b2f850f88cca6d') in 1.137827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.690927 seconds.
+  path: Assets/Music/playing.mp3
+  artifactKey: Guid(550931bf81f9d0f4d9424c3e54f73faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/playing.mp3 using Guid(550931bf81f9d0f4d9424c3e54f73faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d8574352709779f2f75f81f4ebc5b1') in 0.021836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.689453 seconds.
+  path: Assets/Music/Footsteps - Essentials
+  artifactKey: Guid(c1ed2fb46fe37a946adea5eea52e0746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials using Guid(c1ed2fb46fe37a946adea5eea52e0746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c82a68b82346594a34f6d44da3d2794') in 0.012612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.940499 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_DirtyGround
+  artifactKey: Guid(d0ba54a2ca348c945935f123f842b774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_DirtyGround using Guid(d0ba54a2ca348c945935f123f842b774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8b7d40f649e320b604bf5d538ae49a') in 0.010436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.538661 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass
+  artifactKey: Guid(c7e1aea36816af7498177440946a1d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass using Guid(c7e1aea36816af7498177440946a1d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d10c581021faeca48640231660c1cb8') in 0.012227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.709334 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Gravel
+  artifactKey: Guid(679124ef3b78bdd4692da22b80cc87ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Gravel using Guid(679124ef3b78bdd4692da22b80cc87ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1d037377daa99d2672510b76ec13a9f') in 0.096365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.604980 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Leaves
+  artifactKey: Guid(f7ddcf9e73131cd4aa4c1e16ec018c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Leaves using Guid(f7ddcf9e73131cd4aa4c1e16ec018c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdddd58f3be5f0a2bec440c2fbd1a751') in 0.011843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.713058 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass
+  artifactKey: Guid(98f9511d3dadbaa4d86429e5eefaed98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass using Guid(98f9511d3dadbaa4d86429e5eefaed98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '428c929c5d0a35a1f4e389b83b954956') in 0.007285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.326046 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Jump
+  artifactKey: Guid(8aed958da2d55504c97307c630839bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Jump using Guid(8aed958da2d55504c97307c630839bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6996c7f5498c80612942731360425d2') in 0.007036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.118430 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Run
+  artifactKey: Guid(a9969811de04aa64d80e45c1f02f75da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Run using Guid(a9969811de04aa64d80e45c1f02f75da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19c59427d7e532ae4cb5aadd2f887d8c') in 0.023880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.400560 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk
+  artifactKey: Guid(ddae677a827bc8c498f5a64298c72be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk using Guid(ddae677a827bc8c498f5a64298c72be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb951dad08d468ebd5e7da8129b003d') in 0.007906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.955638 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_01.wav
+  artifactKey: Guid(ad5de75eeb6f27a49a13d399389a8f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_01.wav using Guid(ad5de75eeb6f27a49a13d399389a8f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1daae854d6ef4a5b328766724801a3') in 0.130301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_06.wav
+  artifactKey: Guid(1fb63af572f3ebb469e2d7709aaf8a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_06.wav using Guid(1fb63af572f3ebb469e2d7709aaf8a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '547bbb2028d5b5d45a0a9e61d0630531') in 0.013216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_08.wav
+  artifactKey: Guid(0c4726bd3866ab840a1cf5b807849c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_08.wav using Guid(0c4726bd3866ab840a1cf5b807849c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81b3a72bacddaec8a81fcb529aa62cdb') in 0.015519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_09.wav
+  artifactKey: Guid(ed15a29e723b7214ea43525973cdb6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_09.wav using Guid(ed15a29e723b7214ea43525973cdb6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac1f0bfae14c33c1fe8dd2674ed0f6d') in 0.019696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_03.wav
+  artifactKey: Guid(1f0c1a78d4716d148a54135cc0f4f952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_03.wav using Guid(1f0c1a78d4716d148a54135cc0f4f952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe1c1f2c9df60b8a875857b3ff8faa13') in 0.017638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_05.wav
+  artifactKey: Guid(fcbb5c4d4b88dab4196aa78093d897b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_05.wav using Guid(fcbb5c4d4b88dab4196aa78093d897b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72282e7389415c2fcc75a113900276c2') in 0.018819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_02.wav
+  artifactKey: Guid(6608750bb84f23446a146d6a1529c03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_02.wav using Guid(6608750bb84f23446a146d6a1529c03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b516779be6c628acaece261e388108') in 0.016033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_04.wav
+  artifactKey: Guid(4556f410625310c41b03e2f828e7962c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_04.wav using Guid(4556f410625310c41b03e2f828e7962c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bbe50fe30dbf5c16c59b8dc7c5c0f8d') in 0.025506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_07.wav
+  artifactKey: Guid(926831fad7b7b2d4e872a783e1dff180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_07.wav using Guid(926831fad7b7b2d4e872a783e1dff180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4189d0be3a1fa25a4f9db1acf931585d') in 0.016373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.045878 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_01.wav
+  artifactKey: Guid(551d550ab98e3cc4bb7793e752fe8628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_01.wav using Guid(551d550ab98e3cc4bb7793e752fe8628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00bce15dd003b4c57c28febd9ffeab5a') in 0.024930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_39.wav
+  artifactKey: Guid(3fb042d8273dfd141955633820660a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_39.wav using Guid(3fb042d8273dfd141955633820660a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2161d9117ae8132282ea6da29ce1ef1') in 0.016373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_19.wav
+  artifactKey: Guid(33d23eef6cc170546a3c9ce3c9bef1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_19.wav using Guid(33d23eef6cc170546a3c9ce3c9bef1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3b4da67b5ee4472c6a072131648eda9') in 0.017584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_23.wav
+  artifactKey: Guid(c73956075c85d384a891d9da3762e5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_23.wav using Guid(c73956075c85d384a891d9da3762e5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f924d325de8d37621cb67d2a655159b2') in 0.014885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_27.wav
+  artifactKey: Guid(ff032cb5e57bd114ea87189c2ed8b3c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_27.wav using Guid(ff032cb5e57bd114ea87189c2ed8b3c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e6d40c8b7531921c8ddabdc04b5104') in 0.015980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_10.wav
+  artifactKey: Guid(5799109e817d3704889f0499d06a23be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_10.wav using Guid(5799109e817d3704889f0499d06a23be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48133a4e4283846b7bca63f4d7c0d7e7') in 0.017971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_22.wav
+  artifactKey: Guid(5ad92c54c3f49654db8d62382e5f559b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_22.wav using Guid(5ad92c54c3f49654db8d62382e5f559b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1811fdf4eb8eec721f46a2e669f391') in 0.018135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_32.wav
+  artifactKey: Guid(e41709e0fc1f25449a1e6290e3da9b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_32.wav using Guid(e41709e0fc1f25449a1e6290e3da9b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c65c375893559e365d761672578c2f') in 0.019643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_45.wav
+  artifactKey: Guid(74a0ecc6d5d37bf4f8fe4544dfcd9e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_45.wav using Guid(74a0ecc6d5d37bf4f8fe4544dfcd9e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39fb743d4cb18baa3ce592a952f6b575') in 0.016718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_04.wav
+  artifactKey: Guid(38cb68a2a49e89c46bea091d75b27976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_04.wav using Guid(38cb68a2a49e89c46bea091d75b27976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e8666d811cbed4848932273bfd3196') in 0.016892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_49.wav
+  artifactKey: Guid(97b97fae0b55ce141bff2005c510492e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_49.wav using Guid(97b97fae0b55ce141bff2005c510492e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7d8b096aee92d89c839dee6df5228a3') in 0.015770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_31.wav
+  artifactKey: Guid(c79fa9a699dd93647a0729d726adb632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_31.wav using Guid(c79fa9a699dd93647a0729d726adb632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb6662e21195ee1e3ca790b223b2872') in 0.015758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_20.wav
+  artifactKey: Guid(3ba5fb80a58d03741b65a691dc434897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_20.wav using Guid(3ba5fb80a58d03741b65a691dc434897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2090fcf916dd734da1d60e091bcbc943') in 0.019770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000408 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_37.wav
+  artifactKey: Guid(326f222e206f8d84bbced6f9d6a0f08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_37.wav using Guid(326f222e206f8d84bbced6f9d6a0f08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40347c05c21fa4baff00a3a16a8058a4') in 0.013960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_12.wav
+  artifactKey: Guid(ed546d9af9b4e884cbe8d8047fa8c80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_12.wav using Guid(ed546d9af9b4e884cbe8d8047fa8c80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '739e912cadd7ec7cbf7235ee9ff4802a') in 0.015793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_28.wav
+  artifactKey: Guid(ba6029ca248ff2247a1a9ca238be48ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_28.wav using Guid(ba6029ca248ff2247a1a9ca238be48ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2495d4a161f3b780644019c1faa83083') in 0.015118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_48.wav
+  artifactKey: Guid(9cd93e6b4948e0c4abc089546af87c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_48.wav using Guid(9cd93e6b4948e0c4abc089546af87c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7291e5d87fbef618b3ac191bacd7bc') in 0.017242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_05.wav
+  artifactKey: Guid(a62172e6f7275ff4f94c17edc8dfdd0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_05.wav using Guid(a62172e6f7275ff4f94c17edc8dfdd0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b85721f3f021bc06c0bd1f9d6e411fc5') in 0.014721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_36.wav
+  artifactKey: Guid(dd26e9057c37e2943993f701a764fc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_36.wav using Guid(dd26e9057c37e2943993f701a764fc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '465a96d192466974a3ce182a4a0f0fa9') in 0.013714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_38.wav
+  artifactKey: Guid(fbb8ee09f6d45f54d84383b81ca5a5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_38.wav using Guid(fbb8ee09f6d45f54d84383b81ca5a5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ed4ceb1c586d7a88c9634a4b2c78c4') in 0.014388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_33.wav
+  artifactKey: Guid(eb9d0826f01bad94293a3ca6fa1f8427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_33.wav using Guid(eb9d0826f01bad94293a3ca6fa1f8427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '335027d76d51e23134b1cf0b0c380740') in 0.016089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_50.wav
+  artifactKey: Guid(96860d4e7cdc1f746906da7b7bc7a388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_50.wav using Guid(96860d4e7cdc1f746906da7b7bc7a388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4506cb7ac77508c55fe3441b14d50a99') in 0.015514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_06.wav
+  artifactKey: Guid(6a0b4267ac8ee8448b619bc9a3bca6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_06.wav using Guid(6a0b4267ac8ee8448b619bc9a3bca6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ecaa9830067af557a08f88df36db1a9') in 0.016290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_25.wav
+  artifactKey: Guid(09305e4eb78a4cf4ebee70c4b976fa18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_25.wav using Guid(09305e4eb78a4cf4ebee70c4b976fa18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd25e93b22993fc11fdf6f66c08b4056d') in 0.014668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_14.wav
+  artifactKey: Guid(cee5e6c416359ef4cbb722f0cd3a5a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_14.wav using Guid(cee5e6c416359ef4cbb722f0cd3a5a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84caad9f78236ab4d39ab71e0c17c26f') in 0.016966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_17.wav
+  artifactKey: Guid(6f344c93a9337684995c262534fa85f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_17.wav using Guid(6f344c93a9337684995c262534fa85f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4cb153df0aaf32dbc9876d33804013') in 0.014634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_44.wav
+  artifactKey: Guid(dffb2ef44d2dd254aa89c2546475cf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_44.wav using Guid(dffb2ef44d2dd254aa89c2546475cf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa95c4ce06c4e6a2907171fedabd685') in 0.016122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_07.wav
+  artifactKey: Guid(fc32c6fd07980144996b811e5d1f2971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_07.wav using Guid(fc32c6fd07980144996b811e5d1f2971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '428ba3ec067d9e3867e671a1b237b9b4') in 0.011633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_16.wav
+  artifactKey: Guid(f3a60c89c8456614895e7e11520a19d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_16.wav using Guid(f3a60c89c8456614895e7e11520a19d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf5030fec2879c577635afcdf13dbf5d') in 0.012124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_13.wav
+  artifactKey: Guid(ba6466c0db2d12649a51ba73749902d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_13.wav using Guid(ba6466c0db2d12649a51ba73749902d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4bf533b6c20f8a3832bbd99ce0555bd') in 0.011867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_29.wav
+  artifactKey: Guid(3642dbceb97dc5d419752955421aca54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_29.wav using Guid(3642dbceb97dc5d419752955421aca54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1745f66a3616a5f051337e63a4fa3d7') in 0.016482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_42.wav
+  artifactKey: Guid(837b2ac0dee4b2e49b7c4229129a2cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_42.wav using Guid(837b2ac0dee4b2e49b7c4229129a2cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76e981a58fd78305f183d8ad4b79f325') in 0.013279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_11.wav
+  artifactKey: Guid(d3f3cc8ad058cad408e97b1875afec82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_11.wav using Guid(d3f3cc8ad058cad408e97b1875afec82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781d04ae6c099b563128257074648f69') in 0.014397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_40.wav
+  artifactKey: Guid(eb73ae3e299f426418476df5f1fb0f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_40.wav using Guid(eb73ae3e299f426418476df5f1fb0f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b51dad1055495889fafa365dff0c61') in 0.012598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_30.wav
+  artifactKey: Guid(b4b126977b28e1d499d8f7f7c580d488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_30.wav using Guid(b4b126977b28e1d499d8f7f7c580d488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a4c7564a205ef38bde1210b485499e') in 0.017957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_08.wav
+  artifactKey: Guid(030e6a43a7d08bd4581668d53a9808f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_08.wav using Guid(030e6a43a7d08bd4581668d53a9808f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d9f197a713ea5400aa716be8804053') in 0.012786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_09.wav
+  artifactKey: Guid(56ea356e65429294f9098ef523fdb70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_09.wav using Guid(56ea356e65429294f9098ef523fdb70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '430ffb46419115aa4767cd2abceb943d') in 0.016431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_34.wav
+  artifactKey: Guid(a6801ed1ae1ed5648ba823232d0fcdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_34.wav using Guid(a6801ed1ae1ed5648ba823232d0fcdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efd5cdc5ca445d1a512ee50cae3e8e1d') in 0.015569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_18.wav
+  artifactKey: Guid(e4f1c11a5b7fd27468ea8b131669f3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_18.wav using Guid(e4f1c11a5b7fd27468ea8b131669f3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23c2d6ff70bfbbf137cc153522d9412') in 0.016104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_41.wav
+  artifactKey: Guid(553615e2b22e2db44b1e1057668753ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_41.wav using Guid(553615e2b22e2db44b1e1057668753ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265a7b3da5652ee201671ae4a25483e2') in 0.013279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_35.wav
+  artifactKey: Guid(c98c6b4375d0b1e4193f9e678966559a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_35.wav using Guid(c98c6b4375d0b1e4193f9e678966559a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b13d76112bf52c6b1e7e7008667407') in 0.014830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_47.wav
+  artifactKey: Guid(6d1a50aa1ed16a645bfc3a480d77712c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_47.wav using Guid(6d1a50aa1ed16a645bfc3a480d77712c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9ea40799a5fb315fbf4769c310523c9') in 0.014795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_15.wav
+  artifactKey: Guid(be378a7ab9654eb41ab1e85da1701672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_15.wav using Guid(be378a7ab9654eb41ab1e85da1701672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5080915b247dca9b300b25f60c6c87b') in 0.014436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_03.wav
+  artifactKey: Guid(9c0c1f9411026f749bcb3746cd557bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_03.wav using Guid(9c0c1f9411026f749bcb3746cd557bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f664604c4af588c74e3e9de103986c') in 0.014154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_43.wav
+  artifactKey: Guid(55a810a67df804d4487e8f990523255b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_43.wav using Guid(55a810a67df804d4487e8f990523255b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27684722d9e986aaa7205a884fec9bb6') in 0.014164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_21.wav
+  artifactKey: Guid(adf6356301a9fc14aaa03c2cfac83816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_21.wav using Guid(adf6356301a9fc14aaa03c2cfac83816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d3f841eda10eb5d603f8263c47f65a') in 0.015209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_24.wav
+  artifactKey: Guid(a9e685e1af34121498a651c484426703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_24.wav using Guid(a9e685e1af34121498a651c484426703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82bd2dd53ec9cfb775d69709611c6636') in 0.016571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_46.wav
+  artifactKey: Guid(9133d407969ea654a9589b2169db5382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_46.wav using Guid(9133d407969ea654a9589b2169db5382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00f6f8d3b435f15cccea1885a7d376f') in 0.013711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_02.wav
+  artifactKey: Guid(18e761ff5ef14fd4588d9283fcc9b829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_02.wav using Guid(18e761ff5ef14fd4588d9283fcc9b829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0043c2378954c03fe7be0ebbe79ed5') in 0.013237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_26.wav
+  artifactKey: Guid(a1d0e2d83ca2030428f1c772f47b9087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_26.wav using Guid(a1d0e2d83ca2030428f1c772f47b9087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8f28114f403df98dee01302cce2660') in 0.015747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 859.955346 seconds.
+  path: Assets/Resources/Cainos/Pixel Art Top Down - Basic/Script/TopDownCharacterController.cs
+  artifactKey: Guid(abd146093740c5d43b5909c7913f3109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cainos/Pixel Art Top Down - Basic/Script/TopDownCharacterController.cs using Guid(abd146093740c5d43b5909c7913f3109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1ad2e5fa9ea55c86425e9c3541d341') in 0.101178 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

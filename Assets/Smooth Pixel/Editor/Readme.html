@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smooth Pixel Documentation</title>
+    <link rel="icon" type="x-image/ico" href="icon.ico">
+
+    <style type="text/css">
+        @font-face {
+            font-family: "Retro Gaming";
+            src: url("./Retro Gaming.ttf");
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: "Retro Gaming";
+            background-color: #aaa;
+        }
+
+        #header {
+            background-color: #03a;
+            margin: 0;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0px 5px #0008;
+        }
+
+        #mainTitle {
+            font-size: 5vw;
+            margin: 0;
+            margin-left: 30px;
+            color: white;
+            text-shadow: 5px 5px #000a;
+            cursor: pointer;
+        }
+
+        h2 {
+            font-size: 2vw;
+            text-decoration: underline;
+            margin: 0;
+            margin-top: 25px;
+        }
+
+        #docs {
+            margin: 4em 10vw;
+            padding-top: 10px;
+            text-align: center;
+            background-color: white;
+            box-shadow: -5px 5px #0004;
+        }
+
+        .centered {
+            margin: 25px;
+            display: inline-block;
+        }
+
+        .label {
+            display: inline-block;
+            width: 40%;
+            font-size: 2vw;
+        }
+
+        #demogif {
+            width: 45vw;
+            height: auto;
+            display: block;
+        }
+
+        #importSettings {
+            max-width: 535px;
+            width: 50vw;
+        }
+
+        p {
+            text-align: left;
+            margin: 0;
+            font-size: 1.5vw;
+            color: #222;
+            width: 55vw;
+        }
+
+        .red {
+            color: #b00;
+            font-size: 1.75vw;
+        }
+
+        #contact p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1 id="mainTitle" onclick="backToTop()">Smooth Pixel ReadMe</h1>
+    </div>
+
+    <div id="docs">
+
+        <div class="centered">
+            <img id="demogif" src="demo.gif"></img>
+            <div class='label'> Point</div>
+            <div class='label'> Smooth </div>
+        </div>
+        <br />
+
+        <div class='centered'>
+            <p> Pixel Archer By: <a href="https://oco.itch.io/"> OcO </a> </p>
+        </div>
+
+        <h2> 1. What is Smooth Pixel?</h2>
+
+        <div class='centered'>
+            <p>
+                Smooth Pixel is a anti-aliasing shader for pixel art graphics. It reduces visual errors caused by mismatches between the pixel grid on the screen and the pixel grid on a texture. It works best when the ratio between the screen pixels and the texture pixels is greater than 2:1.
+            </p>
+        </div>
+
+        <h2> 2. How to use Smooth Pixel:</h2>
+
+        <div class='centered'>
+            <p>
+                Smooth Pixel consists of a single, UI-compatible shader. A Smooth Pixel material created from the shader is provided and usage is shown in the sample scene.
+                <br />
+                <br />
+                There is only one detail you absolutely need to take care of to make the shader work: the <b class='red'>Filter Mode</b> for any texture you plan to use with the Smooth Pixel shader needs to be set to <b class='red'>Bilinear</b> in the Import settings. The shader uses bilinear sampling along the edges of the texture pixels to achieve its anti-aliasing.
+            </p>
+        </div>
+
+        <div class='centered'>
+            <img id='importSettings' src="ImportSettings.png" />
+        </div>
+
+
+        <h2> Contact the Developer:</h2>
+
+        <div id="contact" class='centered'>
+
+            <p> <u> e-mail: </u> <a href="mailto:christopher.aaron.gallegos@gmail.com">christopher.aaron.gallegos@gmail.com</a> </p>
+            <p> <u> twitter: </u> <a href="https://twitter.com/Chrispykins"> @Chrispykins</a> </p>
+        </div>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+
+    var header = document.getElementById("header");
+    var docs = document.getElementById("docs");
+
+    setInterval(function() { docs.style.marginTop = header.clientHeight + "px"; }, 100);
+
+    function backToTop() {
+        document.body.scrollTop = 0;
+    }
+
+</script>
+</html>
