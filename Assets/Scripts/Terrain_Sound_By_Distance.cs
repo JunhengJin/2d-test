@@ -38,7 +38,7 @@ public class Terrain_Sound_By_Distance : MonoBehaviour
             if(footstepisplaying == false)
             {
                 walking[rangenumber].Play();
-                Debug.Log("now is playing: " + rangenumber);
+                //Debug.Log("now is playing: " + rangenumber);
             }
             Player.iswalking = false;
         }
