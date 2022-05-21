@@ -15,6 +15,10 @@ using UnityEngine.UI;
 
         public bool iswalking = false;
 
+        public bool canmove = true;
+
+
+
         //public static TopDownCharacterController instance { get; private set; }
 
         private void Start()
@@ -24,6 +28,8 @@ using UnityEngine.UI;
 
 
         private void Update()
+        {
+        if(canmove == true)
         {
             Vector2 dir = Vector2.zero;
             if (Input.GetKey(KeyCode.A))
@@ -61,5 +67,7 @@ using UnityEngine.UI;
 
             GetComponent<Rigidbody2D>().velocity = speed * dir;
         }
+    }
+            
     }
 //}

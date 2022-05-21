@@ -10,8 +10,11 @@ public class ValueControlor : MonoBehaviour
     public List<float> TargetValue = new List<float>();
     public Text Target_text;
     public GameObject Target_icon;
+    public float delaytime = 0f;
     bool isable = false;
     bool isused = false;
+    int count = 0;
+    public AudioSource target_audio;
 
     public enum ValueControl
     {
@@ -36,6 +39,8 @@ public class ValueControlor : MonoBehaviour
                 {
                     TargetSlider[0].value += TargetValue[0];
                     Target_text.text = "";
+                    target_audio.Play();
+                    Debug.Log("playing!");
                     Destroy(Target_icon);
                 }
             }
@@ -47,8 +52,11 @@ public class ValueControlor : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.F))
                 {
+                    Invoke("waterpart", delaytime);
+                    Player.GetComponent<TopDownCharacterController>().canmove = false;
                     TargetSlider[0].value -= TargetValue[0];
                     TargetSlider[1].value += TargetValue[1];
+                    target_audio.Play();
                     //Destroy(Target_icon);
                     isused = true;
                 }
@@ -56,6 +64,14 @@ public class ValueControlor : MonoBehaviour
         }
 
     }
+
+    void waterpart()
+    {
+        Target_text.text = "Already used";
+        Player.GetComponent<TopDownCharacterController>().canmove = true;
+        count++;
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -74,8 +90,11 @@ public class ValueControlor : MonoBehaviour
                 }
                 else
                 {
-                    Target_text.text = "Already used";
-                    isable = true;
+                    if (count != 0)
+                    {
+                        Target_text.text = "Already used";
+                        isable = true;
+                    }
                 }
             }
 
