@@ -63,7 +63,7 @@ public class ValueControlor : MonoBehaviour
                         Invoke("go_toliet_part", 1f);
                         count++;
                     }
-                    else if(canflush == true&& isused == true)
+                    else if(canflush == true&& isused == true&&count == 1)
                     {
                         count++;
                         Target_text.text = "Flushing...";
