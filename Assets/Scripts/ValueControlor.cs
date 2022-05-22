@@ -8,13 +8,15 @@ public class ValueControlor : MonoBehaviour
     public GameObject Player;
     public List<Slider> TargetSlider = new List<Slider>();
     public List<float> TargetValue = new List<float>();
+    public List<Sprite> Target_sprite = new List<Sprite>();
+    public List<AudioSource> Target_audio = new List<AudioSource>();
     public Text Target_text;
-    public GameObject Target_icon;
+    public GameObject Target;
     public float delaytime = 0f;
     bool isable = false;
     bool isused = false;
+    bool canflush = false;
     int count = 0;
-    public AudioSource target_audio;
 
     public enum ValueControl
     {
@@ -25,7 +27,7 @@ public class ValueControlor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[0];
     }
 
     // Update is called once per frame
@@ -39,37 +41,55 @@ public class ValueControlor : MonoBehaviour
                 {
                     TargetSlider[0].value += TargetValue[0];
                     Target_text.text = "";
-                    target_audio.Play();
+                    Target_audio[0].Play();
                     Debug.Log("playing!");
-                    Destroy(Target_icon);
+                    Destroy(Target);
                 }
             }
         }
 
         if (valueControl == ValueControl.water)
         {
-            if (isable == true&& isused == false)
+            if (isable == true)
             {
                 if (Input.GetKey(KeyCode.F))
                 {
-                    Invoke("waterpart", delaytime);
-                    Player.GetComponent<TopDownCharacterController>().canmove = false;
-                    TargetSlider[0].value -= TargetValue[0];
-                    TargetSlider[1].value += TargetValue[1];
-                    target_audio.Play();
-                    //Destroy(Target_icon);
-                    isused = true;
+                    if (count == 0&& isused == false)
+                    {
+                        Target_text.text = "Put 'F' to flush the toilet";
+                        Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[1];
+                        TargetSlider[1].value += TargetValue[1];
+                        isused = true;
+                        Invoke("go_toliet_part", 1f);
+                        count++;
+                    }
+                    else if(canflush == true&& isused == true)
+                    {
+                        count++;
+                        Target_text.text = "Flushing...";
+                        Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[2];
+                        Invoke("flushing_part", delaytime);
+                        Player.GetComponent<TopDownCharacterController>().canmove = false;
+                        TargetSlider[0].value -= TargetValue[0];
+                        Target_audio[0].Play();
+                    }
                 }
             }
         }
 
     }
-
-    void waterpart()
+    void go_toliet_part()
     {
-        Target_text.text = "Already used";
+        canflush = true;
+    }
+    void flushing_part()
+    {
+        Target_text.text = "Put 'F' go to the toilet";
+        isused = false;
         Player.GetComponent<TopDownCharacterController>().canmove = true;
-        count++;
+        Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[0];
+        count = 0;
+        canflush = false;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -83,17 +103,20 @@ public class ValueControlor : MonoBehaviour
             }
             if (valueControl == ValueControl.water)
             {
-                if(isused == false)
+                isable = true;
+                if (isused == false)
                 {
                     Target_text.text = "Put 'F' go to the toilet";
-                    isable = true;
                 }
                 else
                 {
-                    if (count != 0)
+                    if (count == 2 && canflush == true)
                     {
-                        Target_text.text = "Already used";
-                        isable = true;
+                        Target_text.text = "Flushing...";
+                    }
+                    if (count == 1 && canflush == true)
+                    {
+                        Target_text.text = "Put 'F' to flush the toilet";
                     }
                 }
             }

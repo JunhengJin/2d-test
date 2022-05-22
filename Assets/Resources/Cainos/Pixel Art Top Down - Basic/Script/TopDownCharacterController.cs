@@ -3,36 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//namespace Cainos.PixelArtTopDown_Basic
-//{
-    public class TopDownCharacterController : MonoBehaviour
+
+public class TopDownCharacterController : MonoBehaviour
+{
+    public float speed;
+
+    private Animator animator;
+
+    public Slider FoodSlider;
+
+    public bool iswalking = false;
+
+    public bool canmove = true;
+
+    float stop = 0;
+
+    float temp = 0;
+
+    private void Start()
     {
-        public float speed;
-
-        private Animator animator;
-
-        public Slider FoodSlider;
-
-        public bool iswalking = false;
-
-        public bool canmove = true;
-
-
-
-        //public static TopDownCharacterController instance { get; private set; }
-
-        private void Start()
+        animator = GetComponent<Animator>();
+        temp = speed;
+    }
+    private void Update()
         {
-            animator = GetComponent<Animator>();
-        }
-
-
-        private void Update()
+        if (canmove == true)
         {
-        if(canmove == true)
-        {
-            Vector2 dir = Vector2.zero;
-            if (Input.GetKey(KeyCode.A))
+        speed = temp;
+        Vector2 dir = Vector2.zero;
+        if (Input.GetKey(KeyCode.A))
             {
                 dir.x = -1;
                 animator.SetInteger("Direction", 3);
@@ -53,7 +52,6 @@ using UnityEngine.UI;
                 animator.SetInteger("Direction", 1);
                 FoodSlider.value -= 1.0f;
                 iswalking = true;
-
             }
             else if (Input.GetKey(KeyCode.S))
             {
@@ -67,7 +65,14 @@ using UnityEngine.UI;
 
             GetComponent<Rigidbody2D>().velocity = speed * dir;
         }
+        else
+        {
+            Vector2 dir = Vector2.zero;
+            dir.Normalize();
+            speed = stop;
+            animator.SetBool("IsMoving", dir.magnitude > 0);
+            GetComponent<Rigidbody2D>().velocity = speed * dir;
+        }
     }
-            
-    }
+}
 //}
