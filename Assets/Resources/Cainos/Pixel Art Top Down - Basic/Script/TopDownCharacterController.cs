@@ -26,12 +26,13 @@ public class TopDownCharacterController : MonoBehaviour
         temp = speed;
     }
     private void Update()
-        {
+    {
         if (canmove == true)
         {
-        speed = temp;
-        Vector2 dir = Vector2.zero;
-        if (Input.GetKey(KeyCode.A))
+            iswalking = false;
+            speed = temp;
+            Vector2 dir = Vector2.zero;
+            if (Input.GetKey(KeyCode.A))
             {
                 dir.x = -1;
                 animator.SetInteger("Direction", 3);
@@ -62,7 +63,6 @@ public class TopDownCharacterController : MonoBehaviour
             }
             dir.Normalize();
             animator.SetBool("IsMoving", dir.magnitude > 0);
-
             GetComponent<Rigidbody2D>().velocity = speed * dir;
         }
         else

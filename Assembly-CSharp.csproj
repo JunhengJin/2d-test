@@ -62,9 +62,9 @@
     <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\PropVariants\FPGrassLong.cs" />
     <Compile Include="Assets\Scripts\ValueControlor.cs" />
     <Compile Include="Assets\Resources\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
-    <Compile Include="Assets\Scripts\Terrain_Sound_By_Distance.cs" />
+    <Compile Include="Assets\Scripts\FootstepSound.cs" />
     <Compile Include="Assets\Scripts\VolumeControl.cs" />
-    <Compile Include="Assets\Scripts\SceneControl.cs" />
+    <Compile Include="Assets\Scripts\SceneLoading.cs" />
     <Compile Include="Assets\Resources\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
     <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\PropVariants\FPCreeper.cs" />
     <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\PropVariants\FPPillar.cs" />
@@ -72,6 +72,9 @@
     <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
     <Compile Include="Assets\Resources\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
     <Compile Include="Assets\Resources\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\SceneStop.cs" />
+    <Compile Include="Assets\Scripts\TimeCount.cs" />
+    <Compile Include="Assets\Scripts\Player_status_Listener.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\SimplePixelUI\fonts\Font2\license.txt" />

@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SceneControl : MonoBehaviour
+public class SceneLoading : MonoBehaviour
 {
     public Slider Load_Slider;
     public GameObject Loadscene;
     public Text Load_Percentage;
-
+    int Level = 1;
+    public int Levelnumber = 1;
 
     public void StartLoadScene()
     {
@@ -18,7 +19,7 @@ public class SceneControl : MonoBehaviour
     IEnumerator LoadLevel()
     {
         Loadscene.SetActive(true);
-        AsyncOperation op = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        AsyncOperation op = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + Level);
         op.allowSceneActivation = false;
         while (!op.isDone)
         {
@@ -35,5 +36,10 @@ public class SceneControl : MonoBehaviour
             }
             yield return null;
         }
+    }
+
+    public void LoadScene_withoutUI()
+    {
+        SceneManager.LoadScene(Levelnumber, LoadSceneMode.Single);
     }
 }
