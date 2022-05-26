@@ -70,7 +70,7 @@ public class TopDownCharacterController : MonoBehaviour
             Vector2 dir = Vector2.zero;
             dir.Normalize();
             speed = stop;
-            animator.SetBool("IsMoving", dir.magnitude > 0);
+            animator.SetBool("IsMoving", false);
             GetComponent<Rigidbody2D>().velocity = speed * dir;
         }
     }

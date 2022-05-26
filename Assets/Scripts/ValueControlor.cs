@@ -37,7 +37,7 @@ public class ValueControlor : MonoBehaviour
         {
             if (isable == true)
             {
-                if (Input.GetKey(KeyCode.F))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     TargetSlider[0].value += TargetValue[0];
                     Target_text.text = "";
@@ -52,11 +52,11 @@ public class ValueControlor : MonoBehaviour
         {
             if (isable == true)
             {
-                if (Input.GetKey(KeyCode.F))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     if (count == 0&& isused == false)
                     {
-                        Target_text.text = "Put 'F' to flush the toilet";
+                        Target_text.text = "Put 'E' to flush the toilet";
                         Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[1];
                         TargetSlider[1].value += TargetValue[1];
                         isused = true;
@@ -84,7 +84,7 @@ public class ValueControlor : MonoBehaviour
     }
     void flushing_part()
     {
-        Target_text.text = "Put 'F' go to the toilet";
+        Target_text.text = "Put 'E' go to the toilet";
         isused = false;
         Player.GetComponent<TopDownCharacterController>().canmove = true;
         Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[0];
@@ -98,7 +98,7 @@ public class ValueControlor : MonoBehaviour
         {
             if (valueControl == ValueControl.food)
             {
-                Target_text.text = "Put 'F' to eat";
+                Target_text.text = "Put 'E' to eat";
                 isable = true;
             }
             if (valueControl == ValueControl.water)
@@ -106,7 +106,7 @@ public class ValueControlor : MonoBehaviour
                 isable = true;
                 if (isused == false)
                 {
-                    Target_text.text = "Put 'F' go to the toilet";
+                    Target_text.text = "Put 'E' go to the toilet";
                 }
                 else
                 {
@@ -116,7 +116,7 @@ public class ValueControlor : MonoBehaviour
                     }
                     if (count == 1 && canflush == true)
                     {
-                        Target_text.text = "Put 'F' to flush the toilet";
+                        Target_text.text = "Put 'E' to flush the toilet";
                     }
                 }
             }
