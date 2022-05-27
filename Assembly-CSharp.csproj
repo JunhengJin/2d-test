@@ -60,9 +60,11 @@
     <Compile Include="Assets\Scripts\TimeCount.cs" />
     <Compile Include="Assets\Resources\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
     <Compile Include="Assets\Scripts\VolumeControl.cs" />
+    <Compile Include="Assets\Scripts\BoxControl.cs" />
     <Compile Include="Assets\Scripts\HorizontalGradient.cs" />
     <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\PropVariants\FPCreeper.cs" />
     <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\PropVariants\FPTree.cs" />
+    <Compile Include="Assets\Scripts\FlashlightControl.cs" />
     <Compile Include="Assets\Resources\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
     <Compile Include="Assets\Scripts\SceneStop.cs" />
     <Compile Include="Assets\Resources\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
@@ -78,8 +80,6 @@
     <Compile Include="Assets\Scripts\ChangeLightColor.cs" />
     <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\VerticalGradient.cs" />
-    <Compile Include="Assets\Scripts\FlashlightControl.cs" />
-    <Compile Include="Assets\Scripts\BoxControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\SimplePixelUI\fonts\Font2\license.txt" />
