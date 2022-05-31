@@ -17,12 +17,13 @@ public class ValueControlor : MonoBehaviour
     bool LeakWater = false;
     bool DontHaveWater = false;
     int count = 0;
+    GameObject Smoke;
     //float counttime = 0;
     private Animator myAnim;
 
     public enum ValueControl
     {
-        food,water,washhand
+        food,water,washhand,cleanCar,
     }
 
     public ValueControl valueControl;
@@ -32,6 +33,11 @@ public class ValueControlor : MonoBehaviour
         if (valueControl == ValueControl.washhand)
         {
             myAnim = GetComponent<Animator>();
+        }
+        if (valueControl == ValueControl.cleanCar)
+        {
+            Smoke = GameObject.FindWithTag("Smoke");
+            Smoke.SetActive(false);
         }
         //Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[0];
     }
@@ -57,27 +63,34 @@ public class ValueControlor : MonoBehaviour
         {
             if (isable == true)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (TargetSlider[0].value <= 500 && count == 0)
                 {
-                    if (count == 0)
+                    Target_text.text = "Don't have enough water!";
+                }else
+                {
+                    if (Input.GetKeyDown(KeyCode.E))
                     {
-                        Target_text.text = "Doing...";
-                        count++;
-                        Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[1];
-                        TargetSlider[1].value += TargetValue[1];
-                        Invoke("go_toliet_part", 1f);
-                    }
-                    else if(count == 2)
-                    {
-                        count++;
-                        Target_text.text = "Flushing...";
-                        Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[2];
-                        Invoke("flushing_part", delaytime);
-                        Player.GetComponent<TopDownCharacterController>().canmove = false;
-                        TargetSlider[0].value -= TargetValue[0];
-                        Target_audio[0].Play();
+                        if (count == 0)
+                        {
+                            Target_text.text = "Doing...";
+                            count++;
+                            Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[1];
+                            TargetSlider[1].value += TargetValue[1];
+                            Invoke("GoTolietPart", 1f);
+                        }
+                        else if (count == 2)
+                        {
+                            count++;
+                            Target_text.text = "Flushing...";
+                            Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[2];
+                            Invoke("FlushingPart", delaytime);
+                            Player.GetComponent<TopDownCharacterController>().canmove = false;
+                            TargetSlider[0].value -= TargetValue[0];
+                            Target_audio[0].Play();
+                        }
                     }
                 }
+                
             }
         }
 
@@ -87,10 +100,11 @@ public class ValueControlor : MonoBehaviour
             {
                 if (TargetSlider[0].value <= 500&&count==0)
                 {
-                    Target_text.text = "Don't enough have water!";
+                    Target_text.text = "Don't have enough water!";
                 }
                 else
                 {
+                    DontHaveWater = false;
                     if (TargetSlider[0].value <= 1)
                     {
                         DontHaveWater = true;
@@ -99,6 +113,7 @@ public class ValueControlor : MonoBehaviour
                     {
                         if (count == 0)
                         {
+                            Target_audio[0].Play();
                             count++;
                             Target_text.text = "Waitting...";
                             myAnim.SetBool("canTurnon", true);
@@ -110,6 +125,8 @@ public class ValueControlor : MonoBehaviour
                         }
                         else if (count == 2)
                         {
+                            Target_audio[1].Pause();
+                            Target_audio[2].Play();
                             myAnim.SetBool("Fturnoff", true);
                             count++;
                             LeakWater = false;
@@ -121,14 +138,17 @@ public class ValueControlor : MonoBehaviour
                         else if (count == 3)
                         {
                             count++;
+                            Target_audio[2].Pause();
+                            Target_audio[3].Play();
                             Target_text.text = "Washing...";
                             Invoke("DrainOffWater", delaytime);
                             Player.GetComponent<TopDownCharacterController>().canmove = false;
-                            TargetSlider[1].value += TargetValue[1];
                             //Target_audio[0].Play();
                         }
                         else if (count == 5)
                         {
+                            Target_audio[3].Pause();
+                            Target_audio[4].Play();
                             count++;
                             myAnim.SetBool("canTurnon", false);
                             myAnim.SetBool("isFulled", false);
@@ -140,6 +160,8 @@ public class ValueControlor : MonoBehaviour
                         if(count == 7)
                         {
                             count = 4;
+                            Target_audio[2].Pause();
+                            Target_audio[3].Play();
                             Target_text.text = "Washing...";
                             Invoke("DrainOffWater", delaytime);
                             Player.GetComponent<TopDownCharacterController>().canmove = false;
@@ -149,6 +171,7 @@ public class ValueControlor : MonoBehaviour
                     if (DontHaveWater == true&&count ==2)
                     {
                         myAnim.SetBool("Fturnoff", true);
+                        Target_audio[1].Pause();
                         LeakWater = false;
                         myAnim.SetBool("canTurnon", false);
                         myAnim.SetBool("isFulled", false);
@@ -165,14 +188,41 @@ public class ValueControlor : MonoBehaviour
             }
         }
 
+        if (valueControl == ValueControl.cleanCar)
+        {
+            if (isable == true)
+            {
+                if (TargetSlider[0].value <= 2000 && count == 0)
+                {
+                    Target_text.text = "Don't have enough water!";
+                }
+                else
+                {
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        if (count == 0)
+                        {
+                            Target_text.text = "Doing...";
+                            Player.GetComponent<TopDownCharacterController>().canmove = false;
+                            count++;
+                            Smoke.SetActive(true);
+                            Target_audio[0].Play();
+                            Invoke("CleanCar", delaytime);
+                        }
+                    }
+                }
+
+            }
+        }
+
     }
     //GoToliet
-    void go_toliet_part()
+    void GoTolietPart()
     {
         Target_text.text = "Put 'E' to flush the toilet";
         count++;
     }
-    void flushing_part()
+    void FlushingPart()
     {
         Target_text.text = "Put 'E' go to the toilet";
         Player.GetComponent<TopDownCharacterController>().canmove = true;
@@ -182,6 +232,8 @@ public class ValueControlor : MonoBehaviour
     //WashHand
     void WatiTurnOff()
     {
+        Target_audio[0].Pause();
+        Target_audio[1].Play();
         count++;
         Target_text.text = "Put 'E' to Turn off";
         myAnim.SetBool("canTurnon", false);
@@ -193,6 +245,7 @@ public class ValueControlor : MonoBehaviour
     {
         Target_text.text = "Put 'E' to drain off water";
         Player.GetComponent<TopDownCharacterController>().canmove = true;
+        TargetSlider[1].value += TargetValue[1];
         count++;
     }
     void TapGoBack()
@@ -203,6 +256,16 @@ public class ValueControlor : MonoBehaviour
         myAnim.SetBool("Fturnoff", false);
         Target_text.text = "Put 'E' to Turn on the Tap";
         count = 0;
+    }
+
+    void CleanCar()
+    {
+        count++;
+        Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[1];
+        TargetSlider[0].value -= TargetValue[0];
+        Player.GetComponent<TopDownCharacterController>().canmove = true;
+        Smoke.SetActive(false);
+        Target_text.text = "No need to be cleaned";
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -270,7 +333,22 @@ public class ValueControlor : MonoBehaviour
                 }
 
             }
+            if (valueControl == ValueControl.cleanCar)
+            {
+                if (count == 0)
+                {
+                    Target_text.text = "Put 'E' Clean The Car";
+                }
+                if (count == 1)
+                {
+                    Target_text.text = "Doing...";
+                }
+                if (count == 2)
+                {
+                    Target_text.text = "No need to be cleaned";
+                }
 
+            }
         }
     }
 

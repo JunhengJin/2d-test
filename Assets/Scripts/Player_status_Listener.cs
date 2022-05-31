@@ -9,6 +9,7 @@ public class Player_status_Listener : MonoBehaviour
     //bool DIE = false;
     public GameObject Target;
     public Text Target_text;
+    public int MinValue = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class Player_status_Listener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TargetSlider[0].value == 0)
+        if (TargetSlider[0].value == MinValue)
         {
             Target.SetActive(true);
             GameObject.Find("SceneControl").GetComponent<SceneStop>().TimeStop();
