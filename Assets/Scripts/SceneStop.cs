@@ -20,13 +20,13 @@ public class SceneStop : MonoBehaviour
     public void TimeStop()
     {
         Time.timeScale = 0;
-        Player.GetComponent<TopDownCharacterController>().canmove = false;
+        Player.GetComponent<TopDownCharacterController>().canMove = false;
         BackgroundMusic.Pause();
     }
     public void TimeStart()
     {
         Time.timeScale = 1;
-        Player.GetComponent<TopDownCharacterController>().canmove = true;
+        Player.GetComponent<TopDownCharacterController>().canMove = true;
         BackgroundMusic.Play();
     }
 }

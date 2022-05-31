@@ -21,7 +21,7 @@ public class FootstepSound : MonoBehaviour
     void Update()
     {
         time -= Time.deltaTime;
-        if (Player.iswalking == true && time < 0)
+        if (Player.isWalking == true && time < 0)
         {
             playVoice();
             time = 0.5f;
