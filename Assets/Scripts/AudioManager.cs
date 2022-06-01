@@ -37,7 +37,7 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         current = this;
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
         musicSource = gameObject.AddComponent<AudioSource>();
         fxSource = gameObject.AddComponent<AudioSource>();
         playerSource = gameObject.AddComponent<AudioSource>();
@@ -49,7 +49,6 @@ public class AudioManager : MonoBehaviour
         int index = Random.Range(0, current.walkStepClips.Length);
         current.playerSource.clip = current.walkStepClips[index];
         current.playerSource.Play();
-        Debug.Log("Playing!");
     }
     // Start is called before the first frame update
     void Start()
