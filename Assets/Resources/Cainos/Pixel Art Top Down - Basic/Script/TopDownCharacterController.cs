@@ -10,8 +10,6 @@ public class TopDownCharacterController : MonoBehaviour
 
     private Animator animator;
 
-    public Slider foodSlider;
-
     public bool isWalking = false;
 
     public bool canMove = true;
@@ -46,14 +44,14 @@ public class TopDownCharacterController : MonoBehaviour
             {
                 dir.x = -1;
                 animator.SetInteger("Direction", 3);
-                foodSlider.value -= 1.0f;
+                ValueManager.InstantChangeValue("F", -1);
                 isWalking = true;
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 dir.x = 1;
                 animator.SetInteger("Direction", 2);
-                foodSlider.value -= 1.0f;
+                ValueManager.InstantChangeValue("F", -1);
                 isWalking = true;
             }
 
@@ -61,14 +59,14 @@ public class TopDownCharacterController : MonoBehaviour
             {
                 dir.y = 1;
                 animator.SetInteger("Direction", 1);
-                foodSlider.value -= 1.0f;
+                ValueManager.InstantChangeValue("F", -1);
                 isWalking = true;
             }
             else if (Input.GetKey(KeyCode.S))
             {
                 dir.y = -1;
                 animator.SetInteger("Direction", 0);
-                foodSlider.value -= 1.0f;
+                ValueManager.InstantChangeValue("F", -1);
                 isWalking = true;
             }
             dir.Normalize();

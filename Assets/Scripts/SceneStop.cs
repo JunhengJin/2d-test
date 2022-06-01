@@ -5,7 +5,6 @@ using UnityEngine;
 public class SceneStop : MonoBehaviour
 {
     public GameObject Player;
-    public AudioSource BackgroundMusic;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +20,12 @@ public class SceneStop : MonoBehaviour
     {
         Time.timeScale = 0;
         Player.GetComponent<TopDownCharacterController>().canMove = false;
-        BackgroundMusic.Pause();
+        //AudioManager.PausePlayingBackgroundMusicAudio();
     }
     public void TimeStart()
     {
         Time.timeScale = 1;
         Player.GetComponent<TopDownCharacterController>().canMove = true;
-        BackgroundMusic.Play();
+        //AudioManager.ContinuePlayingBackgroundMusicAudio();
     }
 }

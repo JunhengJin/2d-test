@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &619550692600312691
+--- !u!1 &4005527383246220383
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 619550692600312461}
-  - component: {fileID: 619550692600312690}
+  - component: {fileID: 5531637876815983648}
+  - component: {fileID: 5076787787697437250}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &619550692600312461
+--- !u!4 &5531637876815983648
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619550692600312691}
+  m_GameObject: {fileID: 4005527383246220383}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 138.36526, y: 31.839478, z: -10.017999}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,13 +31,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &619550692600312690
+--- !u!114 &5076787787697437250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619550692600312691}
+  m_GameObject: {fileID: 4005527383246220383}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9dfdcb4434bb07041bc885aba34369ce, type: 3}
@@ -53,7 +53,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 38cb68a2a49e89c46bea091d75b27976, type: 3}
   - {fileID: 8300000, guid: a62172e6f7275ff4f94c17edc8dfdd0d, type: 3}
   - {fileID: 8300000, guid: 6a0b4267ac8ee8448b619bc9a3bca6d9, type: 3}
-  dashClips: []
+  dashClip: {fileID: 0}
   eatingClip: {fileID: 8300000, guid: 4a69bd98677c18145a7ce793548d969d, type: 3}
   flushingClip: {fileID: 8300000, guid: a38d5eaea69a2124a848e424953df149, type: 3}
   openTapClip: {fileID: 8300000, guid: bc71ad196437bf942b3ea0fef5861704, type: 3}
@@ -62,3 +62,4 @@ MonoBehaviour:
   washingHandClip: {fileID: 8300000, guid: eed4b548217fb664cb35cc4657dea534, type: 3}
   drainWaterClip: {fileID: 8300000, guid: b2b6dcf2de37859438d9fccc1b285e4f, type: 3}
   cleanCarClip: {fileID: 8300000, guid: 5aa2cf8062229374da51710009815fc7, type: 3}
+  Player: {fileID: 8241507879592953947, guid: f6c824f0edb37114490c4370182f8d4f, type: 3}

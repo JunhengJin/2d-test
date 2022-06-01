@@ -1,20 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class VolumeControl : MonoBehaviour
+public class StartGamePlay : MonoBehaviour
 {
-    public Slider Voice_Slider;
     // Start is called before the first frame update
     void Start()
     {
-        
+        AudioManager.PlayPlayingBackgroundMusicAudio();
     }
 
     // Update is called once per frame
     void Update()
     {
-        AudioManager.ChangeMusicAudioVolume(Voice_Slider.value);
+        
     }
 }

@@ -7,8 +7,6 @@ public class FootstepSound : MonoBehaviour
 
     //public List<GameObject> StartingWeapons = new List<GameObject>();
     public TopDownCharacterController Player;
-    public List<AudioSource> walking = new List<AudioSource>();
-    int rangenumber = 0;
     float time = 0.5f;
 
     // Start is called before the first frame update
@@ -23,13 +21,8 @@ public class FootstepSound : MonoBehaviour
         time -= Time.deltaTime;
         if (Player.isWalking == true && time < 0)
         {
-            playVoice();
+            AudioManager.PlayFootstepAudio();
             time = 0.5f;
         }
-    }
-    void playVoice()
-    {
-        rangenumber = Random.Range(0, walking.Count - 1);
-        walking[rangenumber].Play();
     }
 }

@@ -9,7 +9,6 @@ public class ValueControlor : MonoBehaviour
     public List<Slider> TargetSlider = new List<Slider>();
     public List<float> TargetValue = new List<float>();
     public List<Sprite> Target_sprite = new List<Sprite>();
-    public List<AudioSource> Target_audio = new List<AudioSource>();
     public Text Target_text;
     public GameObject Target;
     public float delaytime = 0f;
@@ -38,7 +37,6 @@ public class ValueControlor : MonoBehaviour
         {
             Smoke = GameObject.FindWithTag("Smoke");
             Smoke.SetActive(false);
-            TargetValue[0] = TargetSlider[0].value - TargetValue[0];
         }
         //Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[0];
     }
@@ -52,9 +50,9 @@ public class ValueControlor : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    TargetSlider[0].value += TargetValue[0];
+                    ValueManager.InstantChangeValue("F", TargetValue[0]);
                     Target_text.text = "";
-                    Target_audio[0].Play();
+                    AudioManager.PlayEatingAudio();
                     Destroy(Target);
                 }
             }
@@ -76,7 +74,7 @@ public class ValueControlor : MonoBehaviour
                             Target_text.text = "Doing...";
                             count++;
                             Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[1];
-                            TargetSlider[1].value += TargetValue[1];
+                            ValueManager.InstantChangeValue("H", TargetValue[1]);
                             Invoke("GoTolietPart", 1f);
                         }
                         else if (count == 2)
@@ -86,8 +84,8 @@ public class ValueControlor : MonoBehaviour
                             Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[2];
                             Invoke("FlushingPart", delaytime);
                             Player.GetComponent<TopDownCharacterController>().canMove = false;
-                            TargetSlider[0].value -= TargetValue[0];
-                            Target_audio[0].Play();
+                            ValueManager.GradualChangeValue("W", TargetValue[0], delaytime);
+                            AudioManager.PlayFlushingAudio();
                         }
                     }
                 }
@@ -114,7 +112,7 @@ public class ValueControlor : MonoBehaviour
                     {
                         if (count == 0)
                         {
-                            Target_audio[0].Play();
+                            AudioManager.PlayOpenTapAudio();
                             count++;
                             Target_text.text = "Waitting...";
                             myAnim.SetBool("canTurnon", true);
@@ -126,8 +124,7 @@ public class ValueControlor : MonoBehaviour
                         }
                         else if (count == 2)
                         {
-                            Target_audio[1].Pause();
-                            Target_audio[2].Play();
+                            AudioManager.PlayCloseTapAudio();
                             myAnim.SetBool("Fturnoff", true);
                             count++;
                             LeakWater = false;
@@ -139,18 +136,15 @@ public class ValueControlor : MonoBehaviour
                         else if (count == 3)
                         {
                             count++;
-                            Target_audio[2].Pause();
-                            Target_audio[3].Play();
-                            TargetValue[1] += TargetSlider[1].value;
+                            AudioManager.PlayWashingHandAudio();
+                            ValueManager.GradualChangeValue("H", TargetValue[0], delaytime);
                             Target_text.text = "Washing...";
                             Invoke("DrainOffWater", delaytime);
                             Player.GetComponent<TopDownCharacterController>().canMove = false;
-                            //Target_audio[0].Play();
                         }
                         else if (count == 5)
                         {
-                            Target_audio[3].Pause();
-                            Target_audio[4].Play();
+                            AudioManager.PlayDrainWaterAudio();
                             count++;
                             myAnim.SetBool("canTurnon", false);
                             myAnim.SetBool("isFulled", false);
@@ -162,18 +156,17 @@ public class ValueControlor : MonoBehaviour
                         if(count == 7)
                         {
                             count = 4;
-                            Target_audio[2].Pause();
-                            Target_audio[3].Play();
+                            AudioManager.PlayWashingHandAudio();
                             Target_text.text = "Washing...";
                             Invoke("DrainOffWater", delaytime);
                             Player.GetComponent<TopDownCharacterController>().canMove = false;
-                            TargetSlider[1].value += TargetValue[1];
+                            ValueManager.GradualChangeValue("W", TargetValue[1], delaytime);
                         }
                     }
                     if (DontHaveWater == true&&count ==2)
                     {
                         myAnim.SetBool("Fturnoff", true);
-                        Target_audio[1].Pause();
+                        AudioManager.PauseInteractiveAudio();
                         LeakWater = false;
                         myAnim.SetBool("canTurnon", false);
                         myAnim.SetBool("isFulled", false);
@@ -183,14 +176,14 @@ public class ValueControlor : MonoBehaviour
                     }
                     if(count == 4)
                     {
-                        TargetSlider[1].value = Mathf.Lerp(TargetSlider[1].value, TargetValue[1], Time.deltaTime / delaytime);
+                        //ValueManager.GradualChangeValue("H", TargetValue[1], delaytime);
                     }
                 }
             }
                 
             if (LeakWater == true)
             {
-                TargetSlider[0].value -= 2;
+                ValueManager.InstantChangeValue("W", -2);
             }
         }
 
@@ -210,15 +203,12 @@ public class ValueControlor : MonoBehaviour
                         {
                             Target_text.text = "Doing...";
                             Player.GetComponent<TopDownCharacterController>().canMove = false;
+                            ValueManager.GradualChangeValue("W", TargetValue[0], delaytime);
                             count++;
                             Smoke.SetActive(true);
-                            Target_audio[0].Play();
+                            AudioManager.PlayCleanCarAudio();
                             Invoke("CleanCar", delaytime);
                         }
-                    }
-                    if (count == 1)
-                    {
-                        TargetSlider[0].value = Mathf.Lerp(TargetSlider[0].value, TargetValue[0], Time.deltaTime * 0.1f);
                     }
                 }
 
@@ -242,8 +232,8 @@ public class ValueControlor : MonoBehaviour
     //WashHand
     void WatiTurnOff()
     {
-        Target_audio[0].Pause();
-        Target_audio[1].Play();
+        AudioManager.PauseInteractiveAudio();
+        AudioManager.PlayFlowingAudio();
         count++;
         Target_text.text = "Put 'E' to Turn off";
         myAnim.SetBool("canTurnon", false);
