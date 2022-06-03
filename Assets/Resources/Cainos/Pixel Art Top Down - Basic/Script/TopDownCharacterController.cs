@@ -20,13 +20,13 @@ public class TopDownCharacterController : MonoBehaviour
 
     float resumeTime;
 
-    float direction;
-
     public float dashTime;
 
-    float stop = 0;
-
     float temp = 0;
+
+    public float coolDown = 5;
+
+    float coolDownTemp;
 
     private void Start()
     {
@@ -35,10 +35,10 @@ public class TopDownCharacterController : MonoBehaviour
     }
     private void Update()
     {
+        coolDownTemp -= Time.deltaTime;
         if (canMove == true)
         {
             isWalking = false;
-            speed = temp;
             Vector2 dir = Vector2.zero;
             if (Input.GetKey(KeyCode.A))
             {
@@ -69,28 +69,29 @@ public class TopDownCharacterController : MonoBehaviour
                 ValueManager.InstantChangeValue("F", -1);
                 isWalking = true;
             }
-            dir.Normalize();
-            animator.SetBool("IsMoving", dir.magnitude > 0);
-            GetComponent<Rigidbody2D>().velocity = speed * dir;
-            if (Input.GetKeyDown(KeyCode.L) && isDash == false)
+            if (Input.GetKeyDown(KeyCode.LeftShift) && isDash == false&& coolDownTemp<0)
             {
+                coolDownTemp = coolDown;
                 isDash = true;
                 resumeTime = Time.time + dashTime;
-                GetComponent<Rigidbody2D>().velocity = dir * dashForce;
+                GhostGenerator.Generate(resumeTime,dashTime);
+                speed += dashForce;
             }
             if (Time.time> resumeTime)
             {
                 isDash = false;
+                speed = temp;
             }
+            dir.Normalize();
+            animator.SetBool("IsMoving", dir.magnitude > 0);
+            GetComponent<Rigidbody2D>().velocity = speed * dir;
         }
         else
         {
             Vector2 dir = Vector2.zero;
             dir.Normalize();
-            speed = stop;
             animator.SetBool("IsMoving", false);
-            GetComponent<Rigidbody2D>().velocity = speed * dir;
+            GetComponent<Rigidbody2D>().velocity = 0 * dir;
         }
     }
 }
-//}
