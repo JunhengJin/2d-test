@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    static AudioManager current;
+    static AudioManager _current;
 
     [Header("BackGroundAudio")]
     public AudioClip titleMusicClip;
@@ -31,128 +31,123 @@ public class AudioManager : MonoBehaviour
     AudioSource musicSource;
     AudioSource fxSource;
     AudioSource playerSource;
-    AudioSource InteractiveSource;
+    AudioSource interactiveSource;
 
 
     private void Awake()
     {
-        current = this;
+        _current = this;
         DontDestroyOnLoad(gameObject);
         musicSource = gameObject.AddComponent<AudioSource>();
         fxSource = gameObject.AddComponent<AudioSource>();
         playerSource = gameObject.AddComponent<AudioSource>();
-        InteractiveSource = gameObject.AddComponent<AudioSource>();
+        interactiveSource = gameObject.AddComponent<AudioSource>();
 
         PlayTitleMusicAudio();
     }
 
-    public static void PlayTitleMusicAudio()
+    private static void PlayTitleMusicAudio()
     {
-        current.musicSource.clip = current.titleMusicClip;
-        current.musicSource.loop = true;
-        current.musicSource.Play();
+        _current.musicSource.clip = _current.titleMusicClip;
+        _current.musicSource.loop = true;
+        _current.musicSource.Play();
     }
 
     public static void PlayPlayingBackgroundMusicAudio()
     {
-        current.musicSource.clip = current.playBackgroundMusicClip;
-        current.musicSource.loop = true;
-        current.musicSource.Play();
+        _current.musicSource.clip = _current.playBackgroundMusicClip;
+        _current.musicSource.loop = true;
+        _current.musicSource.Play();
     }
     public static void PausePlayingBackgroundMusicAudio()
     {
-        current.musicSource.Pause();
+        _current.musicSource.Pause();
     }
 
     public static void ContinuePlayingBackgroundMusicAudio()
     {
-        current.musicSource.Play();
+        _current.musicSource.Play();
     }
     public static void PlayClickAudio()
     {
-        current.fxSource.clip = current.clickClip;
-        current.fxSource.Play();
+        _current.fxSource.clip = _current.clickClip;
+        _current.fxSource.Play();
     }
     public static void PlayEatingAudio()
     {
-        current.playerSource.clip = current.eatingClip;
-        current.playerSource.Play();
+        _current.playerSource.clip = _current.eatingClip;
+        _current.playerSource.Play();
     }
 
     public static void PlayFootstepAudio()
     {
-        int index = Random.Range(0, current.walkStepClips.Length);
-        current.playerSource.clip = current.walkStepClips[index];
-        current.playerSource.Play();
+        int index = Random.Range(0, _current.walkStepClips.Length);
+        _current.playerSource.clip = _current.walkStepClips[index];
+        _current.playerSource.Play();
     }
 
     public static void PlayDashAudio()
     {
-        current.playerSource.clip = current.dashClip;
-        current.playerSource.Play();
+        _current.playerSource.clip = _current.dashClip;
+        _current.playerSource.Play();
     }
 
     public static void PlayFlushingAudio()
     {
-        current.InteractiveSource.clip = current.flushingClip;
-        current.InteractiveSource.Play();
+        _current.interactiveSource.clip = _current.flushingClip;
+        _current.interactiveSource.Play();
     }
 
     public static void PauseInteractiveAudio()
     {
-        current.InteractiveSource.Pause();
+        _current.interactiveSource.Pause();
     }
 
     public static void PlayOpenTapAudio()
     {
-        current.InteractiveSource.clip = current.openTapClip;
-        current.InteractiveSource.Play();
+        _current.interactiveSource.clip = _current.openTapClip;
+        _current.interactiveSource.Play();
     }
 
     public static void PlayFlowingAudio()
     {
-        current.InteractiveSource.clip = current.flowingClip;
-        current.InteractiveSource.loop = true;
-        current.InteractiveSource.Play();
+        _current.interactiveSource.clip = _current.flowingClip;
+        _current.interactiveSource.loop = true;
+        _current.interactiveSource.Play();
     }
 
     public static void PlayCloseTapAudio()
     {
-        current.InteractiveSource.clip = current.closeTapClip;
-        current.InteractiveSource.loop = false;
-        current.InteractiveSource.Play();
+        _current.interactiveSource.clip = _current.closeTapClip;
+        _current.interactiveSource.loop = false;
+        _current.interactiveSource.Play();
     }
     public static void PlayWashingHandAudio()
     {
-        current.InteractiveSource.clip = current.washingHandClip;
-        current.InteractiveSource.Play();
+        _current.interactiveSource.clip = _current.washingHandClip;
+        _current.interactiveSource.Play();
     }
 
     public static void PlayDrainWaterAudio()
     {
-        current.InteractiveSource.clip = current.drainWaterClip;
-        current.InteractiveSource.Play();
+        _current.interactiveSource.clip = _current.drainWaterClip;
+        _current.interactiveSource.Play();
     }
 
     public static void PlayCleanCarAudio()
     {
-        current.InteractiveSource.clip = current.cleanCarClip;
-        current.InteractiveSource.Play();
+        _current.interactiveSource.clip = _current.cleanCarClip;
+        _current.interactiveSource.Play();
     }
 
     public static void ChangeMusicAudioVolume(float value)
     {
-        current.musicSource.volume = value;
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        _current.musicSource.volume = value;
     }
 
-    // Update is called once per frame
-    void Update()
+    public static float GetMusicAudioVolume()
     {
-
+        return _current.musicSource.volume;
     }
+
 }

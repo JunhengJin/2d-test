@@ -1221,7 +1221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5f7b721ad9b2934d9be47d06ab80825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Voice_Slider: {fileID: 1095763359}
+  voiceSlider: {fileID: 1095763359}
 --- !u!4 &678886074
 Transform:
   m_ObjectHideFlags: 0
