@@ -1222,6 +1222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voiceSlider: {fileID: 1095763359}
+  playMusic: 0
 --- !u!4 &678886074
 Transform:
   m_ObjectHideFlags: 0
@@ -2051,10 +2052,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0755dfdb83f109348be29ff1ac78ad09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Load_Slider: {fileID: 534249323}
-  Loadscene: {fileID: 497117047}
-  Load_Percentage: {fileID: 301161516}
-  Levelnumber: 1
+  loadSlider: {fileID: 534249323}
+  loadSceneObject: {fileID: 497117047}
+  loadPercentage: {fileID: 301161516}
+  levelNumber: 1
 --- !u!1 &1674236411
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,7 +46,7 @@ public class AudioManager : MonoBehaviour
         PlayTitleMusicAudio();
     }
 
-    private static void PlayTitleMusicAudio()
+    public static void PlayTitleMusicAudio()
     {
         _current.musicSource.clip = _current.titleMusicClip;
         _current.musicSource.loop = true;
