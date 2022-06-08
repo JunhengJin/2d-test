@@ -8,17 +8,6 @@ public class ItemOnWorld : MonoBehaviour
     public Item thisItem;
 
     public Inventory playerInventory;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -31,10 +20,12 @@ public class ItemOnWorld : MonoBehaviour
         if (!playerInventory.itemList.Contains(thisItem))
         {
             playerInventory.itemList.Add((thisItem));
+            InventoryManager.CreateNewItem((thisItem));
         }
         else
         {
             thisItem.itemHeld += 1;
         }
+        InventoryManager.RefreshItem();
     }
 }
