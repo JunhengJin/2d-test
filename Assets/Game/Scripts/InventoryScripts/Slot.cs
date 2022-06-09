@@ -10,15 +10,26 @@ public class Slot : MonoBehaviour
     public Image slotImage;
 
     public Text slotNum;
-    // Start is called before the first frame update
-    void Start()
+
+    public string slotInfo;
+
+    public GameObject itemInSlot;
+
+    public void ItemOnClicked()
     {
-        
+        InventoryManager.UpdateItemInfo(slotInfo);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetupSlot(Item item)
     {
-        
+        if (item == null)
+        {
+            itemInSlot.SetActive(false);
+            return;
+        }
+
+        slotImage.sprite = item.itemImage;
+        slotNum.text = item.itemHeld.ToString();
+        slotInfo = item.itemInfo;
     }
 }

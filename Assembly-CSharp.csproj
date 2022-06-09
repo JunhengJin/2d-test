@@ -87,6 +87,8 @@
      <Compile Include="Assets\Game\Scripts\GamePlay\ChangeLightColor.cs" />
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
      <Compile Include="Assets\Game\Scripts\Text\VerticalGradient.cs" />
+     <Compile Include="Assets\Game\Scripts\InventoryScripts\ItemOnDrag.cs" />
+     <Compile Include="Assets\Game\Scripts\MoveBag.cs" />
      <None Include="Assets\Resources\SimplePixelUI\fonts\Font2\license.txt" />
      <None Include="Assets\Resources\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
      <None Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Sprites\Tileset\River\Waterfall\WaterfalTilesInfo.txt" />
