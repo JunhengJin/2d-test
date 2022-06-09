@@ -53,6 +53,7 @@ public class TopDownCharacterController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.O))
             {
                 OpenMyBag();
+                InventoryManager.RefreshItem();
             }
             if (Input.GetKey(KeyCode.A))
             {
