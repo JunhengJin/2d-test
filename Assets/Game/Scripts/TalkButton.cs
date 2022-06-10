@@ -9,6 +9,12 @@ public class TalkButton : MonoBehaviour
 
     public GameObject talkUI;
 
+    private void Start()
+    {
+        talkUI.SetActive(false);
+        Button.SetActive(false);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         Button.SetActive(true);

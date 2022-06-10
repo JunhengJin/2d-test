@@ -22,6 +22,18 @@ TextureImporter:
   - first:
       213: 21300006
     second: Girl01_idle_Spritesheet_3
+  - first:
+      213: 6738356383557307445
+    second: Girl01_idle_Spritesheet_0
+  - first:
+      213: -104194435601345300
+    second: Girl01_idle_Spritesheet_1
+  - first:
+      213: -1960689540825932508
+    second: Girl01_idle_Spritesheet_2
+  - first:
+      213: 1858275991761417225
+    second: Girl01_idle_Spritesheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,19 +114,19 @@ TextureImporter:
       name: Girl01_idle_Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 30
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4
+        y: 2
+        width: 22
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 02305410000000000800000000000000
-      internalID: 21300000
+      spriteID: 53c4be3fd63738d50800000000000000
+      internalID: 6738356383557307445
       vertices: []
       indices: 
       edges: []
@@ -123,19 +135,19 @@ TextureImporter:
       name: Girl01_idle_Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 30
-        y: 0
-        width: 30
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 35
+        y: 2
+        width: 20
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 22305410000000000800000000000000
-      internalID: 21300002
+      spriteID: ce4d86e76b3dd8ef0800000000000000
+      internalID: -104194435601345300
       vertices: []
       indices: 
       edges: []
@@ -144,19 +156,19 @@ TextureImporter:
       name: Girl01_idle_Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 60
-        y: 0
-        width: 30
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 2
+        width: 22
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 42305410000000000800000000000000
-      internalID: 21300004
+      spriteID: 42d1f34304b3ac4e0800000000000000
+      internalID: -1960689540825932508
       vertices: []
       indices: 
       edges: []
@@ -165,19 +177,19 @@ TextureImporter:
       name: Girl01_idle_Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 90
-        y: 0
-        width: 30
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 94
+        y: 2
+        width: 22
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 62305410000000000800000000000000
-      internalID: 21300006
+      spriteID: 904739f3b2ce9c910800000000000000
+      internalID: 1858275991761417225
       vertices: []
       indices: 
       edges: []
@@ -185,7 +197,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a2fa21c516503eb479ddb5e4f2df9040
     internalID: 0
     vertices: []
     indices: 

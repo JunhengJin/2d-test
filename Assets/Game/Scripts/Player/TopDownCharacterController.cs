@@ -53,7 +53,6 @@ public class TopDownCharacterController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.O))
             {
                 OpenMyBag();
-                InventoryManager.RefreshItem();
             }
             if (Input.GetKey(KeyCode.A))
             {
@@ -86,6 +85,7 @@ public class TopDownCharacterController : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.LeftShift) && isDash == false&& coolDownTemp<0)
             {
+                AudioManager.PlayDashAudio();
                 coolDownTemp = coolDown;
                 isDash = true;
                 resumeTime = Time.time + dashTime;
@@ -120,5 +120,6 @@ public class TopDownCharacterController : MonoBehaviour
     {
         isOpen = !isOpen;
         myBag.SetActive(isOpen);
+        InventoryManager.RefreshItem();
     }
 }
