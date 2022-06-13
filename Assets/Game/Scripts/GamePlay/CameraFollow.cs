@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,11 +21,14 @@ namespace Cainos.PixelArtTopDown_Basic
 
             offset = transform.position - target.position;
         }
-        private void LateUpdate(){
-            if (target == null) return;
 
-            targetPos = target.position + offset;
-            transform.position = Vector3.Lerp(transform.position, targetPos, lerpSpeed * Time.deltaTime);
+        private void LateUpdate(){
+            if (target != null)
+            {
+                targetPos = target.position + offset;
+                transform.position = Vector3.Lerp(transform.position, targetPos, lerpSpeed);
+            }
+            
         }
         
 

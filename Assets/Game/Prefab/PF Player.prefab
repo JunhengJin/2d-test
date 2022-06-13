@@ -205,11 +205,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  foodSlider: {fileID: 0}
   isWalking: 0
-  canMove: 1
-  dashForce: 100
+  dashForce: 10
   dashTime: 0.5
+  coolDown: 1
+  myBag: {fileID: 0}
 --- !u!212 &8241507879592953943
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -97,6 +97,11 @@ public class TopDownCharacterController : MonoBehaviour
                 isDash = false;
                 speed = temp;
             }
+
+            if (isWalking == true)
+            {
+                AudioManager.CheckFootstepAudio();
+            }
             dir.Normalize();
             animator.SetBool("IsMoving", dir.magnitude > 0);
             GetComponent<Rigidbody2D>().velocity = speed * dir;

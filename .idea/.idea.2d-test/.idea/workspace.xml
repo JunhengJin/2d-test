@@ -5,24 +5,97 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2d-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2d-test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefab/PF Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefab/PF Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Level_1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Level_1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Title.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Title.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/TitleSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/TitleSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/TitlewithoutAudioManager.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/TitlewithoutAudioManager.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Audio/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/GamePlay/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/GamePlay/CameraFollow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Player/TopDownCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Player/TopDownCharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/TalkButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/TalkButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Fantasy Environment and Animated Characters (Pixel Art) [free add-on]/Graphical/Characters/Girl01/Idle/Girl01_idle_Spritesheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Fantasy Environment and Animated Characters (Pixel Art) [free add-on]/Graphical/Characters/Girl01/Idle/Girl01_idle_Spritesheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Font.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Font/prstart.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Font/prstart.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Font/prstartk.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Font/prstartk.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Materials/ThaleahFat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Materials/ThaleahFat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Materials/ThaleahFat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Materials/ThaleahFat.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Materials/ThaleahFat_TTF.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Materials/ThaleahFat_TTF.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Materials/Thaleah_DemoBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Materials/Thaleah_DemoBackground.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/ThaleahFat.fontsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/ThaleahFat.fontsettings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Thaleah_Demo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Thaleah_Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Thaleah_Readme.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Thaleah_PixelFont/Thaleah_Readme.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Archer (Bilinear).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Archer (Bilinear).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Archer (Point).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Archer (Point).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/ImportSettings.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/ImportSettings.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/Readme.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/Readme.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/Readme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/Readme.html.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/ReadmeEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/ReadmeEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/Retro Gaming.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/Retro Gaming.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/demo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/demo.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Editor/icon.ico.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Readme.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Readme.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/SmoothPixel.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/SmoothPixel.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/SmoothPixelShader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/SmoothPixelShader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/debug (Bilinear).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/debug (Bilinear).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/debug (Point).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Smooth Pixel/debug (Point).png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0f/0f83882f2ebc838c553a75d5a5fce3a7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/11/11ad5077c0fcce419b54c054f28337e2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/34/3419a8ee067da38de7c3331460d4e08f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/37/375d9c9e0d413e0f043144ec8477fb6f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/40/400039f918d6be345caca8e7ba4798bb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/55/5593e4ab69502f8e60b1477dae383ba5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/56/566f6a649038a477209c8e4abeb69869" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/be/be9260677040e1bd24aa13ef0ea772bc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c3/c34721e80231523ddd1236e76e41d66d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/de/de65330730b5f8e1c6b8eaf706e32b52" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ed/ed46a1b900836bd897f54f2dda747251" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fb/fb3292bd904413f9705df3bc425c9c49" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/03/038eb11fc767944804dfd346e65e230f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/10/10d348179d610812a781807b6b44035c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1e/1e546d8bbcc78432d65e5df05723f41e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3e/3e554df29e39031fde8106ab07161d4f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/46/46b0e201d0e8818eb3af95820a9c0ed9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4a/4a771850b9f5382d9c8a434120af32a7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/52/523eb8bf9a97940d6eb8155061cf0e79" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/54/5468a3b87a28e4163c6c30c624f4f3aa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/57/57bad4024fcc5cfd99069e8a7a97bfbd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/60/60681d3e98da13e6addf4eca7309df98" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/76/76eb50c8f1331c6eb60ab4dbd00d0f4f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/79/79b425b515af3694d5c5e02ef1577666" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/84/84d333dc9c7cfa4ca62538785572223e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ab/abc0c1a4e0c2fb3ebf69590fceada374" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ba/baa8709914fda5b1c989b0b6e24d0c7a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d3/d36c533043f781d4e95c97b624195a54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/eb/eb25e2c1e3458bf9d175cc7236208922" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/EditorOnlyScriptingSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorOnlyScriptingSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorSnapSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorSnapSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
@@ -125,10 +198,10 @@
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Style.catalog" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Style.catalog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" afterDir="false" />
@@ -223,7 +296,8 @@
       <workItem from="1654784756905" duration="11513000" />
       <workItem from="1654817031193" duration="6488000" />
       <workItem from="1654827409813" duration="1375000" />
-      <workItem from="1654871341733" duration="2534000" />
+      <workItem from="1654871341733" duration="2535000" />
+      <workItem from="1655140841460" duration="4530000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SocialPlatforms;
+using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
 {
@@ -86,6 +90,14 @@ public class AudioManager : MonoBehaviour
         _current.playerSource.Play();
     }
 
+    public static void CheckFootstepAudio()
+    {
+        if (_current.playerSource.isPlaying != true)
+        {
+            PlayFootstepAudio(); 
+        }
+    }
+
     public static void PlayDashAudio()
     {
         _current.playerSource.clip = _current.dashClip;
@@ -149,5 +161,4 @@ public class AudioManager : MonoBehaviour
     {
         return _current.musicSource.volume;
     }
-
 }
