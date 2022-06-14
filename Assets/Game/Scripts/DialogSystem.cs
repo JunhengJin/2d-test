@@ -19,8 +19,10 @@ public class DialogSystem : MonoBehaviour
     [Header("Face")] public Sprite face01, face02;
 
     private bool textFinsihed;
+    private bool cancelTyping;
     
     private List<string> textList = new List<string>();
+    public bool showFace = false;
    
     void Awake()
     {
@@ -29,13 +31,10 @@ public class DialogSystem : MonoBehaviour
 
     private void OnEnable()
     {
-        //textLabel.text = textList[index];
-        //index++;
         textFinsihed = true;
         StartCoroutine(SetTextUI());
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R) && index == textList.Count)
@@ -44,11 +43,20 @@ public class DialogSystem : MonoBehaviour
             index = 0;
             return;
         }
-        if (Input.GetKeyDown(KeyCode.R)&&textFinsihed)
+        //if (Input.GetKeyDown(KeyCode.R)&&textFinsihed)
+        //{
+       //     StartCoroutine(SetTextUI());
+        //}
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            //textLabel.text = textList[index];
-            //index++;
-            StartCoroutine(SetTextUI());
+            if (textFinsihed&&!cancelTyping)
+            {
+                StartCoroutine(SetTextUI());
+            }
+            else if(!textFinsihed)
+            {
+                cancelTyping = !cancelTyping;
+            }
         }
     }
 
@@ -69,24 +77,36 @@ public class DialogSystem : MonoBehaviour
         textFinsihed = false;
         textLabel.text = "";
         
-        switch (textList[index].Trim().ToString())
-        {
-            case"A":
-                faceImage.sprite = face01;
-                index++;
-                break;
-            case"B":
-                faceImage.sprite = face02;
-                index++;
-                break;
+        if(showFace==true){
+            switch (textList[index].Trim().ToString())
+            {
+                case"A":
+                    faceImage.sprite = face01;
+                    index++;
+                    break;
+                case"B":
+                    faceImage.sprite = face02;
+                    index++;
+                    break;
+            }
         }
         
-        for (int i = 0; i < textList[index].Length; i++)
-        {
-            textLabel.text += textList[index][i];
+        //for (int i = 0; i < textList[index].Length; i++)
+       // {
+        //    textLabel.text += textList[index][i];
 
+        //    yield return new WaitForSeconds(textSpeed);
+        //}
+        int letter = 0;
+        while (!cancelTyping&&letter<textList[index].Length-1)
+        {
+            textLabel.text += textList[index][letter];
+            letter++;
             yield return new WaitForSeconds(textSpeed);
         }
+
+        textLabel.text = textList[index];
+        cancelTyping = false;
         textFinsihed = true;
         index++;
     }

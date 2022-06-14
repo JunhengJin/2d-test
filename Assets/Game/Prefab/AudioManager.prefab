@@ -53,7 +53,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 38cb68a2a49e89c46bea091d75b27976, type: 3}
   - {fileID: 8300000, guid: a62172e6f7275ff4f94c17edc8dfdd0d, type: 3}
   - {fileID: 8300000, guid: 6a0b4267ac8ee8448b619bc9a3bca6d9, type: 3}
-  dashClip: {fileID: 0}
+  dashClip: {fileID: 8300000, guid: 2906e27c62c134f469b39df3ae61d2a7, type: 3}
   eatingClip: {fileID: 8300000, guid: 4a69bd98677c18145a7ce793548d969d, type: 3}
   flushingClip: {fileID: 8300000, guid: a38d5eaea69a2124a848e424953df149, type: 3}
   openTapClip: {fileID: 8300000, guid: bc71ad196437bf942b3ea0fef5861704, type: 3}
@@ -62,4 +62,3 @@ MonoBehaviour:
   washingHandClip: {fileID: 8300000, guid: eed4b548217fb664cb35cc4657dea534, type: 3}
   drainWaterClip: {fileID: 8300000, guid: b2b6dcf2de37859438d9fccc1b285e4f, type: 3}
   cleanCarClip: {fileID: 8300000, guid: 5aa2cf8062229374da51710009815fc7, type: 3}
-  Player: {fileID: 8241507879592953947, guid: f6c824f0edb37114490c4370182f8d4f, type: 3}

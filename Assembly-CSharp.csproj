@@ -92,6 +92,8 @@
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
      <Compile Include="Assets\Game\Scripts\Text\VerticalGradient.cs" />
      <Compile Include="Assets\Game\Scripts\InventoryScripts\MoveBag.cs" />
+     <Compile Include="Assets\Game\Scripts\ShowMissionList.cs" />
+     <Compile Include="Assets\Game\Scripts\ControlMissionUi.cs" />
      <None Include="Assets\Resources\SimplePixelUI\fonts\Font2\license.txt" />
      <None Include="Assets\Resources\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
      <None Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Sprites\Tileset\River\Waterfall\WaterfalTilesInfo.txt" />
@@ -101,6 +103,7 @@
      <None Include="Assets\Resources\SimplePixelUI\fonts\Font1\license.txt" />
      <None Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Documentation.txt" />
      <None Include="Assets\Resources\Medieval_pixel_art_asset_FREE\pixel_snapping_README.txt" />
+     <None Include="Assets\Game\Scripts\TV content.txt" />
      <None Include="Assets\Game\Scripts\dialog.txt" />
      <None Include="Assets\Resources\SimplePixelUI\fonts\Font1\readme.txt" />
      <None Include="Assets\Resources\Fantasy Environment and Animated Characters (Pixel Art) [free add-on]\Readme.txt" />
