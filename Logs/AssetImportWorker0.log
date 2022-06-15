@@ -1,124 +1,124 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.33f1 (915a7af8b0d5) revision 9525882'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 16259 MB
+OS: 'Windows 10  (10.0.19042) 64bit Enterprise' Language: 'en' Physical Memory: 32703 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-D:\Program Files\UnityEditor\2020.3.33f1\Editor\Unity.exe
+C:\Program Files\Unity 2020.3.33f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/UnityProject/unity-github/2d-test
+C:/Users/c1001486/GitHub/2d-test
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63821
-Successfully changed project path to: D:/UnityProject/unity-github/2d-test
-D:/UnityProject/unity-github/2d-test
+57217
+Successfully changed project path to: C:/Users/c1001486/GitHub/2d-test
+C:/Users/c1001486/GitHub/2d-test
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 112.26 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 176.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
-[Subsystems] Discovering subsystems at path D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/UnityProject/unity-github/2d-test/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2020.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/c1001486/GitHub/2d-test/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Renderer: NVIDIA GeForce GTX 1070 Ti (ID=0x1b82)
     Vendor:   
-    VRAM:     4021 MB
-    Driver:   30.0.15.1259
+    VRAM:     8079 MB
+    Driver:   30.0.14.7196
 Initialize mono
-Mono path[0] = 'D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
+Mono path[0] = 'C:/Program Files/Unity 2020.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity 2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56872
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001154 seconds.
+Register platform support module: C:/Program Files/Unity 2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.141917 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 112.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 91.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.745 seconds
+- Completed reload, in  3.635 seconds
 Domain Reload Profiling:
-	ReloadAssembly (746ms)
-		BeginReloadAssembly (67ms)
+	ReloadAssembly (3635ms)
+		BeginReloadAssembly (2579ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (599ms)
-			LoadAssemblies (66ms)
+		EndReloadAssembly (746ms)
+			LoadAssemblies (2577ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (175ms)
+			SetupTypeCache (410ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (268ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (209ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (113ms)
-				BeforeProcessingInitializeOnLoad (17ms)
-				ProcessInitializeOnLoadAttributes (101ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (92ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (73ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003360 seconds.
+Registered in 0.004991 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\UnityProject\unity-github\2d-test\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\c1001486\GitHub\2d-test\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 116.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 94.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.467 seconds
+- Completed reload, in  5.483 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1468ms)
-		BeginReloadAssembly (168ms)
+	ReloadAssembly (5484ms)
+		BeginReloadAssembly (141ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (1235ms)
-			LoadAssemblies (116ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (5284ms)
+			LoadAssemblies (3068ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (384ms)
+			SetupTypeCache (862ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (514ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (1196ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (117ms)
-				BeforeProcessingInitializeOnLoad (121ms)
-				ProcessInitializeOnLoadAttributes (247ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				RefreshPlugins (95ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (351ms)
+				ProcessInitializeOnLoadMethodAttributes (647ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 1.50 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3394 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 147.6 MB.
-System memory in use after: 147.8 MB.
+System memory in use before: 147.7 MB.
+System memory in use after: 147.9 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3829.
-Total: 4.098600 ms (FindLiveObjects: 0.274700 ms CreateObjectMapping: 0.202600 ms MarkObjects: 3.533400 ms  DeleteObjects: 0.086800 ms)
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3830.
+Total: 3.022100 ms (FindLiveObjects: 0.232200 ms CreateObjectMapping: 0.144700 ms MarkObjects: 2.571900 ms  DeleteObjects: 0.072600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,61 +132,817 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Level_1.unity
-  artifactKey: Guid(cfede34127b325e49ab2d9acd705c6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level_1.unity using Guid(cfede34127b325e49ab2d9acd705c6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a269c60212f9a0700d1234ef83f1ba3') in 0.010030 seconds 
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_199.asset
+  artifactKey: Guid(8a9e07ea8551c424ab754d79ec92c6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_199.asset using Guid(8a9e07ea8551c424ab754d79ec92c6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deab9f005368fbbaf2017391021dc94d') in 0.103058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_213.asset
+  artifactKey: Guid(d69b6870f6859784e9f173fc18ffbe10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_213.asset using Guid(d69b6870f6859784e9f173fc18ffbe10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdc8545658270615d962b58e22d3c0b7') in 0.021956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_200.asset
+  artifactKey: Guid(ccdf6b8823ce0954f94040a5c92814bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_200.asset using Guid(ccdf6b8823ce0954f94040a5c92814bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca38c77b914c344b8afae7bbc8b5a49a') in 0.016687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_203.asset
+  artifactKey: Guid(093b4cb30a7949e4aad241bb42fdd7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_203.asset using Guid(093b4cb30a7949e4aad241bb42fdd7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a7891e2e674632e128525f99e80b708') in 0.016947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_205.asset
+  artifactKey: Guid(65881b4a0fa090948ba1e11058d15644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_205.asset using Guid(65881b4a0fa090948ba1e11058d15644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '695a89c59b2411f96dd585212a056aa1') in 0.015635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_230.asset
+  artifactKey: Guid(7cdce055e393ff54dbc1e079fe9a6994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_230.asset using Guid(7cdce055e393ff54dbc1e079fe9a6994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c2b7128bfd4359260855867febd7177') in 0.017107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_189.asset
+  artifactKey: Guid(2f1062d80deff434eb61d4169ae2f43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_189.asset using Guid(2f1062d80deff434eb61d4169ae2f43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e5500b2a35d2d10141215c8a9b93f3') in 0.019646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_175.asset
+  artifactKey: Guid(36a6d73afa976fe48af1c017673b0961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_175.asset using Guid(36a6d73afa976fe48af1c017673b0961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7637c9446f10bfcfbfb3e3409a52ea4') in 0.017192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_184.asset
+  artifactKey: Guid(4279081315188d846aa6fb8b4ca7c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_184.asset using Guid(4279081315188d846aa6fb8b4ca7c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4a5aaab002b260112f8332c9170802') in 0.016019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_217.asset
+  artifactKey: Guid(11e44b6c670f454428d7c8ea0f8a9883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_217.asset using Guid(11e44b6c670f454428d7c8ea0f8a9883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1136613e55807bebb860df45e6938d3f') in 0.017202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_192.asset
+  artifactKey: Guid(9f26551cb186a894a913e570273abf69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_192.asset using Guid(9f26551cb186a894a913e570273abf69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25877dd35ddd2d52f7aedfbc24948f52') in 0.016070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_179.asset
+  artifactKey: Guid(790edb3f44a7cda41967472f808395b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_179.asset using Guid(790edb3f44a7cda41967472f808395b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f96f92e7b8835c6099bbf127f2abc8a') in 0.016635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_176.asset
+  artifactKey: Guid(f508b7576d600eb4186d7059feb254e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_176.asset using Guid(f508b7576d600eb4186d7059feb254e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5468c2aab59d6e8364a9e961e24fa992') in 0.017018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_191.asset
+  artifactKey: Guid(edbb108122ba39540be95f55f9ac2308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_191.asset using Guid(edbb108122ba39540be95f55f9ac2308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7bfd8d73871c5c325609d524df2822b') in 0.016732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_212.asset
+  artifactKey: Guid(98ecaa3b0d9bac34ab315992d6aa4b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_212.asset using Guid(98ecaa3b0d9bac34ab315992d6aa4b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1647d0d0b927c5e0c44b849fca2939f6') in 0.016312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_165.asset
+  artifactKey: Guid(d0d5eccee2c3a2a4d94126a7327b8293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_165.asset using Guid(d0d5eccee2c3a2a4d94126a7327b8293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e11685097929161fd089fa0bbdbb76') in 0.016030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_215.asset
+  artifactKey: Guid(249928d403ccad74b91499d8ece88b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_215.asset using Guid(249928d403ccad74b91499d8ece88b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15633e96c15d1462585a64317c8c788d') in 0.015540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_195.asset
+  artifactKey: Guid(eb8a3d8515b249741a821ec9948d8f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_195.asset using Guid(eb8a3d8515b249741a821ec9948d8f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e5a00cf82c154092c5792e116bcba3') in 0.015560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_196.asset
+  artifactKey: Guid(7275bdac9b5458c4a9a975f915ba3ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_196.asset using Guid(7275bdac9b5458c4a9a975f915ba3ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40305aab92d84c4d1900971f3685fbc5') in 0.016033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_222.asset
+  artifactKey: Guid(f1494427a2405584793fbadefb72873f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_222.asset using Guid(f1494427a2405584793fbadefb72873f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52bbfd196cf52bf28fae07aa22e0af45') in 0.016334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_185.asset
+  artifactKey: Guid(dc087a27a0a9bbb4f9b8cd8a59d75166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_185.asset using Guid(dc087a27a0a9bbb4f9b8cd8a59d75166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5716a7b13f9b74d8cc98d1e1174e1f6f') in 0.015794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_214.asset
+  artifactKey: Guid(56edc84f1d49dbe40b7960f7ad457fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_214.asset using Guid(56edc84f1d49dbe40b7960f7ad457fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c6caf104bbfd2a15dbfb1274f971b2') in 0.015519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_204.asset
+  artifactKey: Guid(ce555a02b2e915f43bdab0e46f2d5352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_204.asset using Guid(ce555a02b2e915f43bdab0e46f2d5352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53cfbbbd19f809d9be41b9ac7785525b') in 0.015520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_168.asset
+  artifactKey: Guid(d17d59868f92b604caf2edbb5361791c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_168.asset using Guid(d17d59868f92b604caf2edbb5361791c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b995a4d7efc5e0a8c5aa2dcec25ac4a6') in 0.017280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_186.asset
+  artifactKey: Guid(cdfe431d61f7fbc4bbb6069cec7e924f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_186.asset using Guid(cdfe431d61f7fbc4bbb6069cec7e924f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c73e1150fe032bd36a855ae503c4eb8') in 0.016988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_201.asset
+  artifactKey: Guid(850525149fcb4be4eb5de4903d685f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_201.asset using Guid(850525149fcb4be4eb5de4903d685f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79e8cd559713624ce0934228d956b8d8') in 0.015121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_194.asset
+  artifactKey: Guid(79e3a200e393d73479c3e5ac27bdb174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_194.asset using Guid(79e3a200e393d73479c3e5ac27bdb174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe525fbc1299a7be4fe6b0447a832f1f') in 0.016051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_190.asset
+  artifactKey: Guid(08b3b9cf52211eb4788135420bbbc15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_190.asset using Guid(08b3b9cf52211eb4788135420bbbc15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c37edf3f6e214535d4025ac61b65d73') in 0.017018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_170.asset
+  artifactKey: Guid(d395c57f48e70f948a6eebbb5161501d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_170.asset using Guid(d395c57f48e70f948a6eebbb5161501d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c56ae616bdef1b610fb638821c5309') in 0.017495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_163.asset
+  artifactKey: Guid(9f3a053be1f1d8f41a0f3069cfb0fc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_163.asset using Guid(9f3a053be1f1d8f41a0f3069cfb0fc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e13173676c03e4f0f2ac9e56104b62') in 0.016460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_228.asset
+  artifactKey: Guid(70ee1d1d0516dd14e906b2953f992167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_228.asset using Guid(70ee1d1d0516dd14e906b2953f992167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe2921412d0961ca36b9c7379678141') in 0.015887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_211.asset
+  artifactKey: Guid(cc80c10f756f98a4ba0ca6249591fd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_211.asset using Guid(cc80c10f756f98a4ba0ca6249591fd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25508796f1f973e0e4f59a148dca4928') in 0.016347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_231.asset
+  artifactKey: Guid(3b61b3b14326b18449dd00046520310d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_231.asset using Guid(3b61b3b14326b18449dd00046520310d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2a1c77a257227a82bc79542b4c13b5') in 0.016376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_162.asset
+  artifactKey: Guid(e9a37e14a9a137945a03bb0c5bcc5959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_162.asset using Guid(e9a37e14a9a137945a03bb0c5bcc5959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06c5f02197ce494bf72d1006a8e57638') in 0.016625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_178.asset
+  artifactKey: Guid(e8b70f0eca21f2e4881baebaf2052e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_178.asset using Guid(e8b70f0eca21f2e4881baebaf2052e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0544fcb004119b761feb8eba03c473') in 0.019138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_160.asset
+  artifactKey: Guid(02cc5d575353caf438ca5b7b79896575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_160.asset using Guid(02cc5d575353caf438ca5b7b79896575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11152f112ff2882324cedd76fbbeb754') in 0.017820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_220.asset
+  artifactKey: Guid(6eb417fc78645774e9946778a53e2966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_220.asset using Guid(6eb417fc78645774e9946778a53e2966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a592c6944216431a12b78e2854b98901') in 0.015838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_182.asset
+  artifactKey: Guid(b793d8dd3b90a8e409b7e5371538cc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_182.asset using Guid(b793d8dd3b90a8e409b7e5371538cc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a1ed9a08ceb5f8098ed58735e9ce29') in 0.016042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_232.asset
+  artifactKey: Guid(1b4cba2d484166b4e95d78a45bd3e476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_232.asset using Guid(1b4cba2d484166b4e95d78a45bd3e476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c3ab87123d343103c49f07572f0ed1') in 0.018013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_227.asset
+  artifactKey: Guid(a38a5c0f5c54b6445889a2baef32015b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_227.asset using Guid(a38a5c0f5c54b6445889a2baef32015b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b3f3eca0227577f3bbde16a2103c64') in 0.016345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_188.asset
+  artifactKey: Guid(c52923a6194cf524c883a86a2f59c651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_188.asset using Guid(c52923a6194cf524c883a86a2f59c651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca9839cd8e28c34ac640323a0973bdc') in 0.015656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_219.asset
+  artifactKey: Guid(0661d72a97ff1c942a8c334fd873c921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_219.asset using Guid(0661d72a97ff1c942a8c334fd873c921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a7045922f7dfdee6c8ae24fbf1cb968') in 0.015109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_181.asset
+  artifactKey: Guid(1ce6d824daecb0d4cb245152706429a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_181.asset using Guid(1ce6d824daecb0d4cb245152706429a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '176e4df0e442cc1a0fc9a393e023dea0') in 0.015923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_187.asset
+  artifactKey: Guid(c66ffb4ec5077d44086fdc5d39c97295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_187.asset using Guid(c66ffb4ec5077d44086fdc5d39c97295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82ff3e2e285fb16aaae90478c7cca15') in 0.015847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_224.asset
+  artifactKey: Guid(910369cd560ae724c830dc4e7f60efa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_224.asset using Guid(910369cd560ae724c830dc4e7f60efa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89a25c988a4be45f1d50e509526fabc0') in 0.016368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_229.asset
+  artifactKey: Guid(314fb4250f729834ca986e14920ec231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_229.asset using Guid(314fb4250f729834ca986e14920ec231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65300e768029f3532196a0ce30046f2b') in 0.015444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_223.asset
+  artifactKey: Guid(ebfcb4582a0c3f54d908d655e7b036bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_223.asset using Guid(ebfcb4582a0c3f54d908d655e7b036bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc0b3f88b47158147b55529edcd0953c') in 0.026437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_183.asset
+  artifactKey: Guid(2bf64fff3df4be040818d13742bcd56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_183.asset using Guid(2bf64fff3df4be040818d13742bcd56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de037d2c525c1408208c024d52ac67ba') in 0.016343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_210.asset
+  artifactKey: Guid(179db4338d93f1d4c85b85545fa7de35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_210.asset using Guid(179db4338d93f1d4c85b85545fa7de35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c20ffc9643cb88257838cadbcf89a3') in 0.017058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_218.asset
+  artifactKey: Guid(78403cd2073f3ae4b8a9a34512944a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_218.asset using Guid(78403cd2073f3ae4b8a9a34512944a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cc0402235723a7d71bfc25112477c9b') in 0.015900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_177.asset
+  artifactKey: Guid(b7ddacdc15710904b884e7e8a9ac6916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_177.asset using Guid(b7ddacdc15710904b884e7e8a9ac6916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '186de9dcd85368f7537286edc919bc19') in 0.015571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_172.asset
+  artifactKey: Guid(bc61b0077868ae2498e4b846e1fa8093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_172.asset using Guid(bc61b0077868ae2498e4b846e1fa8093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f301f3d461d732c53522e7a20a47a0') in 0.015908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_198.asset
+  artifactKey: Guid(bd48f576da0fe214398170a1a9ee85d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_198.asset using Guid(bd48f576da0fe214398170a1a9ee85d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f36f31ed3aa98094135298e5274dbd5') in 0.015851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_208.asset
+  artifactKey: Guid(7254c82d8e4077c45ad33013859284ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_208.asset using Guid(7254c82d8e4077c45ad33013859284ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aadbfc5a620e24a74ed2f9f82f115f1') in 0.016318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_161.asset
+  artifactKey: Guid(929b1257c0bd97845b12d3dce8b32dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_161.asset using Guid(929b1257c0bd97845b12d3dce8b32dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ceb5f03b9d249591d5efbff4b38b13') in 0.016567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_193.asset
+  artifactKey: Guid(10686bf40660665438e18792ded904f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_193.asset using Guid(10686bf40660665438e18792ded904f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca101d616247dc50728972f73b9f055') in 0.015967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_180.asset
+  artifactKey: Guid(4b639bd1f2a507043a83d322d85ffde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_180.asset using Guid(4b639bd1f2a507043a83d322d85ffde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '983f66786b6f5cdb3be0da9209ab9fdb') in 0.015894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_209.asset
+  artifactKey: Guid(1d65d518705cdd941848d2775a2e75e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_209.asset using Guid(1d65d518705cdd941848d2775a2e75e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '676adc3bc7179c38079171620b353d2d') in 0.015684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_173.asset
+  artifactKey: Guid(7dda5449d4b4d2a44b920a8ae82942a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_173.asset using Guid(7dda5449d4b4d2a44b920a8ae82942a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf60d31cdd77877ecefaf7b42933b462') in 0.018737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_207.asset
+  artifactKey: Guid(efab9ad8ca33ca04794942c9430f68c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_207.asset using Guid(efab9ad8ca33ca04794942c9430f68c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1e86d059c24a59f8f1ea528a0bab5e') in 0.016303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_167.asset
+  artifactKey: Guid(1a3046ff74cad9e439aff1c5fcc5b226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_167.asset using Guid(1a3046ff74cad9e439aff1c5fcc5b226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eab081bba96f718b1fd3c74e130fe668') in 0.016863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_216.asset
+  artifactKey: Guid(03ebfeca05de0af4a9354fbddb1348a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_216.asset using Guid(03ebfeca05de0af4a9354fbddb1348a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08dedb810c6872148f1a03e06b69b13f') in 0.016317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_226.asset
+  artifactKey: Guid(39708d5e7510ce04693a83bbf8fa384f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_226.asset using Guid(39708d5e7510ce04693a83bbf8fa384f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5a21d459d87958d819887324d0ed5f') in 0.016843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_221.asset
+  artifactKey: Guid(896e81d0a86546446ba8ac8d7a82a583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_221.asset using Guid(896e81d0a86546446ba8ac8d7a82a583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034cc7295739f10c5e6ee8268b825208') in 0.016527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_225.asset
+  artifactKey: Guid(940c168b920b6b04bb417929070f0da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_225.asset using Guid(940c168b920b6b04bb417929070f0da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b0f64fcaf62391e374045b28e1f954') in 0.016509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_174.asset
+  artifactKey: Guid(41d5b5d44a8999146b0957d34299df88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_174.asset using Guid(41d5b5d44a8999146b0957d34299df88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f52a4335ba53aadeabc8713fdd36343') in 0.016299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_166.asset
+  artifactKey: Guid(4602f35db056c2a4e82966db9eda4c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_166.asset using Guid(4602f35db056c2a4e82966db9eda4c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c087de8199003ed5fc6b7fc1d9c9fdf') in 0.015067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_171.asset
+  artifactKey: Guid(88db5f6fe9f43ad4b8e0e1955b2a4f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_171.asset using Guid(88db5f6fe9f43ad4b8e0e1955b2a4f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451171bf7092e5c111ace1334ebf9431') in 0.016497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_202.asset
+  artifactKey: Guid(3b76b21a59754204fb5b2fe28bf59913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_202.asset using Guid(3b76b21a59754204fb5b2fe28bf59913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e335c1e00d6d035775c34aaa4981c537') in 0.015348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_164.asset
+  artifactKey: Guid(4153a11547aec8e409da83e66b1d44bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_164.asset using Guid(4153a11547aec8e409da83e66b1d44bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa2cb579a7652d4d654c6e2d8c57aa9c') in 0.015767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_169.asset
+  artifactKey: Guid(568163cab1647634eaa3454fb7859433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_169.asset using Guid(568163cab1647634eaa3454fb7859433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1acf483e9fd55777596f1124a5767895') in 0.017322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_197.asset
+  artifactKey: Guid(870b28a4574ff344e9378887f54ffee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_197.asset using Guid(870b28a4574ff344e9378887f54ffee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f11a5e2ca29046cd2655ed20482f755b') in 0.017411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_206.asset
+  artifactKey: Guid(9cbb9c7ed912a7d438683443bdbdb3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_206.asset using Guid(9cbb9c7ed912a7d438683443bdbdb3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f8e1df680761e39f3303ff6df3b19f8') in 0.017213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_233.asset
+  artifactKey: Guid(ec85744ffdcfa34489d8a3fbb1d40ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_233.asset using Guid(ec85744ffdcfa34489d8a3fbb1d40ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d6c9a4467b8865fde4475517096f2c') in 0.016708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 648.241646 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_70.asset
+  artifactKey: Guid(11be8e38f02514f4386f2114aadce462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_70.asset using Guid(11be8e38f02514f4386f2114aadce462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e94006b576f072277c8057a68997a40b') in 0.028135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_76.asset
+  artifactKey: Guid(49b3169ef79435a4eb35fe7c51405836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_76.asset using Guid(49b3169ef79435a4eb35fe7c51405836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b426b986ed48563e0d16d7d1e7dfedca') in 0.017635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_101.asset
+  artifactKey: Guid(600bd07bba3c8e94b8856752cf3dc14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_101.asset using Guid(600bd07bba3c8e94b8856752cf3dc14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c877d557aa1baedf41b4540a8b0b7162') in 0.016608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_105.asset
+  artifactKey: Guid(33505c100c4604c42b9bf4ad64f562f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_105.asset using Guid(33505c100c4604c42b9bf4ad64f562f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a59acb0a255702eb15eb520e0a6c6c3') in 0.016601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_82.asset
+  artifactKey: Guid(6a86b046aa1a2874bb52a80133610369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_82.asset using Guid(6a86b046aa1a2874bb52a80133610369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f1e5a55bd76e3a6e13044ab550c06c4') in 0.015439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_93.asset
+  artifactKey: Guid(197971c6578dcbb40825641761903ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_93.asset using Guid(197971c6578dcbb40825641761903ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9157900b4105860c1ee688aac1a5ffb6') in 0.015817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_77.asset
+  artifactKey: Guid(4813f6c29d58a574dbbc34ea935edb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_77.asset using Guid(4813f6c29d58a574dbbc34ea935edb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fc2747fc72e1163a202bd2ab8f1da90') in 0.014996 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000192 seconds.
-  path: Assets/Scenes/Title.unity
-  artifactKey: Guid(c08994db2919d284887b16673c451909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Title.unity using Guid(c08994db2919d284887b16673c451909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1896d6ab2f29d8f744aba7886460b82f') in 0.005489 seconds 
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_88.asset
+  artifactKey: Guid(5383ebe5ff1afa243ada195fa42df4fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_88.asset using Guid(5383ebe5ff1afa243ada195fa42df4fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0c9c48977b82e6b15538a3da5c0013') in 0.014947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_95.asset
+  artifactKey: Guid(32c9b61bd9d44b34dba25f25bd89d082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_95.asset using Guid(32c9b61bd9d44b34dba25f25bd89d082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4beb9f9f7980c756d4b044e95a7aca7') in 0.014918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_78.asset
+  artifactKey: Guid(f2d0c1d4c0ef18945b8b60aff6dfef34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_78.asset using Guid(f2d0c1d4c0ef18945b8b60aff6dfef34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6dce02f379e0b908c12f456ca46402') in 0.014866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_80.asset
+  artifactKey: Guid(2dbf27312cbe4384e808509852623828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_80.asset using Guid(2dbf27312cbe4384e808509852623828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c8896b52e5d85447306bc4d87746f01') in 0.018779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_83.asset
+  artifactKey: Guid(680e49785662fb3408575d5192fba9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_83.asset using Guid(680e49785662fb3408575d5192fba9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67d4f8a925a32752b0d1a8f9458226a') in 0.014611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_72.asset
+  artifactKey: Guid(cf50c6054edc9a64a93cf0560fa59f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_72.asset using Guid(cf50c6054edc9a64a93cf0560fa59f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b9faae1418f112f49749e66289e5d63') in 0.014923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_100.asset
+  artifactKey: Guid(51a5655df2a976a4989b9a4160339846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_100.asset using Guid(51a5655df2a976a4989b9a4160339846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea58aef3ecf387da3e091fc1d1f341f3') in 0.014957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_102.asset
+  artifactKey: Guid(0138e44a3743d2749b4566ee07180e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_102.asset using Guid(0138e44a3743d2749b4566ee07180e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd501d1cb829c18fe5fb380869b17f20c') in 0.014964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_90.asset
+  artifactKey: Guid(181205982418cfc49820f268bd02c0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_90.asset using Guid(181205982418cfc49820f268bd02c0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24dbd261df45ba76a196fcd76aaa909a') in 0.014532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_74.asset
+  artifactKey: Guid(6ca6b428055ef8d4485db7dce6768cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_74.asset using Guid(6ca6b428055ef8d4485db7dce6768cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51031dd413b201af0c7fdf4be94b5e44') in 0.014558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_73.asset
+  artifactKey: Guid(69c6b2726f38d9c45985fbf410055455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_73.asset using Guid(69c6b2726f38d9c45985fbf410055455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4155b257318705c3cd436096d97a6aaa') in 0.014469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_99.asset
+  artifactKey: Guid(0303432ffa0586242b5a85d813e008cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_99.asset using Guid(0303432ffa0586242b5a85d813e008cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be5de53d452b1c742ad20e92fb805cd3') in 0.016340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_98.asset
+  artifactKey: Guid(91eab8dcfc5785a4090a2267d6a74392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_98.asset using Guid(91eab8dcfc5785a4090a2267d6a74392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b74b00b59ae484ff0720baad3bc26b15') in 0.015485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_87.asset
+  artifactKey: Guid(eb794ea9ffe32d246b416d223b44428c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_87.asset using Guid(eb794ea9ffe32d246b416d223b44428c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf46ac59878f3fb5e437d9c4e1ec541') in 0.031525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_75.asset
+  artifactKey: Guid(1501b8234867a6e4c952d57afa6a8bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_75.asset using Guid(1501b8234867a6e4c952d57afa6a8bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a81568c7b85283560a36580b9729826c') in 0.026163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_79.asset
+  artifactKey: Guid(d305557e77d97674abf4c872ce2bb1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_79.asset using Guid(d305557e77d97674abf4c872ce2bb1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07442030f47b1f2e07696c448d7bbfe6') in 0.018236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_89.asset
+  artifactKey: Guid(320332e4ad8c7f64e8f56f3e45628528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_89.asset using Guid(320332e4ad8c7f64e8f56f3e45628528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f306bdb6259be4d66db3a2deb352a76f') in 0.017040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_92.asset
+  artifactKey: Guid(1ea6b5bbca72e21458c96793f023d7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_92.asset using Guid(1ea6b5bbca72e21458c96793f023d7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf00c63c1c4521a477cbba50080341df') in 0.016467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_84.asset
+  artifactKey: Guid(9da23a4536c515c4ca93c49c025a56b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_84.asset using Guid(9da23a4536c515c4ca93c49c025a56b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d776d8ff6d25f677333ca0710dec3a') in 0.018259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_81.asset
+  artifactKey: Guid(fb0fd8bd60edc52459b60119dd4f7d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_81.asset using Guid(fb0fd8bd60edc52459b60119dd4f7d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7781c47c4d1c71a1e23e6761b262502c') in 0.017050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_103.asset
+  artifactKey: Guid(3da1ad9ef05515c4c84df1fbf353f568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_103.asset using Guid(3da1ad9ef05515c4c84df1fbf353f568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2966e1f61aa6a3f36941243c5c2781') in 0.016403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_86.asset
+  artifactKey: Guid(73224d266a211724db91ea7725ddb63b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_86.asset using Guid(73224d266a211724db91ea7725ddb63b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f78ab726a833bea0c1666ea747859001') in 0.015667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_71.asset
+  artifactKey: Guid(84827a07e9d4c8e4cb9f1ec382ac742f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_71.asset using Guid(84827a07e9d4c8e4cb9f1ec382ac742f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da45d2fc0a1cfb4ce3962c3c0eeec850') in 0.016307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_96.asset
+  artifactKey: Guid(39ca30a82247b5848bbee80b3152c809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_96.asset using Guid(39ca30a82247b5848bbee80b3152c809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f9f9e050d1c4fa951e65c10da0a0e29') in 0.017161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_91.asset
+  artifactKey: Guid(976dd2532de5f1442aea2631f4289e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_91.asset using Guid(976dd2532de5f1442aea2631f4289e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '758376e4d04ccf53d0863d37d033fd47') in 0.016115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_85.asset
+  artifactKey: Guid(7aa17ea81dc39f44ca5d52eef659bf3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_85.asset using Guid(7aa17ea81dc39f44ca5d52eef659bf3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7148f699820b48cb405486fed0b9d593') in 0.020100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_97.asset
+  artifactKey: Guid(951e472149cbe6e45b1253fb77241973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_97.asset using Guid(951e472149cbe6e45b1253fb77241973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2765860ba0e991efb301f0822d3347d3') in 0.017108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_104.asset
+  artifactKey: Guid(be791f2c8fded9849875e6bc06dfd973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_104.asset using Guid(be791f2c8fded9849875e6bc06dfd973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a959dab61e8ee0086c450f9e265093') in 0.016421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_94.asset
+  artifactKey: Guid(50a15308c6c337d418af48c23f116194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Tiles/Borders/Room_Builder_borders_32x32_94.asset using Guid(50a15308c6c337d418af48c23f116194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f1f0e179eb28287e8899a33c15c4e89') in 0.017647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 139.030099 seconds.
+  path: Assets/Game/Texture/$Sink.png
+  artifactKey: Guid(b3648f00d36361a46bc3a4b8195e2a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Texture/$Sink.png using Guid(b3648f00d36361a46bc3a4b8195e2a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1056c797c0f9db7928027be53827a1f5') in 0.107110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Game/Texture/My_toliet-sheet.png
+  artifactKey: Guid(71b07c68917ff0e459dba0b7bdc2ffbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Texture/My_toliet-sheet.png using Guid(71b07c68917ff0e459dba0b7bdc2ffbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493d0a85f43648210386e85e15481f77') in 0.032948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Game/Texture/My_toliet.png
+  artifactKey: Guid(04e68f5f03d67aa4f991619cd92aeccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Texture/My_toliet.png using Guid(04e68f5f03d67aa4f991619cd92aeccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f93afb4d1b6ec9b3316655535a60257') in 0.019600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Game/Texture/animated_toybox_2_full_48x48.png
+  artifactKey: Guid(36a71970fa700a04bbff612ffe858cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Texture/animated_toybox_2_full_48x48.png using Guid(36a71970fa700a04bbff612ffe858cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11982d0239d6b7a1eaef91f33b20611e') in 0.062005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Game/Texture/Bathroom_01.png
+  artifactKey: Guid(5f39620924e4a894a88e458ee2a2867d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Texture/Bathroom_01.png using Guid(5f39620924e4a894a88e458ee2a2867d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceef1f3e4e6afcba61df75c34a1c75bb') in 0.227946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Game/Texture/backbag.png
+  artifactKey: Guid(9f05df0ee688559499c8ab71abf33791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Texture/backbag.png using Guid(9f05df0ee688559499c8ab71abf33791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c3a5c751acc294b3035d08cad30aef') in 0.023335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Game/Texture/animated_bathroom_sink_2_new_3-10 loop_32x32.png
+  artifactKey: Guid(27229505597463943a744c482835e6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Texture/animated_bathroom_sink_2_new_3-10 loop_32x32.png using Guid(27229505597463943a744c482835e6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28de0d1a3493222b878392c95ffcdd9b') in 0.022447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Game/Texture/UsedToliet.png
+  artifactKey: Guid(92b51dd40acd28c44bc1677cff010adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Texture/UsedToliet.png using Guid(92b51dd40acd28c44bc1677cff010adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92fa80537178232a9dc8f706a8f27303') in 0.022332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Game/Texture/Water.png
+  artifactKey: Guid(18662267747f18748bf1ad5ca9241b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Texture/Water.png using Guid(18662267747f18748bf1ad5ca9241b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59caf7d6d89343293664062d4fac3955') in 0.027475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Game/Texture/car.png
+  artifactKey: Guid(4899e08f9a36f3f448fcdcac5ad96d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Texture/car.png using Guid(4899e08f9a36f3f448fcdcac5ad96d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea84a62c14f55f8e8f4713dfb8d4208') in 0.023677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.979989 seconds.
+  path: Assets/Game/Texture/Bathroom_01.png
+  artifactKey: Guid(5f39620924e4a894a88e458ee2a2867d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Texture/Bathroom_01.png using Guid(5f39620924e4a894a88e458ee2a2867d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e273c559e6a457dc093f7a1765bccb4') in 0.175154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 262.825598 seconds.
+  path: Assets/HomeResources/Sprites/Room_Builder_32x32.png
+  artifactKey: Guid(80cf6261cc42fba41b8a0d91fabb33f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Sprites/Room_Builder_32x32.png using Guid(80cf6261cc42fba41b8a0d91fabb33f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac7258a1604b6271392541f6cb451ad2') in 0.325983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.957174 seconds.
+  path: Assets/HomeResources/Drops
+  artifactKey: Guid(437bd5397e219b5489bdd12b76ce8b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops using Guid(437bd5397e219b5489bdd12b76ce8b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1399035561129245ea70e1c2422e31b') in 0.008112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.877944 seconds.
+  path: Assets/HomeResources/Drops/Bedroom
+  artifactKey: Guid(5dedbf0f404fdb24d835425aaa9a1e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/Bedroom using Guid(5dedbf0f404fdb24d835425aaa9a1e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '991a750752481174876dd73afcbb0bda') in 0.006829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.635423 seconds.
+  path: Assets/HomeResources/Drops/BathRoom
+  artifactKey: Guid(c2f0fb6514bc58641ba3d6104769d798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom using Guid(c2f0fb6514bc58641ba3d6104769d798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43f359e1ea44f5673fde1b2db1f6f59e') in 0.006407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.499784 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/3_Bathroom_32x32.png
+  artifactKey: Guid(6b2d40b3a161e7546a446a49c08deef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/3_Bathroom_32x32.png using Guid(6b2d40b3a161e7546a446a49c08deef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11390f02504ebc5728e6a1e17268fe24') in 0.017899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.272688 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/3_Bathroom_32x32.png
+  artifactKey: Guid(6b2d40b3a161e7546a446a49c08deef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/3_Bathroom_32x32.png using Guid(6b2d40b3a161e7546a446a49c08deef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a65598cfa69e2292b8fdc408f39529a') in 0.019984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1075.315023 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/3_Bathroom_32x32.png
+  artifactKey: Guid(6b2d40b3a161e7546a446a49c08deef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/3_Bathroom_32x32.png using Guid(6b2d40b3a161e7546a446a49c08deef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd7b28dbb141bf5273b94d87db042661') in 0.646386 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003232 seconds.
+Registered in 0.004376 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\UnityProject\unity-github\2d-test\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\c1001486\GitHub\2d-test\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.241 seconds
+- Completed reload, in  0.981 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1241ms)
-		BeginReloadAssembly (133ms)
+	ReloadAssembly (981ms)
+		BeginReloadAssembly (111ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1047ms)
-			LoadAssemblies (104ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (814ms)
+			LoadAssemblies (93ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (361ms)
+			SetupTypeCache (284ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (375ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (280ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (126ms)
-				ProcessInitializeOnLoadAttributes (226ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (160ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3276 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.6 MB.
-System memory in use after: 139.9 MB.
+System memory in use before: 143.6 MB.
+System memory in use after: 143.9 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3832.
-Total: 5.102200 ms (FindLiveObjects: 0.273800 ms CreateObjectMapping: 0.161400 ms MarkObjects: 4.627900 ms  DeleteObjects: 0.038200 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4256.
+Total: 3.017000 ms (FindLiveObjects: 0.253000 ms CreateObjectMapping: 0.150800 ms MarkObjects: 2.592200 ms  DeleteObjects: 0.020500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

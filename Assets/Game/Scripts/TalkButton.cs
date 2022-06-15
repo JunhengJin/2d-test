@@ -9,6 +9,8 @@ public class TalkButton : MonoBehaviour
 
     public GameObject talkUI;
 
+    public float offset = 2.1f;
+
     private bool showUI = false;
 
     private void Start()
@@ -21,7 +23,7 @@ public class TalkButton : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Button.transform.position = gameObject.transform.position+Vector3.up*2.1f;
+            Button.transform.position = gameObject.transform.position+Vector3.up*offset;
             Button.SetActive(true);
             showUI = true;
         }
