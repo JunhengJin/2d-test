@@ -129,7 +129,7 @@ public class ValueControlor : MonoBehaviour
                             myAnim.SetBool("canTurnon", false);
                             myAnim.SetBool("isFulled", false);
                             myAnim.SetBool("CanDrain", false);
-                            TextManager.ShowText("Put 'E' to Wash Hand");
+                            TextManager.ShowText("Press 'E' to Wash Hand");
                         }
                         else if (count == 3)
                         {
@@ -277,7 +277,7 @@ public class ValueControlor : MonoBehaviour
             {
                 if (count == 0)
                 {
-                    TextManager.ShowText("Put 'E' Go To The Toliet");
+                    TextManager.ShowText("Press 'E' to Go To The Toliet");
                 }
                 if (count == 1)
                 {
