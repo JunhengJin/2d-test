@@ -15,11 +15,11 @@ C:/Users/c1001486/GitHub/2d-test
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56802
+53509
 Successfully changed project path to: C:/Users/c1001486/GitHub/2d-test
 C:/Users/c1001486/GitHub/2d-test
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 94.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 94.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2020.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -35,74 +35,74 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002010 seconds.
+Registered in 0.002000 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 96.09 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 93.25 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.597 seconds
+- Completed reload, in  0.595 seconds
 Domain Reload Profiling:
-	ReloadAssembly (598ms)
+	ReloadAssembly (595ms)
 		BeginReloadAssembly (61ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (465ms)
+		EndReloadAssembly (467ms)
 			LoadAssemblies (59ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (135ms)
+			SetupTypeCache (133ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (211ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (210ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (96ms)
-				BeforeProcessingInitializeOnLoad (12ms)
-				ProcessInitializeOnLoadAttributes (75ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				RefreshPlugins (93ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (73ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004987 seconds.
+Registered in 0.005224 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\c1001486\GitHub\2d-test\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 96.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 97.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.145 seconds
+- Completed reload, in  1.156 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1146ms)
-		BeginReloadAssembly (136ms)
+	ReloadAssembly (1157ms)
+		BeginReloadAssembly (137ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (950ms)
-			LoadAssemblies (99ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (962ms)
+			LoadAssemblies (98ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
+			SetupTypeCache (303ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (395ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (401ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (97ms)
-				BeforeProcessingInitializeOnLoad (100ms)
-				ProcessInitializeOnLoadAttributes (174ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
+				RefreshPlugins (98ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -118,7 +118,7 @@ System memory in use before: 147.8 MB.
 System memory in use after: 148.0 MB.
 
 Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3830.
-Total: 3.057500 ms (FindLiveObjects: 0.218000 ms CreateObjectMapping: 0.146000 ms MarkObjects: 2.616100 ms  DeleteObjects: 0.076600 ms)
+Total: 3.089400 ms (FindLiveObjects: 0.226400 ms CreateObjectMapping: 0.140500 ms MarkObjects: 2.647100 ms  DeleteObjects: 0.074400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,341 +134,137 @@ AssetImportParameters requested are different than current active one (requested
 Received Import Request.
   path: Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png
   artifactKey: Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58ed86e1c53a62029fdf8a4c5850261') in 0.632162 seconds 
+Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd78ca49677ab573a0989f06cf2293247') in 0.811347 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_377.png
-  artifactKey: Guid(23293dcc50b044e449e495e7bae214ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_377.png using Guid(23293dcc50b044e449e495e7bae214ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a473805faf4afb950df205d82cae02a1') in 0.016994 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_108.png
-  artifactKey: Guid(1e00562ae4207bb4da57fd3f5e156bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_108.png using Guid(1e00562ae4207bb4da57fd3f5e156bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68f2fd94dbb60602d58d8d8f3fce126') in 0.017257 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_429.png
-  artifactKey: Guid(cb002bbf21ced8145a31183720a08f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_429.png using Guid(cb002bbf21ced8145a31183720a08f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c646270b43960c898a32b6ce4cca952') in 0.013968 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/HomeResources/Drops/BathRoom/3_Bathroom_32x32.png
-  artifactKey: Guid(6b2d40b3a161e7546a446a49c08deef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/3_Bathroom_32x32.png using Guid(6b2d40b3a161e7546a446a49c08deef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd7b28dbb141bf5273b94d87db042661') in 0.559515 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/HomeResources/Textures/Room_Builder_Walls_32x32.png
-  artifactKey: Guid(ad054578e5fff6745a09c3fd9f38f8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Textures/Room_Builder_Walls_32x32.png using Guid(ad054578e5fff6745a09c3fd9f38f8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1eb32e0328b1ad88d812a5920176c64') in 2.036418 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_441.png
-  artifactKey: Guid(b49e0e361d7fb6d4eb7d9210e5e4f8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_441.png using Guid(b49e0e361d7fb6d4eb7d9210e5e4f8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52f0427e9c91569aebd6d83240b63112') in 0.021207 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_376.png
-  artifactKey: Guid(ec5a82ad768882e4a803aa9027dfcdcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_376.png using Guid(ec5a82ad768882e4a803aa9027dfcdcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed09accc3c73ae2800b6b41df1e85c2') in 0.016743 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/HomeResources/Textures/Room_Builder_Floors_32x32.png
-  artifactKey: Guid(6c7096a70d5709a4c960f1e88fc601bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Textures/Room_Builder_Floors_32x32.png using Guid(6c7096a70d5709a4c960f1e88fc601bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4892e0b68ae9d58dced9b4019c0684f0') in 0.907039 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_509.png
-  artifactKey: Guid(d0d72b9726c20044e942586a79a2e6f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_509.png using Guid(d0d72b9726c20044e942586a79a2e6f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79975cc02d7785dcd83f1f3ac673a8d2') in 0.014819 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/HomeResources/Textures/Room_Builder_borders_32x32.png
-  artifactKey: Guid(510116dfec55651479f81c4ed46486b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Textures/Room_Builder_borders_32x32.png using Guid(510116dfec55651479f81c4ed46486b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc5f4cb408e68cbb8ad5b13310a52b6') in 0.494547 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_123.png
-  artifactKey: Guid(13cf49b6c356cb5418c9bcaaaa259dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_123.png using Guid(13cf49b6c356cb5418c9bcaaaa259dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50137977d991db2dc303774c315ccc6d') in 0.015545 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_539.png
-  artifactKey: Guid(d3a6fa2ba6668c14ba93288846562ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_539.png using Guid(d3a6fa2ba6668c14ba93288846562ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c585c5599d1dc52a9902c7cadecefb') in 0.016821 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png
-  artifactKey: Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png using Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045cc26eb62848de4014dc8f8ae366ea') in 0.505874 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_375.png
-  artifactKey: Guid(2c32af22a84e6874c83fb55da8993e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_375.png using Guid(2c32af22a84e6874c83fb55da8993e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eab30ea29239c7a26788dbc3486f337') in 0.014479 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/HomeResources/Drops/Bedroom/animated_TV_reportage_32x32.png
-  artifactKey: Guid(7c80fa372ce853c4e91724ba110bbcf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/Bedroom/animated_TV_reportage_32x32.png using Guid(7c80fa372ce853c4e91724ba110bbcf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9804642605dc7e3b52431ba39fd8a09') in 0.070599 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/HomeResources/Sprites/Room_Builder_32x32.png
-  artifactKey: Guid(80cf6261cc42fba41b8a0d91fabb33f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Sprites/Room_Builder_32x32.png using Guid(80cf6261cc42fba41b8a0d91fabb33f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac7258a1604b6271392541f6cb451ad2') in 0.276802 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_403.png
-  artifactKey: Guid(8d8d12393dede464e91197e77e47b49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/Bedroom/Bedroom_Singles_32x32_403.png using Guid(8d8d12393dede464e91197e77e47b49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780e7d50abd20be4f160792251cab7bd') in 0.015615 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.183642 seconds.
-  path: Assets/HomeResources/Tiles Palette/MyHomeBroders.prefab
-  artifactKey: Guid(2e57c4874001c16439149c0ee67f58e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Tiles Palette/MyHomeBroders.prefab using Guid(2e57c4874001c16439149c0ee67f58e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bca372342b1cf1929392471fa630706b') in 0.199117 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/HomeResources/Tiles Palette/MyHomeWall.prefab
-  artifactKey: Guid(0b8b3d1076121704a83e922d8d675626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Tiles Palette/MyHomeWall.prefab using Guid(0b8b3d1076121704a83e922d8d675626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0644009e5b81b8b0b5498591215f6835') in 0.284930 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/HomeResources/Tiles Palette/MyHomeFloor.prefab
-  artifactKey: Guid(5515d3746b99c61489e2388f97f5afbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Tiles Palette/MyHomeFloor.prefab using Guid(5515d3746b99c61489e2388f97f5afbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a67fb34f9563a82d8a6a5e07950b00a') in 0.142256 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.217287 seconds.
-  path: Assets/HomeResources/Sprites/Tiles
-  artifactKey: Guid(a37ad29cf1dd75345aac878245b1a6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Sprites/Tiles using Guid(a37ad29cf1dd75345aac878245b1a6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838acc14877706359d87163396fc7974') in 0.005481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.396865 seconds.
-  path: Assets/HomeResources/Tiles Palette
-  artifactKey: Guid(41a2be19f6eaab94daf9d09ba2e4df37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Tiles Palette using Guid(41a2be19f6eaab94daf9d09ba2e4df37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda49d73aab0e4a572920014fa752a30') in 0.006592 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.185567 seconds.
-  path: Assets/HomeResources/Drops
-  artifactKey: Guid(437bd5397e219b5489bdd12b76ce8b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops using Guid(437bd5397e219b5489bdd12b76ce8b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1399035561129245ea70e1c2422e31b') in 0.008458 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006434 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\c1001486\GitHub\2d-test\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.001 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1002ms)
-		BeginReloadAssembly (127ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (816ms)
-			LoadAssemblies (95ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (278ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (279ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (97ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3276 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.0 MB.
-System memory in use after: 148.2 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4551.
-Total: 3.057800 ms (FindLiveObjects: 0.254800 ms CreateObjectMapping: 0.146000 ms MarkObjects: 2.636700 ms  DeleteObjects: 0.019700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1042.975793 seconds.
-  path: Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png
-  artifactKey: Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png using Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61b7c2cac90b17d4a6051b29c42616d') in 0.551918 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 192.002339 seconds.
-  path: Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png
-  artifactKey: Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png using Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86a17ac7410cf0b85a72bd9029876cb') in 0.560828 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.382836 seconds.
-  path: Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png
-  artifactKey: Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png using Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e87ad45610be4483baa976f7e812e8') in 0.449764 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 780.143419 seconds.
-  path: Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png
-  artifactKey: Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png using Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca22df01d7868cfd6dfca470a4db7fc2') in 0.546752 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004435 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\c1001486\GitHub\2d-test\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.009 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1009ms)
-		BeginReloadAssembly (112ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (838ms)
-			LoadAssemblies (98ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (284ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (284ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (100ms)
-				ProcessInitializeOnLoadAttributes (162ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3276 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.3 MB.
-System memory in use after: 148.5 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4561.
-Total: 3.177500 ms (FindLiveObjects: 0.268300 ms CreateObjectMapping: 0.147700 ms MarkObjects: 2.739400 ms  DeleteObjects: 0.021500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1008.973496 seconds.
-  path: Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png
-  artifactKey: Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/14_Basement_32x32.png using Guid(ceadf25053b81a143b8c2b9e793d3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c200071e64f507b8393d6858620bfee') in 0.708519 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 898.175735 seconds.
-  path: Assets/HomeResources/Drops/BathRoom/5_Classroom_and_library_32x32.png
-  artifactKey: Guid(b1eb5ba9e68faae4c9bd6b8c72083848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/5_Classroom_and_library_32x32.png using Guid(b1eb5ba9e68faae4c9bd6b8c72083848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99404eef6cbf1c52e2bc809725dfcfb5') in 0.032163 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.172865 seconds.
-  path: Assets/HomeResources/Drops/BathRoom/5_Classroom_and_library_32x32.png
-  artifactKey: Guid(b1eb5ba9e68faae4c9bd6b8c72083848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/5_Classroom_and_library_32x32.png using Guid(b1eb5ba9e68faae4c9bd6b8c72083848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6974ae334d4b8f55d5564956234821ad') in 0.015573 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 68.314799 seconds.
-  path: Assets/HomeResources/Drops/BathRoom/5_Classroom_and_library_32x32.png
-  artifactKey: Guid(b1eb5ba9e68faae4c9bd6b8c72083848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/5_Classroom_and_library_32x32.png using Guid(b1eb5ba9e68faae4c9bd6b8c72083848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43b0e147caf369f47b6ac6d6dab746da') in 0.281343 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1643.348171 seconds.
+  Time since last request: 43.808055 seconds.
   path: Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png
   artifactKey: Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243fa624cb43e8cc1ea1f80d6b0e3451') in 0.524926 seconds 
+Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eceae6bfdc0fd783cb5a895e0d185c80') in 0.730116 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 523.645351 seconds.
+  Time since last request: 99.039688 seconds.
   path: Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png
   artifactKey: Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1303f98ee3e24a752ec4dfbc6edbc345') in 0.723621 seconds 
+Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9346e7f8145aef3da4ba4a97d3daf7a') in 0.728003 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 193.837157 seconds.
+  Time since last request: 147.009916 seconds.
   path: Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png
   artifactKey: Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd8a1d543718a21f8cafa8e6a08553d') in 0.702701 seconds 
+Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c544660391d029e189cd7e428f0b0f') in 0.679459 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 155.381979 seconds.
+  Time since last request: 1520.632418 seconds.
   path: Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png
   artifactKey: Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa37658f90a7a910d91f15fe7e4c0989') in 0.666003 seconds 
+Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c5e1f1b9eef497364e4bb6dd9429d8') in 0.756872 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1104.565723 seconds.
+  Time since last request: 628.970715 seconds.
   path: Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png
   artifactKey: Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e949ac19949a353e78dd2f0658ad6b14') in 0.770531 seconds 
+Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36c8fe4113eadcc927da7f58957fec2') in 0.734326 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 347.309048 seconds.
+  Time since last request: 51.125343 seconds.
   path: Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png
   artifactKey: Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01eb7928e6e9205e2ca42942dccca308') in 0.812507 seconds 
+Start importing Assets/HomeResources/Drops/BathRoom/12_Kitchen_32x32.png using Guid(c72480b9606a3b14db377d0bce79217b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09fce75cfc93ef4eb3e5da7c98925ba') in 0.710951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 121.402887 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/18_Jail_32x32.png
+  artifactKey: Guid(7936e6ac6207a6e49bff9dbc87b75f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/18_Jail_32x32.png using Guid(7936e6ac6207a6e49bff9dbc87b75f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b00f65b3a7c15e8c9b16e52f05269824') in 0.031207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.912418 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/18_Jail_32x32.png
+  artifactKey: Guid(7936e6ac6207a6e49bff9dbc87b75f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/18_Jail_32x32.png using Guid(7936e6ac6207a6e49bff9dbc87b75f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81fde9fa4b35ee2d5ef574bb5375cc2d') in 0.017492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.295230 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/18_Jail_32x32.png
+  artifactKey: Guid(7936e6ac6207a6e49bff9dbc87b75f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/18_Jail_32x32.png using Guid(7936e6ac6207a6e49bff9dbc87b75f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3776a15db940931f4bc71deec5ed15f') in 0.024025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.665410 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/18_Jail_32x32.png
+  artifactKey: Guid(7936e6ac6207a6e49bff9dbc87b75f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/18_Jail_32x32.png using Guid(7936e6ac6207a6e49bff9dbc87b75f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30d0bcbcff2be1b757c0b18cac04d150') in 0.758894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 361.216739 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48ab264cc1fbc695dedba1cee2e9d810') in 0.023111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.288438 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e53352d920e31791d324b73fbd77f4') in 0.014049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 124.941798 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e01a48a122d7518390259a4bf1c01e9b') in 1.004147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 57.892618 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f85bd914b1153930b409c74cf00cc41') in 0.679155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.493415 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59cc5625f46a0ad30a6f6f34c07f34bb') in 0.829734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 550.453824 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4aae5b8091bbf97a7147cc9b5325c29') in 0.782554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.224615 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80d14d6bf8e4852d815fe8b803cfb330') in 0.680652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.533637 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '334419f6b27f73c144053b133421f3b0') in 0.757900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 129.593228 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8839c13594eb65da72cc660204a8d8') in 0.969430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.673730 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5218ddb02e86df94bbeea76d00552ea') in 0.716660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 187.699386 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72842563113047f9dd181b44e037d121') in 0.646881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 440.449268 seconds.
+  path: Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png
+  artifactKey: Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HomeResources/Drops/BathRoom/19_Hospital_32x32.png using Guid(ac002c92afdd0ff4d8c15c3918d811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d753d062eac0fc4953f68ea648e715a') in 0.746245 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
