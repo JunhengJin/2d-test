@@ -31,10 +31,14 @@ public class ValueControlor : MonoBehaviour
         {
             myAnim = GetComponent<Animator>();
         }
-        if (valueControl == ValueControl.cleanCar||valueControl == ValueControl.washBody)
+        if (valueControl == ValueControl.cleanCar)
         {
             Smoke = GameObject.FindWithTag("Smoke");
             Smoke.SetActive(false);
+        }
+        if (valueControl == ValueControl.washBody)
+        {
+            Target.SetActive(false);
         }
         //Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[0];
     }
@@ -247,13 +251,14 @@ public class ValueControlor : MonoBehaviour
                             TextManager.ShowText("Bathing...");
                             TopDownCharacterController.ChangeBool(false);
                             ValueManager.GradualChangeValue("H", TargetValue[0], delaytime);
-                            Smoke.transform.position = this.transform.position;
-                            Smoke.SetActive(true);
+                            Target.transform.position = this.transform.position;
+                            Target.SetActive(true);
                             AudioManager.PlayCleanCarAudio();
                             Invoke("FinishBathing", delaytime);
                         }
                         else if (count == 4)
                         {
+                            count++;
                             AudioManager.PlayDrainWaterAudio();
                             LeakWater = false;
                             TextManager.ShowText("Closing...");
@@ -328,6 +333,7 @@ public class ValueControlor : MonoBehaviour
         TopDownCharacterController.ChangeBool(true);
         TextManager.ShowText("Put 'E' to turn on the switch");
         count = 0;
+        AudioManager.PauseInteractiveAudio();
     }
     void TapGoBack()
     {
@@ -352,8 +358,9 @@ public class ValueControlor : MonoBehaviour
     {
         count++;
         TopDownCharacterController.ChangeBool(true);
-        Smoke.SetActive(false);
+        Target.SetActive(false);
         TextManager.ShowText("It has been washed enough. Press 'E' to turn off the switch");
+        AudioManager.PauseInteractiveAudio();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -437,7 +444,6 @@ public class ValueControlor : MonoBehaviour
                 }
 
             }
-            
             if (valueControl == ValueControl.washBody)
             {
                 if(count == 0)
@@ -454,9 +460,13 @@ public class ValueControlor : MonoBehaviour
                 }
                 if (count == 3)
                 {
-                    TextManager.ShowText("It has been washed enough. Press 'E' to turn off the switch");
+                    TextManager.ShowText("Bathing...");
                 }
                 if (count == 4)
+                {
+                    TextManager.ShowText("It has been washed enough. Press 'E' to turn off the switch");
+                }
+                if (count == 5)
                 {
                     TextManager.ShowText("Closing...");
                 }
