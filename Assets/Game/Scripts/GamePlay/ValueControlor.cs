@@ -20,18 +20,18 @@ public class ValueControlor : MonoBehaviour
 
     public enum ValueControl
     {
-        food,water,washHand,cleanCar,
+        food,water,washHand,cleanCar,washBody,
     }
 
     public ValueControl valueControl;
     // Start is called before the first frame update
     void Start()
     {
-        if (valueControl == ValueControl.washHand)
+        if (valueControl == ValueControl.washHand||valueControl == ValueControl.washBody)
         {
             myAnim = GetComponent<Animator>();
         }
-        if (valueControl == ValueControl.cleanCar)
+        if (valueControl == ValueControl.cleanCar||valueControl == ValueControl.washBody)
         {
             Smoke = GameObject.FindWithTag("Smoke");
             Smoke.SetActive(false);
@@ -203,6 +203,7 @@ public class ValueControlor : MonoBehaviour
                             TopDownCharacterController.ChangeBool(false);
                             ValueManager.GradualChangeValue("W", TargetValue[0], delaytime);
                             count++;
+                            Smoke.transform.position = this.transform.position;
                             Smoke.SetActive(true);
                             AudioManager.PlayCleanCarAudio();
                             Invoke("CleanCar", delaytime);
@@ -210,6 +211,74 @@ public class ValueControlor : MonoBehaviour
                     }
                 }
 
+            }
+        }
+        
+        if (valueControl == ValueControl.washBody)
+        {
+            if (isable == true)
+            {
+                if (TargetSlider[0].value <= 500&&count==0)
+                {
+                    TextManager.ShowText("Don't have enough water!");
+                }
+                else
+                {
+                    DontHaveWater = false;
+                    if (TargetSlider[0].value <= 1)
+                    {
+                        DontHaveWater = true;
+                    }
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        if (count == 0)
+                        {
+                            AudioManager.PlayOpenTapAudio();
+                            count++;
+                            TextManager.ShowText("Waitting...");
+                            myAnim.SetBool("IsOffed", true);
+                            myAnim.SetBool("IsLooped", false);
+                            LeakWater = true;
+                            Invoke("CanWashBody", 1.1f);
+                        }
+                        else if (count == 2)
+                        {
+                            count++;
+                            TextManager.ShowText("Bathing...");
+                            TopDownCharacterController.ChangeBool(false);
+                            ValueManager.GradualChangeValue("H", TargetValue[0], delaytime);
+                            Smoke.transform.position = this.transform.position;
+                            Smoke.SetActive(true);
+                            AudioManager.PlayCleanCarAudio();
+                            Invoke("FinishBathing", delaytime);
+                        }
+                        else if (count == 4)
+                        {
+                            AudioManager.PlayDrainWaterAudio();
+                            LeakWater = false;
+                            TextManager.ShowText("Closing...");
+                            myAnim.SetBool("IsOffed", false);
+                            myAnim.SetBool("IsLooped", true);
+                            TopDownCharacterController.ChangeBool(false);
+                            Invoke("WashBodyGoBack", 1.1f);
+                        }
+                    }
+                    if (DontHaveWater == true&&count ==3)
+                    {
+                        AudioManager.PauseInteractiveAudio();
+                        AudioManager.PlayDrainWaterAudio();
+                        LeakWater = false;
+                        myAnim.SetBool("IsOffed", false);
+                        myAnim.SetBool("IsLooped", true);
+                        TextManager.ShowText("Don't have enough water!");
+                        count = 0;
+                    }
+                }
+            }
+                
+            if (LeakWater == true)
+            {
+                ValueManager.InstantChangeValue("W", -2);
             }
         }
 
@@ -239,11 +308,26 @@ public class ValueControlor : MonoBehaviour
         myAnim.SetBool("CanDrain", false);
         myAnim.SetBool("Fturnoff", false);
     }
+
+    void CanWashBody()
+    {
+        AudioManager.PauseInteractiveAudio();
+        AudioManager.PlayFlowingAudio();
+        count++;
+        TextManager.ShowText("Put 'E' to Have a Bath");
+    }
     void DrainOffWater()
     {
         TextManager.ShowText("Put 'E' to drain off water");
         TopDownCharacterController.ChangeBool(true);
         count++;
+    }
+
+    void WashBodyGoBack()
+    {
+        TopDownCharacterController.ChangeBool(true);
+        TextManager.ShowText("Put 'E' to turn on the switch");
+        count = 0;
     }
     void TapGoBack()
     {
@@ -262,6 +346,14 @@ public class ValueControlor : MonoBehaviour
         TopDownCharacterController.ChangeBool(true);
         Smoke.SetActive(false);
         TextManager.ShowText("No need to be cleaned");
+    }
+
+    void FinishBathing()
+    {
+        count++;
+        TopDownCharacterController.ChangeBool(true);
+        Smoke.SetActive(false);
+        TextManager.ShowText("It has been washed enough. Press 'E' to turn off the switch");
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -342,6 +434,35 @@ public class ValueControlor : MonoBehaviour
                 if (count == 2)
                 {
                     TextManager.ShowText("No need to be cleaned");
+                }
+
+            }
+            
+            if (valueControl == ValueControl.washBody)
+            {
+                if(count == 0)
+                {
+                    TextManager.ShowText("Put 'E' to turn on the switch");
+                }
+                if (count == 1)
+                {
+                    TextManager.ShowText("Waitting...");
+                }
+                if (count == 2)
+                {
+                    TextManager.ShowText("Put 'E' to Have a Bath");
+                }
+                if (count == 3)
+                {
+                    TextManager.ShowText("It has been washed enough. Press 'E' to turn off the switch");
+                }
+                if (count == 4)
+                {
+                    TextManager.ShowText("Closing...");
+                }
+                if (count == 7)
+                {
+                    TextManager.ShowText("Don't have enough water!");
                 }
 
             }

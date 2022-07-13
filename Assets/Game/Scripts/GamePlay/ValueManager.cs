@@ -9,6 +9,8 @@ public class ValueManager : MonoBehaviour
     public Slider Food_Slider;
     public Slider Health_Slider;
     public Slider Water_Slider;
+    public Slider Progress_Slider;
+    public GameObject Progress_Target;
     float changeTime;
     float count = 0;
     float changePerValue;
@@ -27,28 +29,33 @@ public class ValueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        startTime += Time.deltaTime;
-        if(startTime< changeTime)
+        if (count != 0)
         {
-            if(count == 1)
+            startTime += Time.deltaTime;
+            if(startTime< changeTime)
             {
-                Food_Slider.value += changePerValue;
-            }
-            if (count == 2)
-            {
-                Health_Slider.value += changePerValue;
-            }
-            if (count == 3)
-            {
-                Water_Slider.value += changePerValue;
-            }
-        }
-        else
-        {
-            count = 0;
-        }
+                if(count == 1)
+                {
+                    Food_Slider.value += changePerValue;
+                }
+                if (count == 2)
+                {
+                    Health_Slider.value += changePerValue;
+                }
+                if (count == 3)
+                {
+                    Water_Slider.value += changePerValue;
+                }
 
-
+                Progress_Slider.value = startTime / changeTime;
+            }
+            else
+            {
+                count = 0;
+                Progress_Target.SetActive(false);
+            }
+ 
+        }
     }
 
     public static void InstantChangeValue(string name,float value)
@@ -71,6 +78,7 @@ public class ValueManager : MonoBehaviour
         current.startTime = 0;
         current.changeTime = time;
         current.changePerValue = value;
+        current.Progress_Target.SetActive(true);
         if (name == "F")
         {
             current.count = 1;
