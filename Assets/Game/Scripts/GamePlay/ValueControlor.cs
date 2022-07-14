@@ -352,6 +352,7 @@ public class ValueControlor : MonoBehaviour
         TopDownCharacterController.ChangeBool(true);
         Smoke.SetActive(false);
         TextManager.ShowText("No need to be cleaned");
+        AudioManager.PauseInteractiveAudio();
     }
 
     void FinishBathing()

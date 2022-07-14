@@ -8,11 +8,37 @@ public class ItemOnWorld : MonoBehaviour
     public Item thisItem;
 
     public Inventory playerInventory;
+    
+    private bool isable = false;
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        AddNewItem();
-        Destroy(gameObject);
+        if (collision.gameObject.tag == "Player")
+        {
+            isable = false;
+            TextManager.ShowText("");
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            isable = true;
+        }
+    }
+
+    private void Update()
+    {
+        if (isable == true)
+        {
+            TextManager.ShowText("Press 'E' to pick up items");
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                AddNewItem();
+                Destroy(gameObject);
+            }
+        }
     }
 
     public void AddNewItem()
