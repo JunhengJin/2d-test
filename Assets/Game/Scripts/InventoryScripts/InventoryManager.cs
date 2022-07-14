@@ -14,6 +14,8 @@ public class InventoryManager : MonoBehaviour
     public Text itemInformation;
 
     public List<GameObject> slots = new List<GameObject>();
+
+    private int temp;
     void Awake()
     {
         if (instance != null)
@@ -32,6 +34,29 @@ public class InventoryManager : MonoBehaviour
     public static void UpdateItemInfo(string itemDescription)
     {
         instance.itemInformation.text = itemDescription;
+    }
+
+    public static void CurrentItem(int slotID)
+    {
+        instance.temp = slotID;
+    }
+    
+    public static void UseThisItem()
+    {
+        if (instance.myBag.itemList[instance.temp] != null)
+        {
+            if (instance.myBag.itemList[instance.temp].itemHeld > 1)
+            {
+                instance.myBag.itemList[instance.temp].itemHeld -= 1;
+            }
+            else
+            {
+                instance.myBag.itemList[instance.temp].itemHeld -= 1;
+                instance.myBag.itemList[instance.temp] = null;
+                instance.itemInformation.text = "";
+            }
+            RefreshItem();
+        }
     }
     /*public static void CreateNewItem(Item item)
     {
