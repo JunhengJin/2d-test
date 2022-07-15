@@ -5,17 +5,12 @@ using UnityEngine.UI;
 
 public class TimeCount : MonoBehaviour
 {
-    int Hours = 7;
-    int Mintues = 0;
-    float count = 0f;
+    private int Hours = 8;
+    private int Mintues = 0;
+    private int Day = 1;
+    private float count = 0f;
     public Text Time_text;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+   
     void Update()
     {
         count += Time.deltaTime;
@@ -32,13 +27,19 @@ public class TimeCount : MonoBehaviour
             }
             count = 0;
         }
+
+        if (Hours == 25)
+        {
+            Day++;
+            Hours = 0;
+        }
         if (Hours < 10)
         {
-            Time_text.text = "0"+Hours + ": ";
+            Time_text.text = "Day"+Day+" 0"+Hours + ": ";
         }
         else
         {
-            Time_text.text = Hours + ": ";
+            Time_text.text = "Day"+Day+" "+Hours + ": ";
         }
         if (Mintues < 10)
         {

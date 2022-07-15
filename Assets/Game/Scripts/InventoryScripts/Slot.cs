@@ -19,7 +19,7 @@ public class Slot : MonoBehaviour
     public void ItemOnClicked()
     {
         InventoryManager.UpdateItemInfo(slotInfo);
-        InventoryManager.CurrentItem(slotID);
+        BackpackUser.CurrentItem(slotID);
     }
 
     public void SetupSlot(Item item)

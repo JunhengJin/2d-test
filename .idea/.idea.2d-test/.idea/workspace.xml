@@ -11,6 +11,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/ControlMissionUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/DialogSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/GameSaveManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/InventoryScripts/BackpackUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/InventoryScripts/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/InventoryScripts/ItemOnDrag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/InventoryScripts/ItemOnWorld.cs" root0="FORCE_HIGHLIGHTING" />
@@ -107,6 +108,7 @@
       <workItem from="1657741724668" duration="3072000" />
       <workItem from="1657829370433" duration="3168000" />
       <workItem from="1657837047178" duration="2617000" />
+      <workItem from="1657914580458" duration="6368000" />
     </task>
     <servers />
   </component>

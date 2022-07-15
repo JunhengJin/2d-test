@@ -35,29 +35,6 @@ public class InventoryManager : MonoBehaviour
     {
         instance.itemInformation.text = itemDescription;
     }
-
-    public static void CurrentItem(int slotID)
-    {
-        instance.temp = slotID;
-    }
-    
-    public static void UseThisItem()
-    {
-        if (instance.myBag.itemList[instance.temp] != null)
-        {
-            if (instance.myBag.itemList[instance.temp].itemHeld > 1)
-            {
-                instance.myBag.itemList[instance.temp].itemHeld -= 1;
-            }
-            else
-            {
-                instance.myBag.itemList[instance.temp].itemHeld -= 1;
-                instance.myBag.itemList[instance.temp] = null;
-                instance.itemInformation.text = "";
-            }
-            RefreshItem();
-        }
-    }
     /*public static void CreateNewItem(Item item)
     {
         Slot newItem = Instantiate(instance.slotPrefab, instance.slotGrid.transform.position, Quaternion.identity);
