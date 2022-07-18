@@ -10,13 +10,21 @@ namespace UnityEngine.Experimental.Rendering.Universal
         private float time = 1440;
         public float multiple = 1;
         private float timer = 0;
+        private float temp = 0;
         
-        private int Hours = 8;
-        private int Mintues = 0;
-        private int Day = 1;
+        public int Hours = 8;
+        public int Mintues = 0;
+        public int Day = 1;
         private float count = 0f;
         public Text Time_text;
 
+        static ChangeLightColor current;
+
+        private void Awake()
+        {
+            current = this;
+            temp = multiple;
+        }
 
         private void Update()
         {
@@ -61,6 +69,33 @@ namespace UnityEngine.Experimental.Rendering.Universal
             
             if (timer > time) timer = 0.0f;
             GameObject.Find("Point Light 2D").GetComponent<Light2D>().color = gradient.Evaluate(timer / time);
+        }
+
+        public static void Sleep()
+        {
+            if (current.Hours >= 8 && current.Hours < 24)
+            {
+                current.Day++;
+                current.Hours = 8;
+                current.Mintues = 0;
+            }
+            else
+            {
+                current.Hours = 8;
+                current.Mintues = 0;
+            }
+        }
+
+        public static void TimeMultiple(float num)
+        {
+            if (num == -1)
+            {
+                current.multiple = current.temp;
+            }
+            else
+            {
+                current.multiple = num;   
+            }
         }
     }
 
