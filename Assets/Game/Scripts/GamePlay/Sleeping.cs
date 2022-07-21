@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class Sleeping : MonoBehaviour
 {
     public RawImage rawImage;
+    public GameObject myObject;
     public float speed=0.1f;
     private float colorAlpha = 0;
     private bool isable = false;
@@ -17,7 +18,7 @@ public class Sleeping : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        myObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -28,6 +29,7 @@ public class Sleeping : MonoBehaviour
             TextManager.ShowText("Press 'E' to sleep");
             if (Input.GetKeyDown(KeyCode.E))
             {
+                myObject.SetActive(true);
                 changeCanvasPart1 = true;
                 ChangeLightColor.TimeMultiple(0);
                 TopDownCharacterController.ChangeBool(false);
@@ -57,6 +59,7 @@ public class Sleeping : MonoBehaviour
                 changeCanvasPart2 = false;
                 ChangeLightColor.TimeMultiple(-1);
                 TopDownCharacterController.ChangeBool(true);
+                myObject.SetActive(false);
             }
             else
             {
