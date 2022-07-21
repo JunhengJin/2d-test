@@ -78,6 +78,7 @@ public class Sleeping : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             isable = false;
+            TextManager.ShowText("");
         }
     }
 }

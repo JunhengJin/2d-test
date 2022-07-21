@@ -32,6 +32,8 @@ public class TopDownCharacterController : MonoBehaviour
     public GameObject myBag;
 
     private bool isOpen = false;
+
+    private float changeSpeed = 5;
     private void Awake()
     {
         _current = this;
@@ -48,6 +50,7 @@ public class TopDownCharacterController : MonoBehaviour
         coolDownTemp -= Time.deltaTime;
         if (canMove == true)
         {
+            if(coolDownTemp<0){speed = changeSpeed;}
             isWalking = false;
             Vector2 dir = Vector2.zero;
             if (Input.GetKeyDown(KeyCode.O))
@@ -119,6 +122,11 @@ public class TopDownCharacterController : MonoBehaviour
     public static void ChangeBool(bool canMove)
     {
         _current.canMove = canMove;
+    }
+
+    public static void ChangeMoveSpeed(float speed)
+    {
+        _current.changeSpeed = speed;
     }
 
     public void OpenMyBag()

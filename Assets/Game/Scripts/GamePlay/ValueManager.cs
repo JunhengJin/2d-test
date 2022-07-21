@@ -15,6 +15,7 @@ public class ValueManager : MonoBehaviour
     float count = 0;
     float changePerValue;
     float startTime;
+    private float timeMultiplier = 1;
 
     private void Awake()
     {
@@ -76,7 +77,7 @@ public class ValueManager : MonoBehaviour
     public static void GradualChangeValue(string name, float value,float time)
     {
         current.startTime = 0;
-        current.changeTime = time;
+        current.changeTime = time*current.timeMultiplier;
         current.changePerValue = value;
         current.Progress_Target.SetActive(true);
         if (name == "F")
@@ -91,5 +92,10 @@ public class ValueManager : MonoBehaviour
         {
             current.count = 3;
         }
+    }
+
+    public static void ChangeTimeMuliplier(float num)
+    {
+        current.timeMultiplier = num;
     }
 }
