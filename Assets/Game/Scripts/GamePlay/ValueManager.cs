@@ -35,6 +35,7 @@ public class ValueManager : MonoBehaviour
             startTime += Time.deltaTime;
             if(startTime< changeTime)
             {
+                TopDownCharacterController.ChangeBool(false);
                 if(count == 1)
                 {
                     Food_Slider.value += changePerValue;
@@ -54,6 +55,7 @@ public class ValueManager : MonoBehaviour
             {
                 count = 0;
                 Progress_Target.SetActive(false);
+                TopDownCharacterController.ChangeBool(true);
             }
  
         }

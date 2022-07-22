@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Bacon
   itemImage: {fileID: 21300000, guid: 0b9e159b363a1ff4f8982693963e393d, type: 3}
-  itemHeld: 1
+  itemHeld: 2
   itemInfo: Bacon

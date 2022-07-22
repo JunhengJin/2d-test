@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,8 @@ public class BackpackUser : MonoBehaviour
     public Inventory myBag;
     private int temp;
     public Text itemInformation;
+    public GameObject diningTable;
+    private bool inDiningArea = false;
     void Awake()
     {
         if (instance != null)
@@ -17,6 +20,12 @@ public class BackpackUser : MonoBehaviour
         }
         instance = this;
     }
+
+    public void Start()
+    {
+        inDiningArea = diningTable.GetComponent<Eating>().isable;
+    }
+
     public static void CurrentItem(int slotID)
     {
         instance.temp = slotID;
@@ -33,7 +42,7 @@ public class BackpackUser : MonoBehaviour
             else
             {
                 instance.myBag.itemList[instance.temp] = null;
-                instance.itemInformation.text = "";
+                InventoryManager.ClearInformation();
             }
             InventoryManager.RefreshItem();
         }

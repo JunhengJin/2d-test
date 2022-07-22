@@ -46,9 +46,9 @@ public class ValueControlor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(valueControl== ValueControl.food)
+        if(valueControl == ValueControl.food)
         {
-            if (isable == true)
+            if (isable)
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -62,7 +62,7 @@ public class ValueControlor : MonoBehaviour
 
         if (valueControl == ValueControl.water)
         {
-            if (isable == true)
+            if (isable)
             {
                 if (TargetSlider[0].value <= 500 && count == 0)
                 {

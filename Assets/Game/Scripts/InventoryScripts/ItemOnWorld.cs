@@ -8,6 +8,8 @@ public class ItemOnWorld : MonoBehaviour
     public Item thisItem;
 
     public Inventory playerInventory;
+
+    public int increaseNum = 1;
     
     private bool isable = false;
 
@@ -58,7 +60,7 @@ public class ItemOnWorld : MonoBehaviour
         }
         else
         {
-            thisItem.itemHeld += 1;
+            thisItem.itemHeld += increaseNum;
         }
         InventoryManager.RefreshItem();
     }

@@ -85,9 +85,11 @@ namespace UnityEngine.Experimental.Rendering.Universal
                 current.Day++;
                 current.Hours = 8;
                 current.Mintues = 0;
+                ValueManager.InstantChangeValue("F", -4000);
             }
             else
             {
+                ValueManager.InstantChangeValue("F", -4000*current.Hours/8);
                 current.Hours = 8;
                 current.Mintues = 0;
             }
