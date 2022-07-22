@@ -45,5 +45,13 @@ public class BackpackUser : MonoBehaviour
         {
             ValueManager.InstantChangeValue("H", 4000);
         }
+        if (itemName == "Bacon")
+        {
+            ValueManager.InstantChangeValue("F", 4000);
+        }
+        if (itemName == "Drumsticks")
+        {
+            ValueManager.InstantChangeValue("F", 4000);
+        }
     }
 }

@@ -35,12 +35,13 @@ public class Player_status_Listener : MonoBehaviour
             GameObject.Find("SceneControl").GetComponent<GamePlaySceneManager>().TimeStop();
         }
 
-        if (TargetSlider[0].value / TargetSlider[0].maxValue > 0.8)
+        if (TargetSlider[0].value / TargetSlider[0].maxValue > 0.7)
         {
             FoodBuffImage.SetActive(true);
             TopDownCharacterController.ChangeMoveSpeed(buffSpeed);
+            Debug.Log("buffSpeed: "+buffSpeed);
         }
-        if (TargetSlider[0].value / TargetSlider[0].maxValue <= 0.8&&TargetSlider[0].value / TargetSlider[0].maxValue>0.25)
+        if (TargetSlider[0].value / TargetSlider[0].maxValue <= 0.7&&TargetSlider[0].value / TargetSlider[0].maxValue>0.25)
         {
             FoodDebuffImage.SetActive(false);
             FoodBuffImage.SetActive(false);
@@ -51,12 +52,12 @@ public class Player_status_Listener : MonoBehaviour
             FoodDebuffImage.SetActive(true);
             TopDownCharacterController.ChangeMoveSpeed(debuffSpeed);
         }
-        if (TargetSlider[1].value / TargetSlider[1].maxValue > 0.8)
+        if (TargetSlider[1].value / TargetSlider[1].maxValue > 0.7)
         {
             HealthBuffImage.SetActive(true);
             ValueManager.ChangeTimeMuliplier(buffWaitTime);
         }
-        if (TargetSlider[1].value / TargetSlider[1].maxValue <= 0.8&&TargetSlider[1].value / TargetSlider[1].maxValue>0.25)
+        if (TargetSlider[1].value / TargetSlider[1].maxValue <= 0.7&&TargetSlider[1].value / TargetSlider[1].maxValue>0.25)
         {
             HealthDebuffImage.SetActive(false);
             HealthBuffImage.SetActive(false);

@@ -31,6 +31,8 @@ namespace UnityEngine.Experimental.Rendering.Universal
             count += Time.deltaTime*multiple;
             if (count >= 1)
             {
+                ValueManager.InstantChangeValue("F", -1);
+                ValueManager.InstantChangeValue("H", -1);
                 if(Mintues < 59)
                 {
                     Mintues++;
@@ -73,6 +75,11 @@ namespace UnityEngine.Experimental.Rendering.Universal
 
         public static void Sleep()
         {
+            if (current.Hours >= 0 && current.Hours < 8)
+            {
+                ValueManager.InstantChangeValue("H", -10000*current.Hours/8);
+            }
+
             if (current.Hours >= 8 && current.Hours < 24)
             {
                 current.Day++;
