@@ -10,7 +10,9 @@ public class ValueControlor : MonoBehaviour
     public List<float> TargetValue = new List<float>();
     public List<Sprite> Target_sprite = new List<Sprite>();
     public GameObject Target;
-    public float delaytime = 0f;
+    public Item Dishe;
+    public Item DisheDirty;
+    public float delaytime = 5f;
     bool isable = false;
     bool LeakWater = false;
     bool DontHaveWater = false;
@@ -20,14 +22,14 @@ public class ValueControlor : MonoBehaviour
 
     public enum ValueControl
     {
-        food,water,washHand,cleanCar,washBody,
+        food,water,washHand,cleanCar,washBody,washDishs,
     }
 
     public ValueControl valueControl;
     // Start is called before the first frame update
     void Start()
     {
-        if (valueControl == ValueControl.washHand||valueControl == ValueControl.washBody)
+        if (valueControl == ValueControl.washHand||valueControl == ValueControl.washBody||valueControl == ValueControl.washDishs)
         {
             myAnim = GetComponent<Animator>();
         }
@@ -173,7 +175,7 @@ public class ValueControlor : MonoBehaviour
                         myAnim.SetBool("canTurnon", false);
                         myAnim.SetBool("isFulled", false);
                         myAnim.SetBool("CanDrain", false);
-                        TextManager.ShowText("Don't have enough water, Put 'E' to Wash Hand");
+                        TextManager.ShowText("Don't have enough water, Press 'E' to Wash Hand");
                         count = 7;
                     }
                     if(count == 4)
@@ -277,6 +279,111 @@ public class ValueControlor : MonoBehaviour
                         myAnim.SetBool("IsLooped", true);
                         TextManager.ShowText("Don't have enough water!");
                         count = 0;
+                    }
+                }
+            }
+                
+            if (LeakWater == true)
+            {
+                ValueManager.InstantChangeValue("W", -2);
+            }
+        }
+        
+        if (valueControl == ValueControl.washDishs)
+        {
+            if (isable == true)
+            {
+                if (TargetSlider[0].value <= 500&&count==0)
+                {
+                    TextManager.ShowText("Don't have enough water!");
+                }
+                else
+                {
+                    DontHaveWater = false;
+                    if (TargetSlider[0].value <= 1)
+                    {
+                        DontHaveWater = true;
+                    }
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        if (count == 0)
+                        {
+                            AudioManager.PlayOpenTapAudio();
+                            count++;
+                            TextManager.ShowText("Waiting...");
+                            myAnim.SetBool("canTurnon", true);
+                            myAnim.SetBool("isFulled", false);
+                            myAnim.SetBool("CanDrain", false);
+                            myAnim.SetBool("Fturnoff", false);
+                            LeakWater = true;
+                            Invoke("WatiTurnOff", 1.1f);
+                        }
+                        else if (count == 2)
+                        {
+                            AudioManager.PlayCloseTapAudio();
+                            myAnim.SetBool("Fturnoff", true);
+                            count++;
+                            LeakWater = false;
+                            myAnim.SetBool("canTurnon", false);
+                            myAnim.SetBool("isFulled", false);
+                            myAnim.SetBool("CanDrain", false);
+                            TextManager.ShowText("Press 'E' to Wash the Dishes(Dirty)");
+                        }
+                        else if (count == 3)
+                        {
+                            if (InventoryManager.CheckExist(DisheDirty))
+                            {
+                                count++;
+                                AudioManager.PlayWashingHandAudio();
+                                ValueManager.GradualChangeValue("H", 0, delaytime);
+                                TextManager.ShowText("Washing...");
+                                Invoke("DrainOffWater", delaytime);
+                                TopDownCharacterController.ChangeBool(false);
+                                InventoryManager.UseThisItem(DisheDirty);
+                                InventoryManager.AddNewItem(Dishe);
+                            }
+                            else
+                            {
+                                count = 8;
+                                TextManager.ShowText("No dishes to be cleaned");
+                            }
+                            
+                        }
+                        else if (count == 5)
+                        {
+                            AudioManager.PlayDrainWaterAudio();
+                            count++;
+                            myAnim.SetBool("canTurnon", false);
+                            myAnim.SetBool("isFulled", false);
+                            myAnim.SetBool("CanDrain", true);
+                            myAnim.SetBool("Fturnoff", false);
+                            TextManager.ShowText("Draining...");
+                            Invoke("TapGoBack", 1f);
+                        }
+                        if(count == 7)
+                        {
+                            count = 4;
+                            AudioManager.PlayWashingHandAudio();
+                            TextManager.ShowText("Washing...");
+                            Invoke("DrainOffWater", delaytime);
+                            TopDownCharacterController.ChangeBool(false);
+                            ValueManager.GradualChangeValue("W", TargetValue[1], delaytime);
+                        }
+                    }
+                    if (DontHaveWater == true&&count ==2)
+                    {
+                        myAnim.SetBool("Fturnoff", true);
+                        AudioManager.PauseInteractiveAudio();
+                        LeakWater = false;
+                        myAnim.SetBool("canTurnon", false);
+                        myAnim.SetBool("isFulled", false);
+                        myAnim.SetBool("CanDrain", false);
+                        TextManager.ShowText("Don't have enough water, Press 'E' to Wash the Dishes(Dirty)");
+                        count = 7;
+                    }
+                    if(count == 4)
+                    {
+                        //ValueManager.GradualChangeValue("H", TargetValue[1], delaytime);
                     }
                 }
             }
@@ -409,7 +516,7 @@ public class ValueControlor : MonoBehaviour
                 }
                 if (count == 3)
                 {
-                    TextManager.ShowText("Put 'E' to Wash Hand");
+                    TextManager.ShowText("Press 'E' to Wash Hand");
                 }
                 if (count == 4)
                 {
@@ -425,7 +532,7 @@ public class ValueControlor : MonoBehaviour
                 }
                 if (count == 7)
                 {
-                    TextManager.ShowText("Don't have enough water, Put 'E' to Wash Hand");
+                    TextManager.ShowText("Don't have enough water, Press 'E' to Wash Hand");
                 }
 
             }
@@ -477,6 +584,47 @@ public class ValueControlor : MonoBehaviour
                 }
 
             }
+            if (valueControl == ValueControl.washDishs)
+            {
+                if(count == 0)
+                {
+                    TextManager.ShowText("Put 'E' to Turn on the Tap");
+                }
+                if (count == 1)
+                {
+                    TextManager.ShowText("Waitting...");
+                }
+                if (count == 2)
+                {
+                    TextManager.ShowText("Put 'E' to Turn off");
+                }
+                if (count == 3)
+                {
+                    TextManager.ShowText("Press 'E' to Wash the Dishes(Dirty)");
+                }
+                if (count == 4)
+                {
+                    TextManager.ShowText("Washing...");
+                }
+                if (count == 5)
+                {
+                    TextManager.ShowText("Put 'E' to drain off water");
+                }
+                if (count == 6)
+                {
+                    TextManager.ShowText("Draining...");
+                }
+                if (count == 7)
+                {
+                    TextManager.ShowText("Don't have enough water, Press 'E' to Wash the Dishes(Dirty)");
+                }
+
+                if (count == 8)
+                {
+                    TextManager.ShowText("No dishes to be cleaned");
+                }
+
+            }
         }
     }
 
@@ -485,6 +633,10 @@ public class ValueControlor : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             TextManager.ShowText("");
+            if (valueControl == ValueControl.washDishs && count == 8)
+            {
+                count = 3;
+            }
             isable = false;
         }
     }

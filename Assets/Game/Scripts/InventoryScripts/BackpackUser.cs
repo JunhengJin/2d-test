@@ -21,11 +21,6 @@ public class BackpackUser : MonoBehaviour
         instance = this;
     }
 
-    public void Start()
-    {
-        inDiningArea = diningTable.GetComponent<Eating>().isable;
-    }
-
     public static void CurrentItem(int slotID)
     {
         instance.temp = slotID;
@@ -41,11 +36,17 @@ public class BackpackUser : MonoBehaviour
             }
             else
             {
+                instance.myBag.itemList[instance.temp].itemHeld -= 1;
                 instance.myBag.itemList[instance.temp] = null;
                 InventoryManager.ClearInformation();
             }
             InventoryManager.RefreshItem();
         }
+    }
+
+    public static void UseTableware(bool caneat)
+    {
+        instance.inDiningArea = caneat;
     }
 
     void JudgingItems(string itemName)
@@ -56,7 +57,14 @@ public class BackpackUser : MonoBehaviour
         }
         if (itemName == "Bacon")
         {
+            AudioManager.PlayEatingAudio();
             ValueManager.InstantChangeValue("F", 4000);
+            ValueManager.InstantChangeValue("H", -2000);
+            if (inDiningArea == true)
+            {
+                ValueManager.InstantChangeValue("H", 2000);
+                diningTable.GetComponent<Eating>().EatUp = true;
+            }
         }
         if (itemName == "Drumsticks")
         {

@@ -70,5 +70,49 @@ public class InventoryManager : MonoBehaviour
     {
         instance.itemInformation.text = "";
     }
+
+    public static void AddNewItem(Item itemToBeGenerated)
+    {
+        if (!instance.myBag.itemList.Contains(itemToBeGenerated))
+        {
+            for (int i = 0; i <= instance.myBag.itemList.Count; i++)
+            {
+                if (instance.myBag.itemList[i]== null)
+                {
+                    instance.myBag.itemList[i] = itemToBeGenerated;
+                    break;
+                }
+            }
+        }
+        itemToBeGenerated.itemHeld++;
+        RefreshItem();
+    }
+
+    public static bool CheckExist(Item item)
+    {
+        return instance.myBag.itemList.Contains(item);
+    }
+    
+    public static void UseThisItem(Item item)
+    {
+        for (int i = 0; i <= instance.myBag.itemList.Count; i++)
+        {
+            if (instance.myBag.itemList[i]== item)
+            {
+                if (instance.myBag.itemList[i].itemHeld > 1)
+                {
+                    instance.myBag.itemList[i].itemHeld -= 1;
+                }
+                else
+                {
+                    instance.myBag.itemList[i].itemHeld -= 1;
+                    instance.myBag.itemList[i] = null;
+                    ClearInformation();
+                }
+                RefreshItem();
+                break;
+            }
+        }
+    }
 }
 

@@ -60,24 +60,7 @@ public class ItemOnBox : MonoBehaviour
     {
         for (int temp = 0; temp < theseItem.Count; temp++)
         {
-            if (!playerInventory.itemList.Contains(theseItem[temp]))
-            {
-                //playerInventory.itemList.Add((thisItem));
-                //InventoryManager.CreateNewItem((thisItem));
-                for (int i = 0; i < playerInventory.itemList.Count; i++)
-                {
-                    if (playerInventory.itemList[i] == null)
-                    {
-                        playerInventory.itemList[i] = theseItem[temp];
-                        break;
-                    }
-                }
-            }
-            else
-            {
-                theseItem[temp].itemHeld += 1;
-            }
-            InventoryManager.RefreshItem();
+            InventoryManager.AddNewItem(theseItem[temp]);
         }
     }
     

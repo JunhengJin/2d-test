@@ -58,10 +58,8 @@ public class ItemOnWorld : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            thisItem.itemHeld += increaseNum;
-        }
+        thisItem.itemHeld += increaseNum;
+
         InventoryManager.RefreshItem();
     }
 }
