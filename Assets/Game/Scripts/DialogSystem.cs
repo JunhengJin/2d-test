@@ -33,12 +33,14 @@ public class DialogSystem : MonoBehaviour
     {
         textFinsihed = true;
         StartCoroutine(SetTextUI());
+        TopDownCharacterController.ChangeBool(false);
     }
     
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R) && index == textList.Count)
         {
+            TopDownCharacterController.ChangeBool(true);
             gameObject.SetActive(false);
             index = 0;
             return;

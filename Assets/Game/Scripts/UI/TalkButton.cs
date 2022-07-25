@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class TalkButton : MonoBehaviour
 {
@@ -9,8 +10,12 @@ public class TalkButton : MonoBehaviour
 
     public GameObject talkUI;
 
+    public List<GameObject> DialogList = new List<GameObject>();
+
     public float offset = 2.1f;
 
+    public bool IsDialog = false;
+    
     private bool showUI = false;
 
     private void Start()
@@ -23,6 +28,7 @@ public class TalkButton : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            TextManager.ShowText("Press 'R' to watch the TV");
             Button.transform.position = gameObject.transform.position+Vector3.up*offset;
             Button.SetActive(true);
             showUI = true;
@@ -34,6 +40,7 @@ public class TalkButton : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Button.SetActive(false);
+            TextManager.ShowText("");
             showUI = false;
         }
     }
@@ -44,6 +51,18 @@ public class TalkButton : MonoBehaviour
         if (showUI==true && Input.GetKeyDown(KeyCode.R))
         {
             talkUI.SetActive(true);
+            if (IsDialog == true)
+            {
+                if (ChangeLightColor.GetDayNum() < 5)
+                {
+                    DialogList[0].SetActive(true);
+                }else if (ChangeLightColor.GetDayNum() >= 5)
+                {
+                    DialogList[1].SetActive(true);
+                    ChangeLightColor.SuppliesAvailable(true);
+                }
+            }
+            TextManager.ShowText("");
         }
     }
 }

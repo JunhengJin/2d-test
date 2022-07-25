@@ -16,6 +16,7 @@ namespace UnityEngine.Experimental.Rendering.Universal
         public int Mintues = 0;
         public int Day = 1;
         private float count = 0f;
+        private bool suppliesAvailable = false;
         public Text Time_text;
 
         static ChangeLightColor current;
@@ -93,6 +94,35 @@ namespace UnityEngine.Experimental.Rendering.Universal
                 current.Hours = 8;
                 current.Mintues = 0;
             }
+        }
+
+        public static int GetDayNum()
+        {
+            return current.Day;
+        }
+
+        public static void ChangeHour(int num)
+        {
+            int temp = 23-(current.Hours + num);
+            if (temp >= 0)
+            {
+                current.Hours += num;
+            }
+            else
+            {
+                current.Day++;
+                current.Hours = -temp;
+            }
+        }
+
+        public static void SuppliesAvailable(bool suppliesAvailable)
+        {
+            current.suppliesAvailable = suppliesAvailable;
+        }
+
+        public static bool CheckSuppliesAvailable()
+        {
+            return current.suppliesAvailable;
         }
 
         public static void TimeMultiple(float num)

@@ -1,0 +1,303 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.33f1 (915a7af8b0d5) revision 9525882'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 16259 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\Program Files\UnityEditor\2020.3.33f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/UnityProject/unity-github/2d-test
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53558
+Successfully changed project path to: D:/UnityProject/unity-github/2d-test
+D:/UnityProject/unity-github/2d-test
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 120.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
+[Subsystems] Discovering subsystems at path D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProject/unity-github/2d-test/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Vendor:   
+    VRAM:     4021 MB
+    Driver:   30.0.15.1259
+Initialize mono
+Mono path[0] = 'D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Program Files/UnityEditor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001173 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 133.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.797 seconds
+Domain Reload Profiling:
+	ReloadAssembly (797ms)
+		BeginReloadAssembly (70ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (652ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (174ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (295ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (134ms)
+				BeforeProcessingInitializeOnLoad (16ms)
+				ProcessInitializeOnLoadAttributes (103ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003957 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProject\unity-github\2d-test\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 129.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.630 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1631ms)
+		BeginReloadAssembly (188ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1377ms)
+			LoadAssemblies (138ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (446ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (82ms)
+			SetupLoadedEditorAssemblies (548ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (129ms)
+				BeforeProcessingInitializeOnLoad (127ms)
+				ProcessInitializeOnLoadAttributes (263ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3399 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.0 MB.
+System memory in use after: 148.2 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3836.
+Total: 3.968600 ms (FindLiveObjects: 0.455500 ms CreateObjectMapping: 0.265800 ms MarkObjects: 3.145900 ms  DeleteObjects: 0.100000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Pixel Font/SG06.TTF
+  artifactKey: Guid(b000ec9b634c1bf4ab4c718b49d1b674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG06.TTF using Guid(b000ec9b634c1bf4ab4c718b49d1b674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef2d06a72b02c61b06434587d75412e') in 1.815444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/Resources/Pixel Font/SG18.TTF
+  artifactKey: Guid(facdc2e7c866eba4684d1465bbe88c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG18.TTF using Guid(facdc2e7c866eba4684d1465bbe88c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad44ba5dc33b4cd4f847b8c5d57a3df3') in 0.018720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/Resources/Pixel Font/SG19.TTF
+  artifactKey: Guid(2410bb247f4763549b9f9c60ab885990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG19.TTF using Guid(2410bb247f4763549b9f9c60ab885990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787773c803a592771e7c8725fa93ad0d') in 0.018844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000633 seconds.
+  path: Assets/Resources/Pixel Font/SG03.TTF
+  artifactKey: Guid(c8c061f51ef9d2f41bfa7d4a5874b8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG03.TTF using Guid(c8c061f51ef9d2f41bfa7d4a5874b8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba5898777aa5391139fed9900520fb6') in 0.018933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000464 seconds.
+  path: Assets/Resources/Pixel Font/SG02.TTF
+  artifactKey: Guid(f1f877017c9a88947a16f631fc3e20f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG02.TTF using Guid(f1f877017c9a88947a16f631fc3e20f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef507175c009efb10fad5b8a3f1176a9') in 0.020559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000502 seconds.
+  path: Assets/Resources/Pixel Font/SG07.TTF
+  artifactKey: Guid(3c1987a56557e3e43993173b11b29ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG07.TTF using Guid(3c1987a56557e3e43993173b11b29ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee2cca089fd61453d50b75f8413cddb3') in 0.021521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/Resources/Pixel Font/SG17.TTF
+  artifactKey: Guid(e8e9bd2e6fdf92f4883d85824add5629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG17.TTF using Guid(e8e9bd2e6fdf92f4883d85824add5629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dfc2068d92d74140d303fa776f5fab3') in 0.022575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/Resources/Pixel Font/SG08.TTF
+  artifactKey: Guid(157d0f16e94472a43a7c3d0216d3d22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG08.TTF using Guid(157d0f16e94472a43a7c3d0216d3d22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46f8f5361f04c5d18044e14adf5f158') in 0.022462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Resources/Pixel Font/SG13.TTF
+  artifactKey: Guid(e61607a91bc418b4d977e272b47d13f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG13.TTF using Guid(e61607a91bc418b4d977e272b47d13f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bb8d0cf40c9118f8171325180514ab4') in 0.024061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Resources/Pixel Font/SG04.TTF
+  artifactKey: Guid(6e6b75837970c884789ccc0bf3503de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG04.TTF using Guid(6e6b75837970c884789ccc0bf3503de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be7236956468f247f8d9bb604d013af7') in 0.022089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Resources/Pixel Font/SG14.TTF
+  artifactKey: Guid(9d5e84c6378bb6848bc5a05948f7cc68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG14.TTF using Guid(9d5e84c6378bb6848bc5a05948f7cc68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '519502ddc018ceaefb3465aad44d058d') in 0.026911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Resources/Pixel Font/SG01.TTF
+  artifactKey: Guid(cb88fcf501ba74649a521ad12ef2fedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG01.TTF using Guid(cb88fcf501ba74649a521ad12ef2fedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bebd5b26ac7265fbb33e1e1122320605') in 0.019421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Resources/Pixel Font/SG10.TTF
+  artifactKey: Guid(41ecf1d65b2cd57478137751016dc281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG10.TTF using Guid(41ecf1d65b2cd57478137751016dc281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c055a39290583c391fb4ebb5bcaf4677') in 0.021352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/Resources/Pixel Font/SG05.TTF
+  artifactKey: Guid(a65624ec418530d4882c4bfa78fa5bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG05.TTF using Guid(a65624ec418530d4882c4bfa78fa5bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a038c67daa7d9f85d331463183c30437') in 0.022085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Resources/Pixel Font/SG16.TTF
+  artifactKey: Guid(efd6cd65216885d4da7ffbfe488d8b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG16.TTF using Guid(efd6cd65216885d4da7ffbfe488d8b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48fee05e9bd78f08f4d82982ae9884c2') in 0.020747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Resources/Pixel Font/SG11.TTF
+  artifactKey: Guid(6d31cf1104bb08f4898dee18e6a41ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG11.TTF using Guid(6d31cf1104bb08f4898dee18e6a41ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fedf0fea19bd0aef9c4a764bd6a0b2de') in 0.024215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Resources/Pixel Font/SG09.TTF
+  artifactKey: Guid(3ec1ec3758d934f4a8fee49a9c09b8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG09.TTF using Guid(3ec1ec3758d934f4a8fee49a9c09b8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9170e852f1e41aaa690dc29b131f22') in 0.021559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Resources/Pixel Font/SG12.TTF
+  artifactKey: Guid(a7df767d97a21a3438bc0da3964213d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG12.TTF using Guid(a7df767d97a21a3438bc0da3964213d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ab355b20633761fab0c29245ebe277') in 0.018548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Resources/Pixel Font/SG15.TTF
+  artifactKey: Guid(4837afef79dde72458c5865cca548881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pixel Font/SG15.TTF using Guid(4837afef79dde72458c5865cca548881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2e9e3181b331f2e59463115bd45f4d') in 0.019830 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003894 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProject\unity-github\2d-test\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.398 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1398ms)
+		BeginReloadAssembly (159ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1166ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (394ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (402ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (141ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3281 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 145.5 MB.
+System memory in use after: 145.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3921.
+Total: 4.672900 ms (FindLiveObjects: 0.254600 ms CreateObjectMapping: 0.177600 ms MarkObjects: 4.216600 ms  DeleteObjects: 0.023400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

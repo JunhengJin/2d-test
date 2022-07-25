@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class Sleeping : MonoBehaviour
 {
+    static Sleeping current;
     public RawImage rawImage;
     public GameObject myObject;
     public float speed=0.1f;
@@ -14,7 +15,12 @@ public class Sleeping : MonoBehaviour
     private bool isable = false;
     private bool changeCanvasPart1 = false;
     private bool changeCanvasPart2 = false;
-
+    private bool isSleep = true;
+    
+    private void Awake()
+    {
+        current = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +49,11 @@ public class Sleeping : MonoBehaviour
             {
                 changeCanvasPart2 = true;
                 changeCanvasPart1 = false;
-                ChangeLightColor.Sleep();
+                if (isSleep == true)
+                {
+                    ChangeLightColor.Sleep();
+                }
+                isSleep = true;
             }
             else
             {
@@ -68,6 +78,13 @@ public class Sleeping : MonoBehaviour
         }
     }
 
+    public static void ChangeCanves()
+    {
+        ChangeLightColor.TimeMultiple(0);
+        current.changeCanvasPart1 = true;
+        current.isSleep = false;
+        current.myObject.SetActive(true);
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")

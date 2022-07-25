@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.UI;
 
 public class ValueControlor : MonoBehaviour
@@ -213,6 +214,15 @@ public class ValueControlor : MonoBehaviour
                             Smoke.SetActive(true);
                             AudioManager.PlayCleanCarAudio();
                             Invoke("CleanCar", delaytime);
+                        }
+
+                        if (count == 3)
+                        {
+                            count = 4;
+                            Sleeping.ChangeCanves();
+                            TopDownCharacterController.ChangeBool(false);
+                            TextManager.ShowText("Doing...");
+                            Invoke("ComeBack_Car", 4f);
                         }
                     }
                 }
@@ -458,8 +468,27 @@ public class ValueControlor : MonoBehaviour
         Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[1];
         TopDownCharacterController.ChangeBool(true);
         Smoke.SetActive(false);
-        TextManager.ShowText("No need to be cleaned");
+        if (!ChangeLightColor.CheckSuppliesAvailable())
+        {
+            TextManager.ShowText("No need to be cleaned");
+        }
+        else
+        {
+            TextManager.ShowText("Press 'E' to drive to the designated location to collect supplies (it will take 4 hours)");
+            count=3;
+        }
+        
         AudioManager.PauseInteractiveAudio();
+    }
+
+    void ComeBack_Car()
+    {
+        count = 5;
+        ChangeLightColor.ChangeHour(4);
+        TopDownCharacterController.ChangeBool(true);
+        ValueManager.InstantChangeValue("F", TargetValue[1]);
+        ValueManager.InstantChangeValue("H", TargetValue[2]);
+        ValueManager.InstantChangeValue("W", TargetValue[3]);
     }
 
     void FinishBathing()
@@ -542,13 +571,25 @@ public class ValueControlor : MonoBehaviour
                 {
                     TextManager.ShowText("Put 'E' Clean The Car");
                 }
-                if (count == 1)
+                if (count == 1||count==4)
                 {
                     TextManager.ShowText("Doing...");
                 }
                 if (count == 2)
                 {
-                    TextManager.ShowText("No need to be cleaned");
+                    if (!ChangeLightColor.CheckSuppliesAvailable())
+                    {
+                        TextManager.ShowText("No need to be cleaned");
+                    }
+                    else
+                    {
+                        count = 3;
+                    }
+                }
+
+                if (count == 3)
+                {
+                    TextManager.ShowText("Press 'E' to drive to the designated location to collect supplies (it will take 4 hours)");
                 }
 
             }

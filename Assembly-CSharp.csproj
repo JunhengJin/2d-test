@@ -102,6 +102,7 @@
      <None Include="Assets\Resources\SimplePixelUI\fonts\Font2\license.txt" />
      <None Include="Assets\Resources\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
      <None Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Sprites\Tileset\River\Waterfall\WaterfalTilesInfo.txt" />
+     <None Include="Assets\Game\Dialog\TV content Day2.txt" />
      <None Include="Assets\Resources\Pixel Font\Smooth Pixel\SmoothPixelShader.shader" />
      <None Include="Assets\Resources\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow.shader" />
      <None Include="Assets\Resources\FreePixelFood\ReadMe.txt" />
