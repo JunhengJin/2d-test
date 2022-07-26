@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Dishes(Used)
   m_EditorClassIdentifier: 
   itemName: Dishe(Used)
-  itemImage: {fileID: 5445751372242461460, guid: c72480b9606a3b14db377d0bce79217b,
-    type: 3}
+  itemImage: {fileID: 21300000, guid: 7cf3bd2af19eeff4c9309ba33951747e, type: 3}
   itemHeld: 0
   itemInfo: 'Dishe(Used)
 

@@ -6,7 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class GameSaveManager : MonoBehaviour
 {
     public Inventory myInventroy;
-    public Item thisItem;
+    public List<Item> thisItem = new List<Item>();
 
     public void SaveGame()
     {
@@ -23,11 +23,15 @@ public class GameSaveManager : MonoBehaviour
         formatter.Serialize(file,json);
         file.Close();
         
-        BinaryFormatter formatter2 = new BinaryFormatter();
-        FileStream file2 = File.Create(Application.persistentDataPath + "/game_SaveData/inventory2.txt");
-        var json2 = JsonUtility.ToJson(thisItem);
-        formatter2.Serialize(file2,json2);
-        file2.Close();
+        
+         for (int i = 0; i < thisItem.Count;i++)
+         {
+             BinaryFormatter formatter2 = new BinaryFormatter();
+             FileStream file2 = File.Create(Application.persistentDataPath + "/game_SaveData/item"+i+".txt");
+             var json2 = JsonUtility.ToJson(thisItem[i]);
+             formatter2.Serialize(file2,json2);
+             file2.Close();
+         }
     }
 
     public void LoadGame()
@@ -39,12 +43,15 @@ public class GameSaveManager : MonoBehaviour
             JsonUtility.FromJsonOverwrite((string)bf.Deserialize(file),myInventroy);
             file.Close();
         }
-        BinaryFormatter bf2 = new BinaryFormatter();
-        if (File.Exists(Application.persistentDataPath + "/game_SaveData/inventory2.txt"))
+        for (int i = 0; i < thisItem.Count;i++)
         {
-            FileStream file2 = File.Open(Application.persistentDataPath + "/game_SaveData/inventory2.txt",FileMode.Open);
-            JsonUtility.FromJsonOverwrite((string)bf2.Deserialize(file2),thisItem);
-            file2.Close();
+            BinaryFormatter bf2 = new BinaryFormatter();
+            if (File.Exists(Application.persistentDataPath + "/game_SaveData/item"+i+".txt"))
+            {
+                FileStream file2 = File.Open(Application.persistentDataPath + "/game_SaveData/item"+i+".txt",FileMode.Open);
+                JsonUtility.FromJsonOverwrite((string)bf2.Deserialize(file2),thisItem[i]);
+                file2.Close();
+            }
         }
     }
     

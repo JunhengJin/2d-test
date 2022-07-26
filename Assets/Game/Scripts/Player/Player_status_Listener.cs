@@ -29,7 +29,7 @@ public class Player_status_Listener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TargetSlider[0].value == MinValue)
+        if (TargetSlider[0].value == MinValue||TargetSlider[1].value == MinValue)
         {
             Target.SetActive(true);
             GameObject.Find("SceneControl").GetComponent<GamePlaySceneManager>().TimeStop();

@@ -15,5 +15,7 @@ MonoBehaviour:
   itemName: FirstAidKit
   itemImage: {fileID: 3254004854327962492, guid: 7936e6ac6207a6e49bff9dbc87b75f30,
     type: 3}
-  itemHeld: 2
-  itemInfo: If you feel unwell, please use it immediately!
+  itemHeld: 0
+  itemInfo: 'FirstAidKit
+
+    If you feel unwell, please use it immediately!'

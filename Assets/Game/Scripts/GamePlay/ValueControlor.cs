@@ -569,7 +569,7 @@ public class ValueControlor : MonoBehaviour
             {
                 if (count == 0)
                 {
-                    TextManager.ShowText("Put 'E' Clean The Car");
+                    TextManager.ShowText("Press 'E' Clean The Car");
                 }
                 if (count == 1||count==4)
                 {

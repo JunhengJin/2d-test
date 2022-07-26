@@ -66,9 +66,82 @@ public class BackpackUser : MonoBehaviour
                 diningTable.GetComponent<Eating>().EatUp = true;
             }
         }
-        if (itemName == "Drumsticks")
+        if (itemName == "Apple"||itemName == "Watermelon")
         {
+            AudioManager.PlayEatingAudio();
+            ValueManager.InstantChangeValue("F", 2000);
+            ValueManager.InstantChangeValue("H", -2000);
+            if (inDiningArea == true)
+            {
+                ValueManager.InstantChangeValue("H", 4000);
+                diningTable.GetComponent<Eating>().EatUp = true;
+            }
+        }
+        if (itemName == "Chicken thigh")
+        {
+            AudioManager.PlayEatingAudio();
             ValueManager.InstantChangeValue("F", 4000);
+            ValueManager.InstantChangeValue("H", -2000);
+            if (inDiningArea == true)
+            {
+                ValueManager.InstantChangeValue("H", 2000);
+                diningTable.GetComponent<Eating>().EatUp = true;
+            }
+        }
+        if (itemName == "Emergency food")
+        {
+            AudioManager.PlayEatingAudio();
+            ValueManager.InstantChangeValue("F", 7000);
+            ValueManager.InstantChangeValue("H", -1000);
+            if (inDiningArea == true)
+            {
+                ValueManager.InstantChangeValue("H", 2500);
+                diningTable.GetComponent<Eating>().EatUp = true;
+            }
+        }
+        if (itemName == "Fish")
+        {
+            AudioManager.PlayEatingAudio();
+            ValueManager.InstantChangeValue("F", 3500);
+            ValueManager.InstantChangeValue("H", -3000);
+            if (inDiningArea == true)
+            {
+                ValueManager.InstantChangeValue("H", 2000);
+                diningTable.GetComponent<Eating>().EatUp = true;
+            }
+        }
+        if (itemName == "Fried fish fillet")
+        {
+            AudioManager.PlayEatingAudio();
+            ValueManager.InstantChangeValue("F", 5000);
+            ValueManager.InstantChangeValue("H", -1500);
+            if (inDiningArea == true)
+            {
+                ValueManager.InstantChangeValue("H", 3500);
+                diningTable.GetComponent<Eating>().EatUp = true;
+            }
+        }
+        if (itemName == "Meatballs")
+        {
+            AudioManager.PlayEatingAudio();
+            ValueManager.InstantChangeValue("F", 6500);
+            ValueManager.InstantChangeValue("H", -2000);
+            if (inDiningArea == true)
+            {
+                ValueManager.InstantChangeValue("H", 3000);
+                diningTable.GetComponent<Eating>().EatUp = true;
+            }
+        }
+        if (itemName == "Sushi")
+        {
+            AudioManager.PlayEatingAudio();
+            ValueManager.InstantChangeValue("F", 4500);
+            ValueManager.InstantChangeValue("H", -1500);
+            if (inDiningArea == true)
+            {
+                ValueManager.InstantChangeValue("H", 2500);
+                diningTable.GetComponent<Eating>().EatUp = true;
+            }
         }
     }
 }

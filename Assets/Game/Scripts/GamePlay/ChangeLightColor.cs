@@ -78,7 +78,7 @@ namespace UnityEngine.Experimental.Rendering.Universal
         {
             if (current.Hours >= 0 && current.Hours < 8)
             {
-                ValueManager.InstantChangeValue("H", -10000*current.Hours/8);
+                ValueManager.InstantChangeValue("H", -3000*current.Hours/8);
             }
 
             if (current.Hours >= 8 && current.Hours < 24)
@@ -86,11 +86,13 @@ namespace UnityEngine.Experimental.Rendering.Universal
                 current.Day++;
                 current.Hours = 8;
                 current.Mintues = 0;
-                ValueManager.InstantChangeValue("F", -4000);
+                ValueManager.InstantChangeValue("F", -2000);
+                ValueManager.InstantChangeValue("H", -1000);
             }
             else
             {
-                ValueManager.InstantChangeValue("F", -4000*current.Hours/8);
+                ValueManager.InstantChangeValue("F", -2000*current.Hours/8);
+                ValueManager.InstantChangeValue("H", -1000*current.Hours/8);
                 current.Hours = 8;
                 current.Mintues = 0;
             }

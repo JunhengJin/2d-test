@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f283ecb82a3bf2b499edac21b4b41235, type: 3}
+  m_Name: Sushi
+  m_EditorClassIdentifier: 
+  itemName: Sushi
+  itemImage: {fileID: -9108510950829718212, guid: 142ff8784e552734f9d6a895491d0ae8,
+    type: 3}
+  itemHeld: 0
+  itemInfo: 'Sushi
+
+    Japanese traditional food, supplement a certain hunger value.'

@@ -107,8 +107,8 @@ public class AudioManager : MonoBehaviour
     public static void PlayFlushingAudio()
     {
         _current.interactiveSource.clip = _current.flushingClip;
-        _current.musicSource.loop = false;
         _current.interactiveSource.Play();
+        _current.musicSource.loop = false;
     }
 
     public static void PauseInteractiveAudio()

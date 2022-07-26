@@ -18,7 +18,7 @@ public class MouseEnter : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
         {
             TextManager.ShowData("<color=#4169E1>Water: </color>"+TargetSlider1.value/TargetSlider1.maxValue*100+"<color=#4169E1>%</color>\n"
                                  +"<color=#d81300>Health: </color>"+TargetSlider2.value/TargetSlider2.maxValue*100+"<color=#d81300>%</color>\n"
-                                 +"<color=#feae34>Food: </color>"+TargetSlider3.value/TargetSlider3.maxValue*100+"<color=#feae34>%</color>");
+                                 +"<color=#feae34>Hunger: </color>"+TargetSlider3.value/TargetSlider3.maxValue*100+"<color=#feae34>%</color>");
         }
     }
     public void OnPointerExit(PointerEventData eventData)
