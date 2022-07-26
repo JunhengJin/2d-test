@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Sushi
   itemImage: {fileID: -9108510950829718212, guid: 142ff8784e552734f9d6a895491d0ae8,
     type: 3}
-  itemHeld: 0
+  itemHeld: 1
   itemInfo: 'Sushi
 
     Japanese traditional food, supplement a certain hunger value.'

@@ -17,6 +17,7 @@ public class ValueControlor : MonoBehaviour
     bool isable = false;
     bool LeakWater = false;
     bool DontHaveWater = false;
+    private bool firstTime = true;
     int count = 0;
     GameObject Smoke;
     private Animator myAnim;
@@ -76,6 +77,11 @@ public class ValueControlor : MonoBehaviour
                     {
                         if (count == 0)
                         {
+                            if (firstTime == true)
+                            {
+                                firstTime = false;
+                                ControlMissionUi.ConTask3("Toliet");
+                            }
                             TextManager.ShowText("Doing...");
                             count++;
                             Target.GetComponent<SpriteRenderer>().sprite = Target_sprite[1];
@@ -117,6 +123,11 @@ public class ValueControlor : MonoBehaviour
                     {
                         if (count == 0)
                         {
+                            if (firstTime == true)
+                            {
+                                firstTime = false;
+                                ControlMissionUi.ConTask3("Hand");
+                            }
                             AudioManager.PlayOpenTapAudio();
                             count++;
                             TextManager.ShowText("Waiting...");
@@ -222,6 +233,11 @@ public class ValueControlor : MonoBehaviour
                             Sleeping.ChangeCanves();
                             TopDownCharacterController.ChangeBool(false);
                             TextManager.ShowText("Doing...");
+                            if (firstTime == true)
+                            {
+                                firstTime = false;
+                                ControlMissionUi.ConTask7();
+                            }
                             Invoke("ComeBack_Car", 4f);
                         }
                     }
@@ -249,6 +265,11 @@ public class ValueControlor : MonoBehaviour
                     {
                         if (count == 0)
                         {
+                            if (firstTime == true)
+                            {
+                                firstTime = false;
+                                ControlMissionUi.ConTask3("Body");
+                            }
                             AudioManager.PlayOpenTapAudio();
                             count++;
                             TextManager.ShowText("Waitting...");
@@ -318,6 +339,11 @@ public class ValueControlor : MonoBehaviour
                     {
                         if (count == 0)
                         {
+                            if (firstTime == true)
+                            {
+                                firstTime = false;
+                                ControlMissionUi.ConTask6();
+                            }
                             AudioManager.PlayOpenTapAudio();
                             count++;
                             TextManager.ShowText("Waiting...");

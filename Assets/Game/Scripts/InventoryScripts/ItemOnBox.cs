@@ -10,6 +10,7 @@ public class ItemOnBox : MonoBehaviour
     private Animator myAnim;
     private bool Used = false;
     private bool Using = false;
+    private bool firstTime = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,11 @@ public class ItemOnBox : MonoBehaviour
             
             if (Input.GetKeyDown(KeyCode.E))
             {
+                if (firstTime == true)
+                {
+                    firstTime = false;
+                    ControlMissionUi.ConTask4();
+                }
                 ValueManager.GradualChangeValue("H", 0, 5);
                 myAnim.SetBool("CanOpen", true);
                 myAnim.SetBool("CanClose", false);

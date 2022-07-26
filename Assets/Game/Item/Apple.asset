@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Apple
   itemImage: {fileID: 3983405018662690971, guid: 142ff8784e552734f9d6a895491d0ae8,
     type: 3}
-  itemHeld: 0
+  itemHeld: 1
   itemInfo: 'Apple
 
     Rich in vitamins, can increase a certain amount of health

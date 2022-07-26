@@ -53,7 +53,7 @@ public class TalkButton : MonoBehaviour
             talkUI.SetActive(true);
             if (IsDialog == true)
             {
-                if (ChangeLightColor.GetDayNum() !=6)
+                if (ChangeLightColor.GetDayNum() !=6&&ChangeLightColor.GetDayNum() <11)
                 {
                     DialogList[ChangeLightColor.GetDayNum()-1].SetActive(true);
                 }else 

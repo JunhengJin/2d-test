@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.UI;
 
 public class Player_status_Listener : MonoBehaviour
@@ -8,6 +9,9 @@ public class Player_status_Listener : MonoBehaviour
     public List<Slider> TargetSlider = new List<Slider>();
     //bool DIE = false;
     public GameObject Target;
+    public GameObject WinTarget;
+    public GameObject DeadByHealth;
+    public GameObject DeadByHunger;
     public GameObject HealthBuffImage;
     public GameObject HealthDebuffImage;
     public GameObject FoodBuffImage;
@@ -23,15 +27,31 @@ public class Player_status_Listener : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        DeadByHealth.SetActive(false);
+        DeadByHunger.SetActive(false);
     }
 
-    // Update is called once per frame
+    void showWin()
+    {
+        WinTarget.SetActive(true);
+        GameObject.Find("SceneControl").GetComponent<GamePlaySceneManager>().TimeStop();
+    }
     void Update()
     {
-        if (TargetSlider[0].value == MinValue||TargetSlider[1].value == MinValue)
+        if (ChangeLightColor.GetDayNum() == 11)
+        {
+            Invoke("showWin",4f);
+        }
+        if (TargetSlider[0].value == MinValue)
         {
             Target.SetActive(true);
+            DeadByHealth.SetActive(true);
+            GameObject.Find("SceneControl").GetComponent<GamePlaySceneManager>().TimeStop();
+        }
+        if (TargetSlider[1].value == MinValue)
+        {
+            Target.SetActive(true);
+            DeadByHunger.SetActive(true);
             GameObject.Find("SceneControl").GetComponent<GamePlaySceneManager>().TimeStop();
         }
 

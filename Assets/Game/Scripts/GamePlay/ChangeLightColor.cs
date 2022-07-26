@@ -49,6 +49,7 @@ namespace UnityEngine.Experimental.Rendering.Universal
             if (Hours == 24)
             {
                 Day++;
+                ControlMissionUi.ConTask1(Day-1);
                 Hours = 0;
             }
             if (Hours < 10)
@@ -84,6 +85,7 @@ namespace UnityEngine.Experimental.Rendering.Universal
             if (current.Hours >= 8 && current.Hours < 24)
             {
                 current.Day++;
+                ControlMissionUi.ConTask1(current.Day-1);
                 current.Hours = 8;
                 current.Mintues = 0;
                 ValueManager.InstantChangeValue("F", -2000);

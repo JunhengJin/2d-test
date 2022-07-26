@@ -14,6 +14,7 @@ public class Cooking : MonoBehaviour
     private bool isable = false;
     private int count = 0;
     private int temp = 0;
+    private bool firstTime = true;
     public enum CookingTools
     {
         machine1,machine2,machine3
@@ -94,6 +95,11 @@ public class Cooking : MonoBehaviour
     private void generateItem()
     {
         count = 4;
+        if (firstTime == true)
+        {
+            firstTime = false;
+            ControlMissionUi.ConTask5();
+        }
         TextManager.ShowText("Press 'E' to pick up the item");
     }
     private void OnTriggerExit2D(Collider2D collision)
