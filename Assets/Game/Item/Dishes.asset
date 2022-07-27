@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dishes
   m_EditorClassIdentifier: 
   itemName: Dishe
-  itemImage: {fileID: 5445751372242461460, guid: c72480b9606a3b14db377d0bce79217b,
+  itemImage: {fileID: 6234097283497843419, guid: c72480b9606a3b14db377d0bce79217b,
     type: 3}
   itemHeld: 0
   itemInfo: 'Dishe

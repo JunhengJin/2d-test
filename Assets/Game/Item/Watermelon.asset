@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Watermelon
   itemImage: {fileID: -3448772663268512762, guid: 142ff8784e552734f9d6a895491d0ae8,
     type: 3}
-  itemHeld: 1
+  itemHeld: 0
   itemInfo: 'Watermelon
 
     Rich in vitamins, can increase a certain amount of health

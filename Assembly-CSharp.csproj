@@ -57,6 +57,7 @@
      <Compile Include="Assets\Game\Scripts\GamePlay\ValueManager.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\PropsAltar.cs" />
      <Compile Include="Assets\Game\Scripts\UI\TalkButton.cs" />
+     <Compile Include="Assets\Game\Scripts\SurvivalGuide.cs" />
      <Compile Include="Assets\Game\Scripts\Audio\VolumeControl.cs" />
      <Compile Include="Assets\Game\Scripts\Audio\AudioManager.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\Sleeping.cs" />
@@ -99,7 +100,6 @@
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
      <Compile Include="Assets\Game\Scripts\Text\VerticalGradient.cs" />
      <Compile Include="Assets\Game\Scripts\InventoryScripts\MoveBag.cs" />
-     <Compile Include="Assets\Game\Scripts\SurvivalGuide.cs" />
      <None Include="Assets\Game\Dialog\TV content Day7.txt" />
      <None Include="Assets\Game\Dialog\TV content Day10.txt" />
      <None Include="Assets\Game\Dialog\TV content Day5.txt" />
