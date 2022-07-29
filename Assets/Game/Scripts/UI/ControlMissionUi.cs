@@ -23,7 +23,7 @@ public class ControlMissionUi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        current.mission[6].SetActive(false);
     }
 
     // Update is called once per frame
@@ -90,6 +90,7 @@ public class ControlMissionUi : MonoBehaviour
     }
     public static void ConTask7()
     {
+        current.mission[6].SetActive(true);
         current.task7Num++;
         current.mission[6].GetComponent<Text>().text = "7.Drive to collect government supplies.("+current.task7Num+"/1)";
         current.mission[6].GetComponent<Text>().color = new Color(0.6f, 0.6f, 0.6f, 1);
