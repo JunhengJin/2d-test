@@ -96,6 +96,7 @@
      <Compile Include="Assets\Game\Scripts\GamePlay\Cooking.cs" />
      <Compile Include="Assets\Game\Scripts\InventoryScripts\Inventory.cs" />
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\PropVariants\FPPillar.cs" />
+     <Compile Include="Assets\Game\Scripts\ExitGame.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\ChangeLightColor.cs" />
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
      <Compile Include="Assets\Game\Scripts\Text\VerticalGradient.cs" />
