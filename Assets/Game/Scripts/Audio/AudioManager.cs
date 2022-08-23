@@ -156,6 +156,9 @@ public class AudioManager : MonoBehaviour
     public static void ChangeMusicAudioVolume(float value)
     {
         _current.musicSource.volume = value;
+        _current.fxSource.volume = value;
+        _current.playerSource.volume = value;
+        _current.interactiveSource.volume = value;
     }
 
     public static float GetMusicAudioVolume()

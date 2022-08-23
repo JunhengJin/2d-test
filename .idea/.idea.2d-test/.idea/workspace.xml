@@ -8,7 +8,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/DialogSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/GamePlay/DoorControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/InventoryScripts/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/InventoryScripts/ItemOnDrag.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,6 +123,8 @@
       <workItem from="1660813083973" duration="825000" />
       <workItem from="1661155430895" duration="859000" />
       <workItem from="1661156330617" duration="111000" />
+      <workItem from="1661241368724" duration="1934000" />
+      <workItem from="1661245059688" duration="176000" />
     </task>
     <servers />
   </component>

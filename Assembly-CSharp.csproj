@@ -57,7 +57,7 @@
      <Compile Include="Assets\Game\Scripts\GamePlay\ValueManager.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\PropsAltar.cs" />
      <Compile Include="Assets\Game\Scripts\UI\TalkButton.cs" />
-     <Compile Include="Assets\Game\Scripts\SurvivalGuide.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\SurvivalGuide.cs" />
      <Compile Include="Assets\Game\Scripts\Audio\VolumeControl.cs" />
      <Compile Include="Assets\Game\Scripts\Audio\AudioManager.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\Sleeping.cs" />
@@ -89,18 +89,19 @@
      <Compile Include="Assets\Game\Scripts\Player\Player_status_Listener.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\ValueControlor.cs" />
      <Compile Include="Assets\Game\Scripts\Player\GhostGenerator.cs" />
-     <Compile Include="Assets\Game\Scripts\DialogSystem.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\DialogSystem.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\GameSaveManager.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\GamePlaySceneManager.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\SpriteColorAnimation.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\Cooking.cs" />
      <Compile Include="Assets\Game\Scripts\InventoryScripts\Inventory.cs" />
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\PropVariants\FPPillar.cs" />
-     <Compile Include="Assets\Game\Scripts\ExitGame.cs" />
+     <Compile Include="Assets\Game\Scripts\GamePlay\ExitGame.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\ChangeLightColor.cs" />
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
      <Compile Include="Assets\Game\Scripts\Text\VerticalGradient.cs" />
      <Compile Include="Assets\Game\Scripts\InventoryScripts\MoveBag.cs" />
+     <Compile Include="Assets\Game\Scripts\TestSave.cs" />
      <None Include="Assets\Game\Dialog\TV content Day7.txt" />
      <None Include="Assets\Game\Dialog\TV content Day10.txt" />
      <None Include="Assets\Game\Dialog\TV content Day5.txt" />
@@ -817,6 +818,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{29882d2c-ef45-3c09-93a8-3e8241b8b887}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
