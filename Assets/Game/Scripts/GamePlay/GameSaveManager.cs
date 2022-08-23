@@ -10,6 +10,7 @@ public class GameSaveManager : MonoBehaviour
 
     public void SaveGame()
     {
+        ES3AutoSaveMgr.Current.Save();
         Debug.Log(Application.persistentDataPath);
 
         if (!Directory.Exists((Application.persistentDataPath + "/game_SaveData")))
@@ -36,6 +37,7 @@ public class GameSaveManager : MonoBehaviour
 
     public void LoadGame()
     {
+        ES3AutoSaveMgr.Current.Load();
         BinaryFormatter bf = new BinaryFormatter();
         if (File.Exists(Application.persistentDataPath + "/game_SaveData/inventory.txt"))
         {

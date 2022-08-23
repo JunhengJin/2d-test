@@ -101,7 +101,8 @@
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
      <Compile Include="Assets\Game\Scripts\Text\VerticalGradient.cs" />
      <Compile Include="Assets\Game\Scripts\InventoryScripts\MoveBag.cs" />
-     <Compile Include="Assets\Game\Scripts\TestSave.cs" />
+     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_Slider.cs" />
+     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_ValueControlor.cs" />
      <None Include="Assets\Game\Dialog\TV content Day7.txt" />
      <None Include="Assets\Game\Dialog\TV content Day10.txt" />
      <None Include="Assets\Game\Dialog\TV content Day5.txt" />

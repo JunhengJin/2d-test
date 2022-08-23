@@ -5,7 +5,7 @@ using UnityEngine;
 public class SurvivalGuide : MonoBehaviour
 {
     private bool isable = false;
-
+    private bool isFirstTime = true;
     public GameObject Target;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,11 @@ public class SurvivalGuide : MonoBehaviour
             {
                 Target.SetActive(true);
                 TopDownCharacterController.ChangeBool(false);
+                if (isFirstTime == true)
+                {
+                    isFirstTime = false;
+                    ControlMissionUi.ConTask2(true);
+                }
             }
         }
     }
@@ -37,6 +42,7 @@ public class SurvivalGuide : MonoBehaviour
     
     private void OnTriggerExit2D(Collider2D collision)
     {
+        isable = false;
         if (collision.gameObject.tag == "Player")
         {
             TextManager.ShowText("");
