@@ -16,6 +16,7 @@ public class Sleeping : MonoBehaviour
     private bool changeCanvasPart1 = false;
     private bool changeCanvasPart2 = false;
     private bool isSleep = true;
+    private bool isDoing = false;
     
     private void Awake()
     {
@@ -35,10 +36,15 @@ public class Sleeping : MonoBehaviour
             TextManager.ShowText("Press 'E' to sleep");
             if (Input.GetKeyDown(KeyCode.E))
             {
-                myObject.SetActive(true);
-                changeCanvasPart1 = true;
-                ChangeLightColor.TimeMultiple(0);
-                TopDownCharacterController.ChangeBool(false);
+                if (isDoing == false)
+                {
+                    myObject.SetActive(true);
+                    changeCanvasPart1 = true;
+                    ChangeLightColor.TimeMultiple(0);
+                    TopDownCharacterController.ChangeBool(false);
+                    isDoing = true;
+                }
+                
             }
         }
 
@@ -70,6 +76,7 @@ public class Sleeping : MonoBehaviour
                 ChangeLightColor.TimeMultiple(-1);
                 TopDownCharacterController.ChangeBool(true);
                 myObject.SetActive(false);
+                isDoing = false;
             }
             else
             {

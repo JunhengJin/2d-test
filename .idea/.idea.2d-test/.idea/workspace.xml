@@ -38,6 +38,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="E:/桌面\2d-test.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="E:\桌面" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Program Files\UnityEditor\2020.3.33f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\UnityProject\unity-github\2d-test -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -129,6 +137,7 @@
       <workItem from="1661248349674" duration="2234000" />
       <workItem from="1661256533670" duration="694000" />
       <workItem from="1662465202718" duration="2104000" />
+      <workItem from="1662469567975" duration="409000" />
     </task>
     <servers />
   </component>
