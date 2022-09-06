@@ -81,12 +81,14 @@
      <Compile Include="Assets\Game\Scripts\Text\TextManager.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\CameraFollow.cs" />
      <Compile Include="Assets\Game\Scripts\InventoryScripts\ItemOnWorld.cs" />
+     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_Slider.cs" />
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\PropVariants\FPFlower.cs" />
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\PropVariants\FPCattail.cs" />
      <Compile Include="Assets\Game\Scripts\InventoryScripts\Slot.cs" />
      <Compile Include="Assets\Game\Scripts\Audio\StartGamePlay.cs" />
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\PropVariants\FPGrassLong.cs" />
      <Compile Include="Assets\Game\Scripts\Player\Player_status_Listener.cs" />
+     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_ValueControlor.cs" />
      <Compile Include="Assets\Game\Scripts\GamePlay\ValueControlor.cs" />
      <Compile Include="Assets\Game\Scripts\Player\GhostGenerator.cs" />
      <Compile Include="Assets\Game\Scripts\UI\DialogSystem.cs" />
@@ -101,8 +103,6 @@
      <Compile Include="Assets\Resources\KrishnaPalacio\MINIFANTASY Forgotten Plains - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
      <Compile Include="Assets\Game\Scripts\Text\VerticalGradient.cs" />
      <Compile Include="Assets\Game\Scripts\InventoryScripts\MoveBag.cs" />
-     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_Slider.cs" />
-     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_ValueControlor.cs" />
      <None Include="Assets\Game\Dialog\TV content Day7.txt" />
      <None Include="Assets\Game\Dialog\TV content Day10.txt" />
      <None Include="Assets\Game\Dialog\TV content Day5.txt" />
